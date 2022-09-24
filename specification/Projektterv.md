@@ -1,29 +1,16 @@
-# `Szallítmányozás` Projektterv `2021`
+# WebShop Projektterv 2022
 
 ## 1. Összefoglaló 
 
-`A szállítmányozás lényege, hogy a küldemény a lehető legkisebb költséggel, legbiztonságosabban, a megfelelő időben optimálisan jusson el a rendeltetési helyre. Ez megköveteli az online is elérhető nyilvántartást, épp ezért ennek a projektnek a célja, hogy a szállítmányozással foglalkozó cégek számára egy webalkalmazást fejlesszünk. Az oldal lehetővé teszi tetszőleges árukészlet nyilvántartását, amelyek akár több raktárban, szétszorva vannak tárolva. Ezenkívül az árumozgatás online nyilvántartására is alkalmas lesz az elkészült weboldal. Mindezen funkciókat egy letisztult felületen keresztül tudja elérni a felhasználó.`
+`A projekt célja egy webshop megvalósítása, amelyben ruhákat fogunk árulni. Fő célunk az, hogy a mai fiatalokat normális ruhába öltöztessük, hogy a dripjük 300%-os legyen. Mi nem csak ruhát hanem stílus árulunk. A weboldalunkon a legjobb funkció a saját stílus megvalósítása, segítségül árulunk basic dripeket. Ezzel is lehhetővétéve a gyors és kényelmes ruhavásárlást. A felhasználó kedvére válogathat változatos, rendkívüli és exklúzív termékeink közül. Drip shop, ahol a pacek a still!  `
 
-```
-Ide írd le tömören (4-6 mondatban), hogy miről szól a projekt, amit a gyakorlatvezetőtől kaptatok. 
-Írd le, hogy mik a fő célok, miért van a weboldalra szükség. 
-A dokumentumban a pirossal illetve a blokkokkal kiemelt szövegeknek két jelentése van: 
-(a) minta/sablon szöveg, amit le kell cserélni, pl. gyakorlatvezető neve; 
-(b) segítő/magyarázó szöveg. 
-Az átadott dokumentumban nem szerepelhetnek se pirossal kiemelt, se blokkban szereplő részek! A
-feketével írt részek törlése tilos, azok közösek.
-```
 
 ## 2. Verziók
 
 | Verzió | Szerző(k)                | Dátum        | Státusz         | Megjegyzés                                                    |
 |--------|--------------------------|--------------|-----------------|---------------------------------------------------------------|
-| `0.1`  | `Teszt Elek`             | `2021-09-26` | `Tervezet`      | `Legelső verzió`                                              |
-| `0.2`  | `Remek Elek, Teszt Elek` | `2021-10-04` | `Előterjesztés` | `A projekt menedzsere jónak találta`                          |
-| `1.0`  | `Lev Elek`               | `2021-10-11` | `Elfogadott`    | `Apróbb átszervezések a kommentek alapján`                    |
-| `1.1`  | `Remek Elek`             | `2021-10-15` | `Tervezet`      | `Személyes felelősségek átszervezése, Gantt chart módosítása` |
-| `1.1`  | `Lev Elek`               | `2021-10-18` | `Előterjesztés` | `2. mérföldkő további módosításai`                            |
-| `2.1`  | `Remek Elek`             | `2021-10-25` | `Elfogadott`    | `Leírások pontosítása a megjegyzések alapján`                 |
+| `0.1`  | `Gyarmati Patrik, Katona Ádám`             | `2022-09-24` | `Tervezet`      | `Tervezett és lehetséges funkciók, design`                                              |
+
 
 
 Státusz osztályozás:
