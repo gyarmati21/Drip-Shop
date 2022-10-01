@@ -48,9 +48,9 @@ A rendszer képes lesz több ruhát tárolni és kezelni, külön és csomagokba
 
 ## 4. Költség- és erőforrás-szükségletek
 
-Az erőforrásigényünk összesen kb. `22` személynap/fő.
+Az erőforrásigényünk összesen kb. 15 személynap/fő.
 
-A rendelkezésünkre áll összesen `3 * 70 = 210` pont.
+A rendelkezésünkre áll összesen (7 * 70 = 490) pont.
 
 ```
 Becsült sarokszámok, a rendelkezésre álló erőforrás fejenként általában 17-25 személynap, 
