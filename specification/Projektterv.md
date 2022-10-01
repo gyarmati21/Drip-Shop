@@ -180,9 +180,9 @@ Minden leadásnál a projektmenedzser jelentést tesz a projekt haladásáról, 
 
 ### 8.1. Tervezett szoftverfolyamat modell és architektúra
 
-`A szoftver fejlesztése során az agilis fejlesztési modellt alkalmazzuk. A fejlesztés során nagy hangsúlyt fektetünk a folyamatos kommunikcióra. A fejlesztés során a szoftver specifikációi rugalmasan vátozhatnak, és ezzel a módszertannal tudunk a leggyorsabban alkalmazkodni az új elvárásokhoz.`
+`A szoftver fejlesztése során az agilis fejlesztési modellt alkalmazzuk. A fejlesztés során nagy hangsúlyt fektetünk a folyamatos kommunikcióra. A fejlesztés során a szoftver specifikációi rugalmasan vátozhatnak, és ezzel leggyorsabban tudunk a alkalmazkodni az új elvárásokhoz.`
 
-`A szoftver MVC alapú REST webszolgáltatásként működik. A szerver és a kliens függetlenek, csupán API végpontok segítségével kommunikálnak.`
+`A szoftver MVC alapú architectúrára fog épülni. A frontend oldalait a backend fogja felépíteni, és elküldeni HTTP üzenetek formájában. Az alkalmazás egy PostGreSQL adatbázis fogja támogatni.`
 
 ```
 Milyen szoftverfolyamat modellt követve állítja elő a csapat a specifikációnak megfelelő prototípusokat? Miért ezt választja? 
@@ -195,10 +195,10 @@ A főbb átadandók és határidők a projekt időtartama alatt a következők:
 
 | Szállítandó |                 Neve                |   Határideje  |
 |:-----------:|:-----------------------------------:|:-------------:|
-|      D1     |       Projektterv és útmutató       | `2021-10-04`  |
-|    P1+D2    | UML, DB, képernyőtervek és bemutató | `2021-10-18 ` |
-|    P1+D3    |      Prototípus I. és bemutató      | `2021-11-08 ` |
-|    P2+D4    |      Prototípus II. és bemutató     | `2021-11-29 ` |
+|      D1     |       Projektterv és útmutató       | `2022-10-05`  |
+|    P1+D2    | UML, DB, képernyőtervek és bemutató | `2022-10-19 ` |
+|    P1+D3    |      Prototípus I. és bemutató      | `2022-11-09 ` |
+|    P2+D4    |      Prototípus II. és bemutató     | `2022-11-30 ` |
 
 ```
 D - dokumentáció, P - prototípus
