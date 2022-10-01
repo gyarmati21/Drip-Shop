@@ -110,43 +110,53 @@ A projekt a következő technológiákat/szoftvereket fogja használni a munka s
 | `Betegség`                                  | `Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása`        | `közepes`       | `közepes` |
 | `Kommunikációs fennakadás a csapattagokkal` | `A csapattagok között nem elégséges az információ áramlás, nem pontosan, esetleg késve vagy nem egyértelműen tájékoztatjuk egymást. Megoldás: még gyakoribb megbeszélések és ellenőrzések` | `kis`        | `erős` |
 
-
 ## 7. Jelentések
 
 ### 7.1. Munka menedzsment
-A munkát `Teszt Elek` koordinálja. `Fő feladata, hogy folyamatosan egyeztessen a csapattagokkal az előrehaladásról és a fellépő problémákról, esetlegesen a megoldásban is segítséget nyújhat a projekt csúszásának elkerülése végett. További feladata a heti szinten tartandó csoportgyűlések időpontjának és helyszínének leszervezése, erről email-ben tájékoztatja a projektcsapatot.`
-
-```
-Írd le, hogy ki menedzseli a munkát (tipikusan a projekt menedzser), mik a feladatai, és azokat hogyan hajtja végre.
-```
+A munkát `Pál Szilárd Ákos` koordinálja. `Fő feladata, hogy folyamatosan egyeztessen a csapattagokkal az előrehaladásról és a fellépő problémákról, esetlegesen a megoldásban is segítséget nyújhat a projekt csúszásának elkerülése végett.`
 
 ### 7.2. Csoportgyűlések
 
-`A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problémáit, illetve hogy megbeszéljék a következő hét feladatait. A megbeszélésről minden esetben memó készül.`
+`Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat, esetleg felmerülő új ötleteket, eltervezzük a következő hét teendőit. A megbeszélésről minden esetben Discord thread készül.`
 
 `1. megbeszélés:`
- - `Időpont: 2021.09.15.`
- - `Hely: SZTE Irinyi épület - Szeged, Tisza Lajos krt. 103`
- - `Résztvevők: Teszt Elek, Remek Elek, Lev Elek`
- - `Érintett témák: Ismerkedés, projekttéma kiválasztása`
+ - `Időpont: 2021.09.17.`
+ - `Hely: Discord`
+ - `Résztvevők:`
+ 	- Katona Ádám
+ 	- Pál Szilárd
+ 	- Györök Gábor
+ 	- Kabók Dániel Tibor
+ 	- Gyarmati Patrik
+ 	- Kücüktüfekci Cengiz Etem
+ 	- Rózsa Patrik
+ - `Érintett témák: Technológiák kiválasztása, téma és név megbeszélése, minták áttekintése`
 
 `2. megbeszélés:`
- - `Időpont: 2021.09.22.`
- - `Hely: Pivovár - Szeged, Vitéz utca 26.`
- - `Résztvevők: Teszt Elek, Remek Elek, Lev Elek`
- - `Érintett témák: A projektben használt technológiák, a dokumentáció felépítése, szerepkörök kiosztása, dokumentáció kisebb részekre felosztása`
+ - `Időpont: 2021.09.24.`
+ - `Hely: Discord`
+ - `Résztvevők:`
+  	- Katona Ádám
+ 	- Pál Szilárd
+ 	- Györök Gábor
+ 	- Kabók Dániel Tibor
+ 	- Gyarmati Patrik
+ 	- Kücüktüfekci Cengiz Etem
+ 	- Rózsa Patrik
+ - `Érintett témák: Első mérföldkő kb felének kitöltése, funkciókról ötletelés`
 
-`3. Megbeszélés:`
- - `Időpont: 2021.09.29.`
- - `Hely: TIK – Szeged, Ady tér 10.`
- - `Résztvevők: Teszt Elek, Remek Elek`
- - `Érintett témák: Funkcionális és nem funkcionális követelmények megbeszélése, UML és adatbázis tervek kiosztása`
-
-```
-A memókat ebben a dokumentumban kell vezetni a teljes projekt során, amely tartalmazza a következőket: 
-jelenlévők listája, megbeszélés helye és ideje, megbeszélt tevékenységek, felmerült kérdések és igények. 
-	Lényege, hogy betekintést kapjunk hogyan szerveződnek, zajlanak a csoportgyűlések.
-```
+`3. megbeszélés:`
+ - `Időpont: 2021.10.01.`
+ - `Hely: Discord`
+ - `Résztvevők:`
+  	- Katona Ádám
+ 	- Pál Szilárd
+ 	- Györök Gábor
+ 	- Kabók Dániel Tibor
+ 	- Gyarmati Patrik
+ 	- Kücüktüfekci Cengiz Etem
+ 	- Rózsa Patrik
+ - `Érintett témák: Git configurálása, commit-olások, első mérföldkő folytatása`
 
 ### 7.3. Minőségbiztosítás
 
@@ -159,7 +169,7 @@ Az alábbi lehetőségek vannak a szoftver megfelelő minőségének biztosítá
 
 ### 7.4. Átadás, eredmények elfogadása
 
-A projekt eredményeit `Márkus András` fogja elfogadni. A projektterven változásokat csak  `Márkus András` írásos kérés esetén `Márkus András`engedélyével lehet tenni. A projekt eredményesnek bizonyul, ha specifikáció helyes és határidőn belül készül el. Az esetleges késések pontlevonást eredményeznek.
+A projekt eredményeit `Dr. Pflanzner Tamás` fogja elfogadni. A projektterven változásokat csak  `Dr. Pflanzner Tamás` írásos kérés esetén `Dr. Pflanzner Tamás`engedélyével lehet tenni. A projekt eredményesnek bizonyul, ha specifikáció helyes és határidőn belül készül el. Az esetleges késések pontlevonást eredményeznek.
 Az elfogadás feltételeire és beadás formájára vonatkozó részletes leírás a következő honlapon olvasható: https://okt.sed.hu/rf1/
 
 ### 7.5. Státuszjelentés
