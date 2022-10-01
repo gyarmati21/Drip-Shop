@@ -58,29 +58,28 @@ a pontok száma = fejenként a projektre kapható maxpont * tagok száma.
 ```
 
 ## 5. Szervezeti felépítés és felelősségmegosztás
-A projekt megrendelője `Márkus András`. A `Szállítmányozás` projektet a projektcsapat fogja végrehajtani, amely `jelenleg három fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is, A tapasztalt projekttagok több éve dolgoznak az iparban, számos sikeres projektten vannak túl.`
- - `Teszt Elek (3 év tapasztalat)`
- - `Remek Elek (3 év tapasztalat)`
- - `Lev Elek (<1 év tapasztalatő)`
-
-```
-Itt lehet részletezni pl. a tagok szakmai tapasztalatait, vagy akár a releváns gyakorlati helyeket, munkahelyeket megemlíteni (4-6 mondatban).
-```
+A projekt megrendelője `Dr. Pflanzner Tamás`. A `Drip Shop` projektet a projektcsapat fogja végrehajtani, amely `jelenleg hét fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is, A tapasztalt projekttagok több hónapja dolgoznak az iparban, számos sikeres projektten vannak túl.`
+ - `Katona Ádám (<1 év tapasztalat)`
+ - `Pál Szilárd (<1 év tapasztalat)`
+ - `Györök Gábor (<1 év tapasztalat)`
+ - `Kabók Dániel (<1 év tapasztalat)`
+ - `Gyarmati Patrik (<1 év tapasztalat)`
+ - `Kücüktüfekci Cengiz Etem (<1 év tapasztalat)`
+ - `Rózsa Patrik (<1 év tapasztalat)`
 
 ### 5.1 Projektcsapat
 A projekt a következő emberekből áll:
 
 |                                                                                                                   | Név             | E-mail cím (stud-os)       |
 |-------------------------------------------------------------------------------------------------------------------|-----------------|----------------------------|
-| Megrendelő                                                                                                        | `Márkus András` | `markusa@inf.u-szeged.hu`  |
-| Felelősségek: Projekt menedzser, `Adatbázis és adatkapcsolatok`, `A rendszer működési logikája`, `Prezentációk` | `Teszt Elek`    | `h123456@stud.u-szeged.hu` |
-| Felelősségek: `Felhasználói felületek`, `Dokumentáció`                                                            | `Remek Elek`    | `h654321@stud.u-szeged.hu` |
-| `Projekt tag`                                                                                                     | `Lev Elek`      | `h000000@stud.u-szeged.hu` |
-
-```
-Nem csak az adott egység felelősének feladata az adott részegység elkészítése, pl. a mérföldkövekhez tartozó prezentációt 
-mindenki szerkesztheti, de elvárható, hogy a prezentációért felelős tag adja elő. 
-```
+| Megrendelő                                                                                                        | `Dr. Pflanzner Tamás` | `tamas.pflanzner@inf.u-szeged.hu`  |
+| Felelősségek: Projekt menedzser																				    | `Pál Szilárd`    | `h050611@stud.u-szeged.hu` |
+| Felelősségek: `Adatbázis és adatkapcsolatok`																	    | `Rózsa Patrik`    | `h163488@stud.u-szeged.hu` |
+| Felelősségek: `Felhasználói felületek`                                                                            | `Gyarmati Patrik`    | `h045342@stud.u-szeged.hu` |
+| Felelősségek: `Felhasználókezelés`                                                                                | `Györök Gábor`    | `h158138@stud.u-szeged.hu` |
+| Felelősségek: `Üzleti logikák`                                                                                    | `Katona Ádám`    | `h159532@stud.u-szeged.hu` |
+| Felelősségek: `Adatbázis lekérdezések`                                                                            | `Kabók Dániel`    | `h046510@stud.u-szeged.hu` |
+| Felelősségek: `Az adatbázis feltöltése releváns adatokkal`                                                        | `Kücüktüfekci Cengiz Etem`    | `h160842@stud.u-szeged.hu` |
 
 ## 6. A munka feltételei
 
