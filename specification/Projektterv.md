@@ -30,7 +30,8 @@ azaz nem feltétlen mindenki, aki módosította a dokumentumot pl. egy elírás 
 
 ## 3. A projekt bemutatása
 
-`Ez a projektterv a Szallítmányozás projektet mutatja be, mely `2021-09-20`-től `2021-11-27`-ig tart. A projekt célja, hogy megfelelő felületet biztosítson a szállítmányozási feladatok online elvégézésére és az adatok nyilvántartására. Mindezért egy egyszerűen használható, átlátható és hatékonyan működő webalkalmazás fog felelni. A projekten három fő fejlesztő fog dolgozni, az elvégzett feladatokat pedig négy alkalommal fogjuk prezentálni a megrendelőnek. `
+A Webshop projectet 2022/09/24-én kezdjük és 2022/11/28-án adjuk át a megrendelőknek és tesszük elérhetővé a felhasználóknak. Ezen időtartam alatt a megrendelőnek 4 alkalommal fogjuk bemutatni a projectünk aktuális állapotát. Ezen a projecten összesen 7 bíztató, siker-orientált ifjú programozó fog dolgozni. A projectünk célja a megrendelők elvárásainak felűlmúlása és a felhasználók minden divat-igényeinek kielégítése valamint egy remek szolgáltatás biztosítása. Motivációnk hogy kitörjünk a mainstream ruhaoldalak monopóliumának árnyékából.
+
 
 ```
 A megvalósítás további általános leírása, pl. mennyi főből áll a csapat, mennyi átadandó lesz a megrendelőnek a félév során, 
