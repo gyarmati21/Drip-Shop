@@ -85,36 +85,31 @@ A projekt a következő emberekből áll:
 
 ### 6.1. Munkakörnyezet
 A projekt a következő munkaállomásokat fogja használni a munka során:
- - `Munkaállomások: 3 db PC Windows 10-es operációs rendszerrel`
- - `Dell Inspiron 5558 laptop (CPU: i5 5200U, RAM: 8 GB, GPU: Nvidia 920M)`
- - `Acer Aspire 573g laptop (CPU: i3 5005U, RAM: 4 GB, GPU: Nvidia 920M)`
- - `Asztali számítógép (CPU: i7 7700k, RAM: 16GB, GPU: Nvidia GTX1070)`
+ - `Lenovo V15 G2 laptop (CPU: Ryzen 7 5700U, RAM: 16 GB, GPU: Radeon Vega 8, OS: Windows 10)`
+ - `Asztali számítógép (CPU:  Ryzen 7 3700X, RAM: 16GB, GPU: Nvidia GTX 1060, OS: Windows 10)`
+ - `Asztali számítógép (CPU: Core i5 7400, RAM: 24GB, GPU: Nvidia GTX 1050 Ti, OS: Windows 10)`
+ - `Asztali számítógép (CPU: Core i5 10400F, RAM: 16GB, GPU: Nvidia RTX 2060S, OS: Windows 10)`
+ - `Asztali számítógép (CPU: Ryzen 5 2600x, RAM: 16GB, GPU: Nvidia GTX 1660 Ti, OS: Arch Linux)`
+ - `Asztali számítógép (CPU: Core i3 8100, RAM: 16GB, GPU: Radeon RX 6600, OS: Windows 10)`
+ - `Asztali számítógép (CPU: ???, RAM: ??GB, GPU: ???, OS: Windows 10)`
+ - `Sony VAIO VPCEH2H1E laptop (CPU: Core i3 2330M, RAM: 4 GB, GPU: Intel HD 3000, OS: Debian Linux)`
 
 A projekt a következő technológiákat/szoftvereket fogja használni a munka során: 
  - `Heroku platformszolgáltatás`
  - `Heroku által biztosított PostgreSQL adatbázisszerver`
- - `Spring Boot (backend)`
- - `React.js (frontend)`
+ - `Spring Boot (Backend)`
  - `Maven szoftverprojekt menedzselő szoftver`
- - `Eclipse IDE`
+ - `Intellij IDEA, Visual Studio Code`
+ - `Thymeleaf (HTML Template Engine)`
  - `Git verziókövető (GitLab)`
-
-```
-Milyen gépet használnak a projekttagok, milyen OS-t használnak, milyen szoftverkörnyezetben, stb.
-```
 
 ### 6.2. Rizikómenedzsment
 
 | Kockázat                                    | Leírás                                                                                                                                                                                     | Valószínűség | Hatás  |
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|
-| `Betegség`                                  | `Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása`        | `nagy`       | `erős` |
+| `Betegség`                                  | `Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása`        | `közepes`       | `közepes` |
 | `Kommunikációs fennakadás a csapattagokkal` | `A csapattagok között nem elégséges az információ áramlás, nem pontosan, esetleg késve vagy nem egyértelműen tájékoztatjuk egymást. Megoldás: még gyakoribb megbeszélések és ellenőrzések` | `kis`        | `erős` |
 
-```
-A rizikótényezők bemutatása, amely hátráltathatja a projekt befejezését. Minden rizikót érdemes megemlíteni, részletezve, hogy mit jelent, 
-milyen valószínűséggel következhet be (kis, közepes és nagy) és mekkora a várható hatása (gyenge, közepes és erős) 
-és hogy milyen tervvel készültök, amennyiben egy ilyen esemény bekövetkezik. Pl.: betegség, szoftver-hardver probléma, tag kiesése, stb. 
-```
 
 ## 7. Jelentések
 
