@@ -21,50 +21,30 @@ Státusz osztályozás:
 
 ## 3. A projekt bemutatása
 
-`Ez a projektterv a Szallítmányozás projektet mutatja be, mely `2021-09-20`-től `2021-11-27`-ig tart. A projekt célja, hogy megfelelő felületet biztosítson a szállítmányozási feladatok online elvégézésére és az adatok nyilvántartására. Mindezért egy egyszerűen használható, átlátható és hatékonyan működő webalkalmazás fog felelni. A projekten három fő fejlesztő fog dolgozni, az elvégzett feladatokat pedig négy alkalommal fogjuk prezentálni a megrendelőnek. `
+A Webshop projectet 2022/09/24-én kezdjük és 2022/11/28-án adjuk át a megrendelőknek és tesszük elérhetővé a felhasználóknak. Ezen időtartam alatt a megrendelőnek 4 alkalommal fogjuk bemutatni a projectünk aktuális állapotát. Ezen a projecten összesen 7 bíztató, siker-orientált ifjú programozó fog dolgozni. A projectünk célja a megrendelők elvárásainak felűlmúlása és a felhasználók minden divat-igényeinek kielégítése valamint egy remek szolgáltatás biztosítása. Motivációnk hogy kitörjünk a mainstream ruhaoldalak monopóliumának árnyékából.
 
-```
-A megvalósítás további általános leírása, pl. mennyi főből áll a csapat, mennyi átadandó lesz a megrendelőnek a félév során, 
-szintén 4-6 mondattal leírva.
-```
 
 ### 3.1. Rendszerspecifikáció
 
-`A rendszernek képesnek kell lennie arra, hogy adott cég raktárait illetve a raktárak állapotát (telítettség, fizikai pozíció, speciális tulajdonság pl. veszélyes anyag tárolása) nyilvántartsa. Ezenkívül a szállítmányozó cég alkalmazásában álló sofőröket, illetve azok kamionjait is kezelnie kell. A kamionok aktuális és korábbi szállítmányait ki tudjuk listázni. Minden funkció a megfelelő felhasználói jogosultság mellett használható, annak függvényében írható, olvasható vagy nem megtekinthető az adat.`
+A rendszer képes lesz több ruhát tárolni és kezelni, külön és csomagokban is egyaránt. Az oldal rendelés előtt egy precíz számítást követően képes lesz megjósolni a megrendelt outfit "Drip" százalékát. Valamint a rendszerünk képes lesz felhasználók adatainak tárolására. A regisztrált felhasználók nyomon tudják követni az eddigi rendeléseik "Drip" százalékainak összegzését. A megrendelő és felhasználók közös igényeinek kielégítése, hogy egy letisztult, könnyen használható, felhasználóbarát és sikeres Webshopot hozzunk létre. A projectre azért van szükség hogy az emberek stílusos ruhákat tudjanak vásárolni egy stílusos oldalról.
 
-```
-Ide írd le részletesen, hogy mit fog tudni a rendszer (4-6 mondatban), amit a projekt keretében kerül megvalósításra. 
-Mik a megrendelő és a felhasználók igényei? Miért van szükség a projektre?
-```
 
 ### 3.2. Funkcionális követelmények
 
- - `Felhasználói munkamenet megvalósítása több jogosultsági szinttel (admin, raktáros, sofőr)`
- - `Felhasználók kezelése (CRUD)`
- - `Raktárak kezelése (CRUD)`
- - `Árukészletek kezelése (CRUD)`
- - `Járművek kezelése (CRUD)`
- - `Fuvarok/szállítmányok kezelése (CRUD)`
- - `Email-es kiértesítés új szállítmány esetén az adott raktárosnak és sofőrnek`
- - `Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
- - `Kapcsolatfelvételi űrlap biztosítása új cégek számára`
- - `Biztonsági mentés automatikus létrehozása`
- 
-```
-Ide kerülnek a rendszerrel szemben támasztott funkcionális igények: azaz amit a rendszernek tudnia kell.
-```
+- Felhasználói munkamenet megvalósítása több jogosultsági szinttel (admin, vásárló)
+- Felhasználók kezelése (CRUD)
+- Ruhák kezelése (CRUD)
+- Outfitek kezelése (CRUD)
+- Megrendelések kezelése (CRUD)
+- "Drip-o-meter"
+- Kosárfunkciók
 
 ### 3.3. Nem funkcionális követelmények
 
- - `A kliens oldal platform- és böngészőfüggetlen legyen`
- - `Reszponzív megjelenés`
- - `Szenzitív adatokat biztonságosan tároljuk`
- - `A legfrissebb technológiákat használja a rendszer`
-
-```
-A rendszer nem funkcionális követelményei, pl.: milyen környezetben fusson, milyen teljesítményt kell produkálnia, 
-milyen megjelenéssel kell rendelkeznie.
-```
+- A kliens oldal platform- és böngészőfüggetlen legyen
+- Reszponzív megjelenés
+- Szenzitív adatokat biztonságosan tároljuk
+- Könnyen navigálható és használható oldal
 
 ## 4. Költség- és erőforrás-szükségletek
 
