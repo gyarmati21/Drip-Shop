@@ -220,90 +220,67 @@ Részfeladatai a következők:
 
 #### 9.1.1. Projektterv kitöltése
 
-Felelős: `Mindenki`
+Felelős: Mindenki
 
-Tartam:  `4 nap`
+Tartam:  2 hét
 
-Erőforrásigény:  `1 személynap/fő`
+Erőforrásigény:  2 személynap/fő
 
-
-#### 9.1.2. Bemutató elkészítése
-
-Felelős: `Teszt Elek`
-
-Tartam:  `2 nap`
-
-Erőforrásigény:  `1 személynap`
-
-```
-A mérföldkőhöz tartozó feladatok bemutatása PPT keretében, pl. téma, tervezett funkciók, tagok, Gantt diagram.`
-```
 
 ### 9.2. UML és adatbázis tervek (2. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `a rendszerarchitektúrát, az adatbázist és webalkalmazás kinézetét megtervezzük.`
+Ennek a feladatnak az a célja, hogy a rendszerarchitektúrát, az adatbázist és webalkalmazás kinézetét megtervezzük.
 
 Részfeladatai a következők:
 
 #### 9.2.1. Use Case diagram
 
-Felelős: `Teszt Elek`
+Felelős: Rózsa Patrik
 
-Tartam:  `4 nap`
+Tartam:  2 hét
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### 9.2.2. Class diagram
 
-Felelős: `Lev Elek`
+Felelős: Gyarmati Patrik
 
-Tartam:  `4 nap`
+Tartam:  2 hét
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  1 személynap
 
 #### 9.2.3. Sequence diagram
 
-Felelős: `Remek Elek`
+Felelős: Györök Gábor
 
-Tartam:  `3 nap`
+Tartam:  2 hét
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  2 személynap
 
 #### 9.2.4. Egyed-kapcsolat diagram adatbázishoz
 
-Felelős: `Remek Ele`
+Felelős: Kabók Dániel
 
-Tartam:  `4 nap`
+Tartam:  2 hét
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  1 személynap
 
 #### 9.2.5. Package diagram
 
-Felelős: `Teszt Elek`
+Felelős: Pál Szilárd
 
-Tartam:  `4 nap`
+Tartam:  2 hét
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### 9.2.6. Képernyőtervek
 
-Felelős: `Teszt Elek`
+Felelős: Katona Ádám
 
-Tartam:  `3 nap`
+Tartam:  2 hét
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
-#### 9.2.7. Bemutató elkészítése
-
-Felelős: `Lev Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `1 személynap`
-
-```
-A mérföldkőhöz tartozó feladatok bemutatása PPT keretében (elkészült diagramok és képernyőtervek)`
-```
 
 ### 9.3. Prototípus I. (3. mérföldkő)
 
