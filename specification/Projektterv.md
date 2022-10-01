@@ -284,199 +284,159 @@ Erőforrásigény:  1 személynap
 
 ### 9.3. Prototípus I. (3. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `egy működő prototípust hozzunk létre, ahol a vállalt funkcionális követelmények nagy része már prezentálható állapotban van.`
+Ennek a feladatnak az a célja, hogy egy működő prototípust hozzunk létre, ahol a vállalt funkcionális követelmények nagy része már prezentálható állapotban van.
 
 Részfeladatai a következők:
 
-#### 9.3.1.  `Felhasználói munkamenet üzleti logikája több jogosultsági szinttel (admin, raktáros, sofőr)`
+#### 9.3.1.  Felhasználói jogosultsági szintek implementálás Back-enden (admin, user)
 
-Felelős: `Teszt Elek`
+Felelős: 
 
-Tartam:  `5 nap`
+Tartam:  
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:
 
-#### 9.3.2.  `Felhasználói munkamenethez kapcsolódó GUI megvalósítása`
+#### 9.3.2.  Felhasználói fiókkal kapcsolatos Front-end elkészítése (login, register, user-page)
 
-Felelős: `Remek Elek`
+Felelős: 
 
-Tartam:  `4 nap`
+Tartam:  
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  
 
-#### 9.3.3.  `Felhasználói munkamenethez szükséges adatok létrehozása az adatbázisban`
+#### 9.3.3.  Felhasználók kezeléséhez tartozó back-end (listázása, módosítása, törlése)
 
-Felelős: `Lev Elek`
+Felelős: 
 
-Tartam:  `3 nap`
+Tartam:  
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény: 
 
-#### 9.3.4.  `Felhasználók kezeléséhez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)`
+#### 9.3.4.  Felhasználók kezeléséhez kapcsolódó front-end megvalósítása
 
-Felelős: `Teszt Elek `
+Felelős: 
 
-Tartam:  `4 nap`
+Tartam:  
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  
 
-#### 9.3.5.  `Felhasználók kezeléséhez kapcsolódó GUI megvalósítása`
+#### 9.3.5.  Termékek listázása front-end
 
-Felelős: `Teszt Elek`
+Felelős: 
 
-Tartam:  `3 nap`
+Tartam:  
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény: 
 
-#### 9.3.6.  `Raktárak kezeléshez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)`
 
-Felelős: `Remek Elek`
 
-Tartam:  `4 nap`
+#### 9.3.6.  Termékek listázása back-end
 
-Erőforrásigény:  `2 személynap`
+Felelős: 
 
-#### 9.3.7.  `Raktárak kezeléshez kapcsolódó GUI megvalósítása`
+Tartam:  
 
-Felelős: `Remek Elek `
+Erőforrásigény: 
 
-Tartam:  `4 nap`
 
-Erőforrásigény:  `2 személynap`
+#### 9.3.7.	Egy termék oldala front-end
 
-#### 9.3.8.  `Raktárkezeléshez szükséges adatok létrehozása az adatbázisban`
+Felelős: 
 
-Felelős: `Lev Elek`
+Tartam:  
 
-Tartam:  `3 nap`
+Erőforrásigény: 
 
-Erőforrásigény:  `1 személynap`
 
-#### 9.3.9.  `Árukészletek kezeléséhez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)`
+#### 9.3.8.  Egy termék oldala back-end
 
-Felelős: `Lev Elek`
+Felelős: 
 
-Tartam:  `5 nap`
+Tartam:  
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény: 
 
-#### 9.3.10.  `Árukészletek kezeléshez kapcsolódó GUI megvalósítása`
 
-Felelős: `Lev Elek`
+#### 9.3.9.  Termékek management front-end
 
-Tartam:  `5 nap`
+Felelős: 
 
-Erőforrásigény:  `2 személynap`
+Tartam:  
 
-#### 9.3.11.  `Árukészletek kezeléséhez szükséges adatok létrehozása az adatbázisban`
+Erőforrásigény: 
 
-Felelős: `Lev Elek`
 
-Tartam:  `3 nap`
+#### 9.3.10.  Termékek management front-end
 
-Erőforrásigény:  `1 személynap`
+Felelős: 
 
-#### 9.3.12.  `Járművek kezeléséhez kapcsolódó üzleti logika (listázása, módosítása, létrehozása, törlése)`
+Tartam:  
 
-Felelős: `Teszt Elek`
+Erőforrásigény: 
 
-Tartam:  `4 nap`
 
-Erőforrásigény:  `2 személynap`
+#### 9.3.11.  Termékek management back-end
 
-#### 9.3.13.  `Járművek kezeléshez kapcsolódó GUI megvalósítása`
+Felelős: 
 
-Felelős: `Teszt Elek `
+Tartam:  
 
-Tartam:  `5 nap`
+Erőforrásigény: 
 
-Erőforrásigény:  `3 személynap`
 
-#### 9.3.14.  `Járművek kezeléséhez szükséges adatok létrehozása az adatbázisban`
+#### 9.3.12.  Kosár front-end
 
-Felelős: `Remek Elek `
+Felelős: 
 
-Tartam:  `3 nap`
+Tartam:  
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény: 
 
-#### 9.3.15.  `Fuvarok kezeléséhez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)`
 
-Felelős: `Remek Elek`
+#### 9.3.13.  Kosár back-end
 
-Tartam:  `4 nap`
+Felelős: 
 
-Erőforrásigény:  `2 személynap`
+Tartam:  
 
-#### 9.3.16.  `Fuvarok kezeléshez kapcsolódó GUI megvalósítása`
+Erőforrásigény: 
 
-Felelős: `Remek Elek`
 
-Tartam:  `5 nap`
+#### 9.3.14.  Megrendelés front-end
 
-Erőforrásigény:  `3 személynap`
+Felelős: 
 
-#### 9.3.17.  `Fuvarok kezeléséhez szükséges adatok létrehozása az adatbázisban`
+Tartam:  
 
-Felelős: `Lev Elek`
+Erőforrásigény: 
 
-Tartam:  `3 nap`
 
-Erőforrásigény:  `1 személynap`
+#### 9.3.15.  Megrendelés back-end
 
-#### 9.3.18.  `Email-es kiértesítés új szállítmány esetén az adott raktárosnak és sofőrnek`
+Felelős: 
 
-Felelős: `Lev Elek`
+Tartam:  
 
-Tartam:  `5 nap`
+Erőforrásigény: 
 
-Erőforrásigény:  `2 személynap`
 
-#### 9.3.19.  `Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
+#### 9.3.16.  Ruha szettek front-end
 
-Felelős: `Lev Elek`
+Felelős: 
 
-Tartam:  `3 nap`
+Tartam:  
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény: 
 
-#### 9.3.20.  `Kapcsolatfelvételi űrlap biztosítása új cégek számára (üzleti logika és GUI)`
 
-Felelős: `Teszt Elek `
+#### 9.3.17.  Ruha szettek back-end
 
-Tartam:  `4 nap`
+Felelős: 
 
-Erőforrásigény:  `2 személynap`
+Tartam:  
 
-#### 9.3.21.  `Biztonsági mentés automatikus létrehozása`
+Erőforrásigény: 
 
-Felelős: `Teszt Elek `
-
-Tartam:  `4 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### 9.3.22. Tesztelési dokumentum (TP, TC)
-
-Felelős: `Mindenki`
-
-Tartam:  `3 nap`
-
-Erőforrásigény:  `1 személynap/fő`
-
-
-#### 9.3.23. Bemutató elkészítése 
-
-Felelős: `Teszt Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `1 személynap`
-
-```
-A feladatokat a 3.2-es pont figyelembevételével érdemes meghatározni és lehető legrészletesebben definiálni a feladatokat és a felelőseit. 
-A bemutató során a prototípus aktuális állását kell prezentálni.
-```
 
 ### 9.4. Prototípus II. (4. mérföldkő)
 
