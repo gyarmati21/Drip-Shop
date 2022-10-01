@@ -32,15 +32,10 @@ azaz nem feltétlen mindenki, aki módosította a dokumentumot pl. egy elírás 
 
 A Webshop projectet 2022/09/24-én kezdjük és 2022/11/28-án adjuk át a megrendelőknek és tesszük elérhetővé a felhasználóknak. Ezen időtartam alatt a megrendelőnek 4 alkalommal fogjuk bemutatni a projectünk aktuális állapotát. Ezen a projecten összesen 7 bíztató, siker-orientált ifjú programozó fog dolgozni. A projectünk célja a megrendelők elvárásainak felűlmúlása és a felhasználók minden divat-igényeinek kielégítése valamint egy remek szolgáltatás biztosítása. Motivációnk hogy kitörjünk a mainstream ruhaoldalak monopóliumának árnyékából.
 
-
-```
-A megvalósítás további általános leírása, pl. mennyi főből áll a csapat, mennyi átadandó lesz a megrendelőnek a félév során, 
-szintén 4-6 mondattal leírva.
-```
-
 ### 3.1. Rendszerspecifikáció
 
-`A rendszernek képesnek kell lennie arra, hogy adott cég raktárait illetve a raktárak állapotát (telítettség, fizikai pozíció, speciális tulajdonság pl. veszélyes anyag tárolása) nyilvántartsa. Ezenkívül a szállítmányozó cég alkalmazásában álló sofőröket, illetve azok kamionjait is kezelnie kell. A kamionok aktuális és korábbi szállítmányait ki tudjuk listázni. Minden funkció a megfelelő felhasználói jogosultság mellett használható, annak függvényében írható, olvasható vagy nem megtekinthető az adat.`
+A rendszer képes lesz több ruhát tárolni és kezelni, külön és csomagokban is egyaránt. Az oldal rendelés előtt egy precíz számítást követően képes lesz megjósolni a megrendelt outfit "Drip" százalékát. Valamint a rendszerünk képes lesz felhasználók adatainak tárolására. A regisztrált felhasználók nyomon tudják követni az eddigi rendeléseik "Drip" százalékainak összegzését. A megrendelő és felhasználók közös igényeinek kielégítése, hogy egy letisztult, könnyen használható, felhasználóbarát és sikeres Webshopot hozzunk létre. A projectre azért van szükség hogy az emberek stílusos ruhákat tudjanak vásárolni egy stílusos oldalról.
+
 
 ```
 Ide írd le részletesen, hogy mit fog tudni a rendszer (4-6 mondatban), amit a projekt keretében kerül megvalósításra. 
