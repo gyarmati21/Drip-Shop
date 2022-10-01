@@ -2,14 +2,14 @@
 
 ## 1. Összefoglaló 
 
-`A projekt célja egy webshop megvalósítása, amelyben ruhákat fogunk árulni. Fő célunk az, hogy a mai fiatalokat normális ruhába öltöztessük, hogy a dripjük 300%-os legyen. Mi nem csak ruhát hanem stílus árulunk. A weboldalunkon a legjobb funkció a saját stílus megvalósítása, segítségül árulunk basic dripeket. Ezzel is lehhetővétéve a gyors és kényelmes ruhavásárlást. A felhasználó kedvére válogathat változatos, rendkívüli és exklúzív termékeink közül. Drip shop, ahol a pacek a still!  `
+A projekt célja egy webshop megvalósítása, amelyben ruhákat fogunk árulni. Fő célunk az, hogy a mai fiatalokat normális ruhába öltöztessük, hogy a dripjük 300%-os legyen. Mi nem csak ruhát hanem stílus árulunk. A weboldalunkon a legjobb funkció a saját stílus megvalósítása, segítségül árulunk basic dripeket. Ezzel is lehhetővétéve a gyors és kényelmes ruhavásárlást. A felhasználó kedvére válogathat változatos, rendkívüli és exklúzív termékeink közül. Drip shop, ahol a pacek a still!
 
 
 ## 2. Verziók
 
 | Verzió | Szerző(k)                | Dátum        | Státusz         | Megjegyzés                                                    |
 |--------|--------------------------|--------------|-----------------|---------------------------------------------------------------|
-| `0.1`  | `Gyarmati Patrik, Katona Ádám`             | `2022-09-24` | `Tervezet`      | `Tervezett és lehetséges funkciók, design`                                              |
+| 0.1  | Gyarmati Patrik, Katona Ádám             | 2022-09-24 | Tervezet      | Tervezett és lehetséges funkciók, design                                              |
 
 
 
@@ -18,64 +18,39 @@ Státusz osztályozás:
  - Előterjesztés: a projekt menedzser bírálatával, a mérföldkő határidejekor
  - Elfogadott: a megrendelő által elfogadva, a prezentáció bemutatásakor
 
-```
-A leadott projekttervet véglegesnek kell tekinteni. 
-Mindazonáltal indokolt esetben ettől el lehet térni, amennyiben a gyakorlatvezető engedélyezi.
-A fő változtatásokat itt kell vezetni a projekt teljes ideje alatt (jelenlegi példánkban most lett vége a 2. mérföldkőnek). 
-Általánosságban elmondható, hogy az első 2 mérföldkő során gyakoribb a változtatás, így legalább 
-3 fő verziót érdemes megjelölni (Tervezet-Előterjesztés-Elfogadott).
-A verzió számozásának következetesnek kell lennie. A szerzőknél azoknak a nevét kell felsorolni, akik hozzájárultak a fő verzióhoz,
-azaz nem feltétlen mindenki, aki módosította a dokumentumot pl. egy elírás javításával. 
-```
 
 ## 3. A projekt bemutatása
 
 A Webshop projectet 2022/09/24-én kezdjük és 2022/11/28-án adjuk át a megrendelőknek és tesszük elérhetővé a felhasználóknak. Ezen időtartam alatt a megrendelőnek 4 alkalommal fogjuk bemutatni a projectünk aktuális állapotát. Ezen a projecten összesen 7 bíztató, siker-orientált ifjú programozó fog dolgozni. A projectünk célja a megrendelők elvárásainak felűlmúlása és a felhasználók minden divat-igényeinek kielégítése valamint egy remek szolgáltatás biztosítása. Motivációnk hogy kitörjünk a mainstream ruhaoldalak monopóliumának árnyékából.
+
 
 ### 3.1. Rendszerspecifikáció
 
 A rendszer képes lesz több ruhát tárolni és kezelni, külön és csomagokban is egyaránt. Az oldal rendelés előtt egy precíz számítást követően képes lesz megjósolni a megrendelt outfit "Drip" százalékát. Valamint a rendszerünk képes lesz felhasználók adatainak tárolására. A regisztrált felhasználók nyomon tudják követni az eddigi rendeléseik "Drip" százalékainak összegzését. A megrendelő és felhasználók közös igényeinek kielégítése, hogy egy letisztult, könnyen használható, felhasználóbarát és sikeres Webshopot hozzunk létre. A projectre azért van szükség hogy az emberek stílusos ruhákat tudjanak vásárolni egy stílusos oldalról.
 
 
-```
-Ide írd le részletesen, hogy mit fog tudni a rendszer (4-6 mondatban), amit a projekt keretében kerül megvalósításra. 
-Mik a megrendelő és a felhasználók igényei? Miért van szükség a projektre?
-```
-
 ### 3.2. Funkcionális követelmények
 
- - `Felhasználói munkamenet megvalósítása több jogosultsági szinttel (admin, raktáros, sofőr)`
- - `Felhasználók kezelése (CRUD)`
- - `Raktárak kezelése (CRUD)`
- - `Árukészletek kezelése (CRUD)`
- - `Járművek kezelése (CRUD)`
- - `Fuvarok/szállítmányok kezelése (CRUD)`
- - `Email-es kiértesítés új szállítmány esetén az adott raktárosnak és sofőrnek`
- - `Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
- - `Kapcsolatfelvételi űrlap biztosítása új cégek számára`
- - `Biztonsági mentés automatikus létrehozása`
- 
-```
-Ide kerülnek a rendszerrel szemben támasztott funkcionális igények: azaz amit a rendszernek tudnia kell.
-```
+- Felhasználói munkamenet megvalósítása több jogosultsági szinttel (admin, vásárló)
+- Felhasználók kezelése (CRUD)
+- Ruhák kezelése (CRUD)
+- Outfitek kezelése (CRUD)
+- Megrendelések kezelése (CRUD)
+- "Drip-o-meter"
+- Kosárfunkciók
 
 ### 3.3. Nem funkcionális követelmények
 
- - `A kliens oldal platform- és böngészőfüggetlen legyen`
- - `Reszponzív megjelenés`
- - `Szenzitív adatokat biztonságosan tároljuk`
- - `A legfrissebb technológiákat használja a rendszer`
-
-```
-A rendszer nem funkcionális követelményei, pl.: milyen környezetben fusson, milyen teljesítményt kell produkálnia, 
-milyen megjelenéssel kell rendelkeznie.
-```
+- A kliens oldal platform- és böngészőfüggetlen legyen
+- Reszponzív megjelenés
+- Szenzitív adatokat biztonságosan tároljuk
+- Könnyen navigálható és használható oldal
 
 ## 4. Költség- és erőforrás-szükségletek
 
-Az erőforrásigényünk összesen kb. `22` személynap/fő.
+Az erőforrásigényünk összesen kb. 15 személynap/fő.
 
-A rendelkezésünkre áll összesen `3 * 70 = 210` pont.
+A rendelkezésünkre áll összesen (7 * 70 = 490) pont.
 
 ```
 Becsült sarokszámok, a rendelkezésre álló erőforrás fejenként általában 17-25 személynap, 
@@ -83,64 +58,58 @@ a pontok száma = fejenként a projektre kapható maxpont * tagok száma.
 ```
 
 ## 5. Szervezeti felépítés és felelősségmegosztás
-A projekt megrendelője `Márkus András`. A `Szállítmányozás` projektet a projektcsapat fogja végrehajtani, amely `jelenleg három fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is, A tapasztalt projekttagok több éve dolgoznak az iparban, számos sikeres projektten vannak túl.`
- - `Teszt Elek (3 év tapasztalat)`
- - `Remek Elek (3 év tapasztalat)`
- - `Lev Elek (<1 év tapasztalatő)`
-
-```
-Itt lehet részletezni pl. a tagok szakmai tapasztalatait, vagy akár a releváns gyakorlati helyeket, munkahelyeket megemlíteni (4-6 mondatban).
-```
+A projekt megrendelője `Dr. Pflanzner Tamás`. A `Drip Shop` projektet a projektcsapat fogja végrehajtani, amely `jelenleg hét fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is, A tapasztalt projekttagok több hónapja dolgoznak az iparban, számos sikeres projektten vannak túl.`
+ - `Katona Ádám (<1 év tapasztalat)`
+ - `Pál Szilárd (<1 év tapasztalat)`
+ - `Györök Gábor (<1 év tapasztalat)`
+ - `Kabók Dániel (<1 év tapasztalat)`
+ - `Gyarmati Patrik (<1 év tapasztalat)`
+ - `Kücüktüfekci Cengiz Etem (<1 év tapasztalat)`
+ - `Rózsa Patrik (<1 év tapasztalat)`
 
 ### 5.1 Projektcsapat
 A projekt a következő emberekből áll:
 
 |                                                                                                                   | Név             | E-mail cím (stud-os)       |
 |-------------------------------------------------------------------------------------------------------------------|-----------------|----------------------------|
-| Megrendelő                                                                                                        | `Márkus András` | `markusa@inf.u-szeged.hu`  |
-| Felelősségek: Projekt menedzser, `Adatbázis és adatkapcsolatok`, `A rendszer működési logikája`, `Prezentációk` | `Teszt Elek`    | `h123456@stud.u-szeged.hu` |
-| Felelősségek: `Felhasználói felületek`, `Dokumentáció`                                                            | `Remek Elek`    | `h654321@stud.u-szeged.hu` |
-| `Projekt tag`                                                                                                     | `Lev Elek`      | `h000000@stud.u-szeged.hu` |
-
-```
-Nem csak az adott egység felelősének feladata az adott részegység elkészítése, pl. a mérföldkövekhez tartozó prezentációt 
-mindenki szerkesztheti, de elvárható, hogy a prezentációért felelős tag adja elő. 
-```
+| Megrendelő                                                                                                        | `Dr. Pflanzner Tamás` | `tamas.pflanzner@inf.u-szeged.hu`  |
+| Felelősségek: Projekt menedzser																				    | `Pál Szilárd`    | `h050611@stud.u-szeged.hu` |
+| Felelősségek: `Adatbázis és adatkapcsolatok`																	    | `Rózsa Patrik`    | `h163488@stud.u-szeged.hu` |
+| Felelősségek: `Felhasználói felületek`                                                                            | `Gyarmati Patrik`    | `h045342@stud.u-szeged.hu` |
+| Felelősségek: `Felhasználókezelés`                                                                                | `Györök Gábor`    | `h158138@stud.u-szeged.hu` |
+| Felelősségek: `Üzleti logikák`                                                                                    | `Katona Ádám`    | `h159532@stud.u-szeged.hu` |
+| Felelősségek: `Adatbázis lekérdezések`                                                                            | `Kabók Dániel`    | `h046510@stud.u-szeged.hu` |
+| Felelősségek: `Az adatbázis feltöltése releváns adatokkal`                                                        | `Kücüktüfekci Cengiz Etem`    | `h160842@stud.u-szeged.hu` |
 
 ## 6. A munka feltételei
 
 ### 6.1. Munkakörnyezet
 A projekt a következő munkaállomásokat fogja használni a munka során:
- - `Munkaállomások: 3 db PC Windows 10-es operációs rendszerrel`
- - `Dell Inspiron 5558 laptop (CPU: i5 5200U, RAM: 8 GB, GPU: Nvidia 920M)`
- - `Acer Aspire 573g laptop (CPU: i3 5005U, RAM: 4 GB, GPU: Nvidia 920M)`
- - `Asztali számítógép (CPU: i7 7700k, RAM: 16GB, GPU: Nvidia GTX1070)`
+ - `Lenovo V15 G2 laptop (CPU: Ryzen 7 5700U, RAM: 16 GB, GPU: Radeon Vega 8, OS: Windows 10)`
+ - `Asztali számítógép (CPU:  Ryzen 7 3700X, RAM: 16GB, GPU: Nvidia GTX 1060, OS: Windows 10)`
+ - `Asztali számítógép (CPU: Core i5 7400, RAM: 24GB, GPU: Nvidia GTX 1050 Ti, OS: Windows 10)`
+ - `Asztali számítógép (CPU: Core i5 10400F, RAM: 16GB, GPU: Nvidia RTX 2060S, OS: Windows 10)`
+ - `Asztali számítógép (CPU: Ryzen 5 2600x, RAM: 16GB, GPU: Nvidia GTX 1660 Ti, OS: Arch Linux)`
+ - `Asztali számítógép (CPU: Core i3 8100, RAM: 16GB, GPU: Radeon RX 6600, OS: Windows 10)`
+ - `Asztali számítógép (CPU: ???, RAM: ??GB, GPU: ???, OS: Windows 10)`
+ - `Sony VAIO VPCEH2H1E laptop (CPU: Core i3 2330M, RAM: 4 GB, GPU: Intel HD 3000, OS: Debian Linux)`
 
 A projekt a következő technológiákat/szoftvereket fogja használni a munka során: 
  - `Heroku platformszolgáltatás`
  - `Heroku által biztosított PostgreSQL adatbázisszerver`
- - `Spring Boot (backend)`
- - `React.js (frontend)`
+ - `Spring Boot (Backend)`
  - `Maven szoftverprojekt menedzselő szoftver`
- - `Eclipse IDE`
+ - `Intellij IDEA, Visual Studio Code`
+ - `Thymeleaf (HTML Template Engine)`
  - `Git verziókövető (GitLab)`
-
-```
-Milyen gépet használnak a projekttagok, milyen OS-t használnak, milyen szoftverkörnyezetben, stb.
-```
 
 ### 6.2. Rizikómenedzsment
 
 | Kockázat                                    | Leírás                                                                                                                                                                                     | Valószínűség | Hatás  |
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|
-| `Betegség`                                  | `Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása`        | `nagy`       | `erős` |
+| `Betegség`                                  | `Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása`        | `közepes`       | `közepes` |
 | `Kommunikációs fennakadás a csapattagokkal` | `A csapattagok között nem elégséges az információ áramlás, nem pontosan, esetleg késve vagy nem egyértelműen tájékoztatjuk egymást. Megoldás: még gyakoribb megbeszélések és ellenőrzések` | `kis`        | `erős` |
 
-```
-A rizikótényezők bemutatása, amely hátráltathatja a projekt befejezését. Minden rizikót érdemes megemlíteni, részletezve, hogy mit jelent, 
-milyen valószínűséggel következhet be (kis, közepes és nagy) és mekkora a várható hatása (gyenge, közepes és erős) 
-és hogy milyen tervvel készültök, amennyiben egy ilyen esemény bekövetkezik. Pl.: betegség, szoftver-hardver probléma, tag kiesése, stb. 
-```
 
 ## 7. Jelentések
 
