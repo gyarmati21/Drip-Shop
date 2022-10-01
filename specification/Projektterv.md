@@ -251,7 +251,7 @@ Erőforrásigény:  1 személynap
 
 #### 9.2.3. Sequence diagram
 
-Felelős: Györök Gábor
+Felelős: Györök Gábor, Kücüktüfekci Cengiz
 
 Tartam:  2 hét
 
@@ -290,263 +290,254 @@ Részfeladatai a következők:
 
 #### 9.3.1.  Felhasználói jogosultsági szintek implementálás Back-enden (admin, user)
 
-Felelős: 
+Felelős: Pál Szilárd
 
-Tartam:  
+Tartam:  1 hét
 
-Erőforrásigény:
+Erőforrásigény: 3 személynap
 
-#### 9.3.2.  Felhasználói fiókkal kapcsolatos Front-end elkészítése (login, register, user-page)
 
-Felelős: 
+#### 9.3.1.  FrameWork és rendszer felállítás
 
-Tartam:  
+Felelős: Pál Szilárd
 
-Erőforrásigény:  
+Tartam:  1 hét
+
+Erőforrásigény: 3 személynap
+
+
+
+#### 9.3.2.  Felhasználói fiókkal kapcsolatos Front-End elkészítése (login, register, user-page)
+
+Felelős: Gyarmati Patrik
+
+Tartam:  1 hét
+
+Erőforrásigény: 3 személynap
+
+
+#### 9.3.2.  Felhasználói fiókkal kapcsolatos Back-End elkészítése (login, register, user-page)
+
+Felelős: Gyarmati Patrik
+
+Tartam:  1 hét
+
+Erőforrásigény: 3 személynap
+
 
 #### 9.3.3.  Felhasználók kezeléséhez tartozó back-end (listázása, módosítása, törlése)
 
-Felelős: 
+Felelős: Rózsa Patrik
 
-Tartam:  
+Tartam:  1 hét
 
-Erőforrásigény: 
+Erőforrásigény: 3 személynap
 
-#### 9.3.4.  Felhasználók kezeléséhez kapcsolódó front-end megvalósítása
+#### 9.3.4.  Felhasználók kezeléséhez kapcsolódó front-end (listázása, módosítása, törlése)
 
-Felelős: 
+Felelős: Rózsa Patrik
 
-Tartam:  
+Tartam:  1 hét
 
-Erőforrásigény:  
+Erőforrásigény: 3 személynap
 
 #### 9.3.5.  Termékek listázása front-end
 
-Felelős: 
+Felelős: Gyarmati Patrik
 
-Tartam:  
+Tartam:  1 hét
 
-Erőforrásigény: 
+Erőforrásigény: 3 személynap
 
 
 
 #### 9.3.6.  Termékek listázása back-end
 
-Felelős: 
+Felelős: Pál Szilárd
 
-Tartam:  
+Tartam:  1 hét
 
-Erőforrásigény: 
+Erőforrásigény: 3 személynap
 
 
 #### 9.3.7.	Egy termék oldala front-end
 
-Felelős: 
+Felelős: Katona Ádám
 
-Tartam:  
+Tartam:  1 hét
 
-Erőforrásigény: 
+Erőforrásigény: 3 személynap
 
 
 #### 9.3.8.  Egy termék oldala back-end
 
-Felelős: 
+Felelős: Katona Ádám
 
-Tartam:  
+Tartam:  1 hét
 
-Erőforrásigény: 
+Erőforrásigény: 3 személynap
 
 
 #### 9.3.9.  Termékek management front-end
 
-Felelős: 
+Felelős: Györök Gábor
 
-Tartam:  
+Tartam:  1 hét
 
-Erőforrásigény: 
-
-
-#### 9.3.10.  Termékek management front-end
-
-Felelős: 
-
-Tartam:  
-
-Erőforrásigény: 
+Erőforrásigény: 3 személynap
 
 
 #### 9.3.11.  Termékek management back-end
 
-Felelős: 
+Felelős: Györök Gábor
 
-Tartam:  
+Tartam:  1 hét
 
-Erőforrásigény: 
+Erőforrásigény: 3 személynap
 
 
 #### 9.3.12.  Kosár front-end
 
-Felelős: 
+Felelős: Kabók Dani
 
-Tartam:  
+Tartam:  1 hét
 
-Erőforrásigény: 
+Erőforrásigény: 3 személynap
 
 
 #### 9.3.13.  Kosár back-end
 
-Felelős: 
+Felelős: Kabók Dani
 
-Tartam:  
+Tartam:  1 hét
 
-Erőforrásigény: 
+Erőforrásigény: 3 személynap
 
 
 #### 9.3.14.  Megrendelés front-end
 
-Felelős: 
+Felelős: Kücüktüfekci Cengiz Etem
 
-Tartam:  
+Tartam:  1 hét
 
-Erőforrásigény: 
+Erőforrásigény: 3 személynap
 
 
 #### 9.3.15.  Megrendelés back-end
 
-Felelős: 
+Felelős: Kücüktüfekci Cengiz Etem
 
-Tartam:  
+Tartam:  1 hét
 
-Erőforrásigény: 
-
-
-#### 9.3.16.  Ruha szettek front-end
-
-Felelős: 
-
-Tartam:  
-
-Erőforrásigény: 
+Erőforrásigény: 3 személynap
 
 
-#### 9.3.17.  Ruha szettek back-end
 
-Felelős: 
+#### 9.3.16.  Style (CSS)
 
-Tartam:  
+Felelős: Gyarmati Patrik, Kabók Dani, Katona Ádám
 
-Erőforrásigény: 
+Tartam:  1 hét
+
+Erőforrásigény: 3 személynap
 
 
 ### 9.4. Prototípus II. (4. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `az előző mérföldkő hiányzó funkcióit pótoljuk, illetve a hibásan működő funkciókat és az esetlegesen felmerülő új funkciókat megvalósítsuk. Továbbá az alkalmazás alapos tesztelése is a mérföldkőben történik.`
+Ennek a feladatnak az a célja, hogy az előző mérföldkő hiányzó funkcióit pótoljuk, illetve a hibásan működő funkciókat és az esetlegesen felmerülő új funkciókat megvalósítsuk. Továbbá az alkalmazás alapos tesztelése is a mérföldkőben történik.
 
-Részfeladatai a következők:
 
-#### 9.4.1. Javított minőségű prototípus új funkciókkal
+#### 9.4.2.  Ruha szettek front-end
 
-Felelős: `Teszt Elek`
+Felelős: Katona Ádám
 
-Tartam:  `5 nap`
+Tartam:  1 hét
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény: 3 személynap
 
-#### 9.4.2. Javított minőségű prototípus javított funkciókkal
 
-Felelős: `Lev Elek`
+#### 9.4.3.  Ruha szettek back-end
 
-Tartam:  `5 nap`
+Felelős: Katona Ádám
 
-Erőforrásigény:  `2 személynap`
+Tartam:  1 hét
 
-#### 9.4.3. Javított minőségű prototípus a korábbi hiányzó funkciókkal
+Erőforrásigény: 3 személynap
 
-Felelős: `Remek Elek`
 
-Tartam:  `5 nap`
+#### 9.4.1.  Felhasználói jogosultsági szintek tesztelése és javítása (TP, TC, TR)
 
-Erőforrásigény:  `2 személynap`
+Felelős: Pál Szilárd
 
-#### 9.4.4. `Felhasználói munkamenet tesztelése (TP, TC, TR)`
+Tartam:  1 hét
 
-Felelős: `Teszt Elek`
+Erőforrásigény: 3 személynap
 
-Tartam:  `1 nap`
 
-Erőforrásigény:  `0.3 személynap`
+#### 9.4.2.  Felhasználói fiókkal kapcsolatos funkciók tesztelése  és javítása (TP, TC, TR)
 
-#### 9.4.5. `Raktárak kezelésének tesztelése (TP, TC, TR)`
+Felelős: Gyarmati Patrik
 
-Felelős: `Remek Elek`
+Tartam:  1 hét
 
-Tartam:  `1 nap`
+Erőforrásigény: 3 személynap
 
-Erőforrásigény:  `0.3 személynap`
 
-#### 9.4.6. `Árukészletek kezelésének tesztelése (TP, TC, TR)`
 
-Felelős: `Teszt Elek`
+#### 9.4.3.  Felhasználók kezeléséhez tartozó tesztelése   és javítása(TP, TC, TR)
 
-Tartam:  `1 nap`
+Felelős: Rózsa Patrik
 
-Erőforrásigény:  `0.3 személynap`
+Tartam:  1 hét
 
-#### 9.4.7. `Járművek kezelésének tesztelése (TP, TC, TR)`
+Erőforrásigény: 3 személynap
 
-Felelős: `Remek Elek`
 
-Tartam:  `1 nap`
+#### 9.4.5.  Termékek listázásának tesztelése  és javítása (TP, TC, TR)
 
-Erőforrásigény:  `0.3 személynap`
+Felelős: Gyarmati Patrik
 
-#### 9.4.8. `Fuvarok kezelésének tesztelése (TP, TC, TR)`
+Tartam:  1 hét
 
-Felelős: `Teszt Elek`
+Erőforrásigény: 3 személynap
 
-Tartam:  `1 nap`
 
-Erőforrásigény:  `0.3 személynap`
 
-#### 9.4.9. `Email-es funkciók tesztelése (TP, TC, TR)`
+#### 9.4.7.	Egy termék oldalának tesztelése   és javítása(TP, TC, TR)
 
-Felelős: `Remek Elek`
+Felelős: Katona Ádám
 
-Tartam:  `1 nap`
+Tartam:  1 hét
 
-Erőforrásigény:  `0.3 személynap`
+Erőforrásigény: 3 személynap
 
-#### 9.4.10. `Térképes funkciók tesztelése (TP, TC, TR)`
 
-Felelős: `Lev Elek`
+#### 9.4.9.  Termékek management tesztelése  és javítása (TP, TC, TR)
 
-Tartam:  `1 nap`
+Felelős: Györök Gábor
 
-Erőforrásigény:  `0.3 személynap`
+Tartam:  1 hét
 
-#### 9.4.11. `Kapcsolatfelvételi űrlap tesztelése (TP, TC, TR)`
+Erőforrásigény: 3 személynap
 
-Felelős: `Lev Elek`
 
-Tartam:  `1 nap`
+#### 9.4.12.  Kosár tesztelése  és javítása (TP, TC, TR)
 
-Erőforrásigény:  `0.3 személynap`
+Felelős: Kabók Dani
 
-#### 9.4.12. `Biztonsági mentés tesztelése (TP, TC, TR)`
+Tartam:  1 hét
 
-Felelős: `Lev Elek`
+Erőforrásigény: 3 személynap
 
-Tartam:  `1 nap`
 
-Erőforrásigény:  `0.3 személynap`
+#### 9.4.14.  Megrendelés tesztelése  és javítása(TP, TC, TR)
 
-#### 9.4.13. Bemutató elkészítése 
+Felelős: Kücüktüfekci Cengiz Etem
 
-Felelős: `Teszt Elek`
+Tartam:  1 hét
 
-Tartam:  `1 nap`
+Erőforrásigény: 3 személynap
 
-Erőforrásigény:  `1 személynap`
 
 ```
 Működő végleges program, a frissített tesztelési dokumentációval. A 3. mérföldkőhöz képest funkiconálisan többet kell tudnia az oldalnak.
