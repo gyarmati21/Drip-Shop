@@ -31,13 +31,45 @@ A rendszer képes lesz több ruhát tárolni és kezelni, külön és csomagokba
 
 ### 3.2. Funkcionális követelmények
 
-- Felhasználói munkamenet megvalósítása több jogosultsági szinttel (admin, vásárló)
+- Felhasználói munkamenet megvalósítása
+	- Bejelentkezés felület megvalósítása
+	- Regisztráció felület megvalósítása
+	- Munkamenet követés funkció megvalósítása
 - Felhasználók kezelése (CRUD)
+	- Felhasználó fiókok törlése
+	- A felhasználó fiók módosítása
+	- Felhasználói adatok megjelenítése a profilon
+- Több jogosultsági szint (felhasználó)
+	- Felhasználó
+		- A felhasználók módosíthatják az adataikat (jelszó)
+		- A felhasználó likeolhatja a ruhákat
+		- A felhasználónak megvont jogosultsága a ruhák kezelése felett
+	- Admin
+		- Admin jogosultságú felhasználó az adatbázis egészét tudja kezelni
 - Ruhák kezelése (CRUD)
+	- Admin felhasználó tud új ruhákat hozzáadni
+	- Admin felhasználó tud ruhákat törölni az adatbázisból
+	- Admin felhasználó tudja modósítani a már feltöltött ruhákat
+	- Az oldal ki listázza az adatbázisban tárólt ruhákat
 - Outfitek kezelése (CRUD)
-- Megrendelések kezelése (CRUD)
+	- Admin felhasználó tud új outfitet hozzáadni
+	- Admin felhasználó tud outfitet törölni az adatbázisból
+	- Admin felhasználó tudja modósítani a már feltöltött outfitet
+	- Az oldal ki listázza az adatbázisban tárólt outfitet
+- Megrendelések kezelése (CRD)
+	- A vásárló képes megrendeléseket leadni
+	- A vásárló képes megrendeléseket törölni
+	- Az admin képes a megrendelést törölni
+	- Az admin látja a leadott megrendeléseket
 - "Drip-o-meter"
+	- Az oldal képes kiírni a DRIP számát
+	- A felhasználó megrendeléskor látja a Drip-o-meter-t
+	- Az adatbázisban minden ruhának el van tárolva a Drip mértéke
 - Kosárfunkciók
+	- A felhasználó képes hozzáadni ruhákat
+	- A felhasználó képes hozzáadni outfiteket
+	- A felhasználó képes törölni a kosárból
+	- A felhasználó képes updatelni a kosárban lévő ruhák darabszámát
 
 ### 3.3. Nem funkcionális követelmények
 
@@ -220,7 +252,7 @@ Részfeladatai a következők:
 
 #### 9.1.1. Projektterv kitöltése
 
-Felelős: Mindenki
+Felelős: Pál Szilárd
 
 Tartam:  2 hét
 
@@ -251,7 +283,7 @@ Erőforrásigény:  1 személynap
 
 #### 9.2.3. Sequence diagram
 
-Felelős: Györök Gábor, Kücüktüfekci Cengiz
+Felelős: Kücüktüfekci Cengiz
 
 Tartam:  2 hét
 
