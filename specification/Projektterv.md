@@ -7,9 +7,9 @@ A projekt célja egy webshop megvalósítása, amelyben ruhákat fogunk árulni.
 
 ## 2. Verziók
 
-| Verzió | Szerző(k)                | Dátum        | Státusz         | Megjegyzés                                                    |
-|--------|--------------------------|--------------|-----------------|---------------------------------------------------------------|
-| 0.1  | Gyarmati Patrik, Katona Ádám             | 2022-09-24 | Tervezet      | Tervezett és lehetséges funkciók, design                                              |
+| Verzió | Szerző(k)                    | Dátum      | Státusz  | Megjegyzés                               |
+| ------ | ---------------------------- | ---------- | -------- | ---------------------------------------- |
+| 0.1    | Gyarmati Patrik, Katona Ádám | 2022-09-24 | Tervezet | Tervezett és lehetséges funkciók, design |
 
 
 
@@ -90,71 +90,71 @@ a pontok száma = fejenként a projektre kapható maxpont * tagok száma.
 ```
 
 ## 5. Szervezeti felépítés és felelősségmegosztás
-A projekt megrendelője `Dr. Pflanzner Tamás`. A `Drip Shop` projektet a projektcsapat fogja végrehajtani, amely `jelenleg hét fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is, A tapasztalt projekttagok több hónapja dolgoznak az iparban, számos sikeres projektten vannak túl.`
- - `Katona Ádám (<1 év tapasztalat)`
- - `Pál Szilárd (<1 év tapasztalat)`
- - `Györök Gábor (<1 év tapasztalat)`
- - `Kabók Dániel (<1 év tapasztalat)`
- - `Gyarmati Patrik (<1 év tapasztalat)`
- - `Kücüktüfekci Cengiz Etem (<1 év tapasztalat)`
- - `Rózsa Patrik (<1 év tapasztalat)`
+A projekt megrendelője Dr. Pflanzner Tamás. A Drip Shop projektet a projektcsapat fogja végrehajtani, amely jelenleg hét fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is, A tapasztalt projekttagok több hónapja dolgoznak az iparban, számos sikeres projektten vannak túl.
+ - Katona Ádám (<1 év tapasztalat)
+ - Pál Szilárd (<1 év tapasztalat)
+ - Györök Gábor (<1 év tapasztalat)
+ - Kabók Dániel (<1 év tapasztalat)
+ - Gyarmati Patrik (<1 év tapasztalat)
+ - Kücüktüfekci Cengiz Etem (<1 év tapasztalat)
+ - Rózsa Patrik (<1 év tapasztalat)
 
 ### 5.1 Projektcsapat
 A projekt a következő emberekből áll:
 
-|                                                                                                                   | Név             | E-mail cím (stud-os)       |
-|-------------------------------------------------------------------------------------------------------------------|-----------------|----------------------------|
-| Megrendelő                                                                                                        | `Dr. Pflanzner Tamás` | `tamas.pflanzner@inf.u-szeged.hu`  |
-| Felelősségek: Projekt menedzser																				    | `Pál Szilárd`    | `h050611@stud.u-szeged.hu` |
-| Felelősségek: `Adatbázis és adatkapcsolatok`																	    | `Rózsa Patrik`    | `h163488@stud.u-szeged.hu` |
-| Felelősségek: `Felhasználói felületek`                                                                            | `Gyarmati Patrik`    | `h045342@stud.u-szeged.hu` |
-| Felelősségek: `Felhasználókezelés`                                                                                | `Györök Gábor`    | `h158138@stud.u-szeged.hu` |
-| Felelősségek: `Üzleti logikák`                                                                                    | `Katona Ádám`    | `h159532@stud.u-szeged.hu` |
-| Felelősségek: `Adatbázis lekérdezések`                                                                            | `Kabók Dániel`    | `h046510@stud.u-szeged.hu` |
-| Felelősségek: `Az adatbázis feltöltése releváns adatokkal`                                                        | `Kücüktüfekci Cengiz Etem`    | `h160842@stud.u-szeged.hu` |
+|                                                          | Név                      | E-mail cím (stud-os)            |
+| -------------------------------------------------------- | ------------------------ | ------------------------------- |
+| Megrendelő                                               | Dr. Pflanzner Tamás      | tamas.pflanzner@inf.u-szeged.hu |
+| Felelősségek: Projekt menedzser                          | Pál Szilárd              | h050611@stud.u-szeged.hu        |
+| Felelősségek: Adatbázis és adatkapcsolatok               | Rózsa Patrik             | h163488@stud.u-szeged.hu        |
+| Felelősségek: Felhasználói felületek                     | Gyarmati Patrik          | h045342@stud.u-szeged.hu        |
+| Felelősségek: Felhasználókezelés                         | Györök Gábor             | h158138@stud.u-szeged.hu        |
+| Felelősségek: Üzleti logikák                             | Katona Ádám              | h159532@stud.u-szeged.hu        |
+| Felelősségek: Adatbázis lekérdezések                     | Kabók Dániel             | h046510@stud.u-szeged.hu        |
+| Felelősségek: Az adatbázis feltöltése releváns adatokkal | Kücüktüfekci Cengiz Etem | h160842@stud.u-szeged.hu        |
 
 ## 6. A munka feltételei
 
 ### 6.1. Munkakörnyezet
 A projekt a következő munkaállomásokat fogja használni a munka során:
- - `Lenovo V15 G2 laptop (CPU: Ryzen 7 5700U, RAM: 16 GB, GPU: Radeon Vega 8, OS: Windows 10)`
- - `Asztali számítógép (CPU:  Ryzen 7 3700X, RAM: 16GB, GPU: Nvidia GTX 1060, OS: Windows 10)`
- - `Asztali számítógép (CPU: Core i5 7400, RAM: 24GB, GPU: Nvidia GTX 1050 Ti, OS: Windows 10)`
- - `Asztali számítógép (CPU: Core i5 10400F, RAM: 16GB, GPU: Nvidia RTX 2060S, OS: Windows 10)`
- - `Asztali számítógép (CPU: Ryzen 5 2600x, RAM: 16GB, GPU: Nvidia GTX 1660 Ti, OS: Arch Linux)`
- - `Asztali számítógép (CPU: Core i3 8100, RAM: 16GB, GPU: Radeon RX 6600, OS: Windows 10)`
- - `Asztali számítógép (CPU: ???, RAM: ??GB, GPU: ???, OS: Windows 10)`
- - `Sony VAIO VPCEH2H1E laptop (CPU: Core i3 2330M, RAM: 4 GB, GPU: Intel HD 3000, OS: Debian Linux)`
+ - Lenovo V15 G2 laptop (CPU: Ryzen 7 5700U, RAM: 16 GB, GPU: Radeon Vega 8, OS: Windows 10)
+ - Asztali számítógép (CPU:  Ryzen 7 3700X, RAM: 16GB, GPU: Nvidia GTX 1060, OS: Windows 10)
+ - Asztali számítógép (CPU: Core i5 7400, RAM: 24GB, GPU: Nvidia GTX 1050 Ti, OS: Windows 10)
+ - Asztali számítógép (CPU: Core i5 10400F, RAM: 16GB, GPU: Nvidia RTX 2060S, OS: Windows 10)
+ - Asztali számítógép (CPU: Ryzen 5 2600x, RAM: 16GB, GPU: Nvidia GTX 1660 Ti, OS: Arch Linux)
+ - Asztali számítógép (CPU: Core i3 8100, RAM: 16GB, GPU: Radeon RX 6600, OS: Windows 10)
+ - Asztali számítógép (CPU: ???, RAM: ??GB, GPU: ???, OS: Windows 10)
+ - Sony VAIO VPCEH2H1E laptop (CPU: Core i3 2330M, RAM: 4 GB, GPU: Intel HD 3000, OS: Debian Linux)
 
 A projekt a következő technológiákat/szoftvereket fogja használni a munka során: 
- - `Heroku platformszolgáltatás`
- - `Heroku által biztosított PostgreSQL adatbázisszerver`
- - `Spring Boot (Backend)`
- - `Maven szoftverprojekt menedzselő szoftver`
- - `Intellij IDEA, Visual Studio Code`
- - `Thymeleaf (HTML Template Engine)`
- - `Git verziókövető (GitLab)`
+ - Heroku platformszolgáltatás
+ - Heroku által biztosított PostgreSQL adatbázisszerver
+ - Spring Boot (Backend)
+ - Maven szoftverprojekt menedzselő szoftver
+ - Intellij IDEA, Visual Studio Code
+ - Thymeleaf (HTML Template Engine)
+ - Git verziókövető (GitLab)
 
 ### 6.2. Rizikómenedzsment
 
-| Kockázat                                    | Leírás                                                                                                                                                                                     | Valószínűség | Hatás  |
-|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|
-| `Betegség`                                  | `Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása`        | `közepes`       | `közepes` |
-| `Kommunikációs fennakadás a csapattagokkal` | `A csapattagok között nem elégséges az információ áramlás, nem pontosan, esetleg késve vagy nem egyértelműen tájékoztatjuk egymást. Megoldás: még gyakoribb megbeszélések és ellenőrzések` | `kis`        | `erős` |
+| Kockázat                                  | Leírás                                                                                                                                                                                   | Valószínűség | Hatás   |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------- |
+| Betegség                                  | Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása        | közepes      | közepes |
+| Kommunikációs fennakadás a csapattagokkal | A csapattagok között nem elégséges az információ áramlás, nem pontosan, esetleg késve vagy nem egyértelműen tájékoztatjuk egymást. Megoldás: még gyakoribb megbeszélések és ellenőrzések | kis          | erős    |
 
 ## 7. Jelentések
 
 ### 7.1. Munka menedzsment
-A munkát `Pál Szilárd Ákos` koordinálja. `Fő feladata, hogy folyamatosan egyeztessen a csapattagokkal az előrehaladásról és a fellépő problémákról, esetlegesen a megoldásban is segítséget nyújhat a projekt csúszásának elkerülése végett.`
+A munkát Pál Szilárd Ákos koordinálja. Fő feladata, hogy folyamatosan egyeztessen a csapattagokkal az előrehaladásról és a fellépő problémákról, esetlegesen a megoldásban is segítséget nyújhat a projekt csúszásának elkerülése végett.
 
 ### 7.2. Csoportgyűlések
 
-`Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat, esetleg felmerülő új ötleteket, eltervezzük a következő hét teendőit. A megbeszélésről minden esetben Discord thread készül.`
+Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat, esetleg felmerülő új ötleteket, eltervezzük a következő hét teendőit. A megbeszélésről minden esetben Discord thread készül.
 
-`1. megbeszélés:`
- - `Időpont: 2021.09.17.`
- - `Hely: Discord`
- - `Résztvevők:`
+1. megbeszélés:
+ - Időpont: 2021.09.17.`
+ - Hely: Discord`
+ - Résztvevők:
  	- Katona Ádám
  	- Pál Szilárd
  	- Györök Gábor
@@ -162,12 +162,12 @@ A munkát `Pál Szilárd Ákos` koordinálja. `Fő feladata, hogy folyamatosan e
  	- Gyarmati Patrik
  	- Kücüktüfekci Cengiz Etem
  	- Rózsa Patrik
- - `Érintett témák: Technológiák kiválasztása, téma és név megbeszélése, minták áttekintése`
+ - Érintett témák: Technológiák kiválasztása, téma és név megbeszélése, minták áttekintése
 
-`2. megbeszélés:`
- - `Időpont: 2021.09.24.`
- - `Hely: Discord`
- - `Résztvevők:`
+2. megbeszélés:
+ - Időpont: 2021.09.24.
+ - Hely: Discord
+ - Résztvevők:
   	- Katona Ádám
  	- Pál Szilárd
  	- Györök Gábor
@@ -175,12 +175,12 @@ A munkát `Pál Szilárd Ákos` koordinálja. `Fő feladata, hogy folyamatosan e
  	- Gyarmati Patrik
  	- Kücüktüfekci Cengiz Etem
  	- Rózsa Patrik
- - `Érintett témák: Első mérföldkő kb felének kitöltése, funkciókról ötletelés`
+ - Érintett témák: Első mérföldkő kb felének kitöltése, funkciókról ötletelés
 
-`3. megbeszélés:`
- - `Időpont: 2021.10.01.`
- - `Hely: Discord`
- - `Résztvevők:`
+3. megbeszélés:
+ - Időpont: 2021.10.01.
+ - Hely: Discord
+ - Résztvevők:
   	- Katona Ádám
  	- Pál Szilárd
  	- Györök Gábor
@@ -188,7 +188,7 @@ A munkát `Pál Szilárd Ákos` koordinálja. `Fő feladata, hogy folyamatosan e
  	- Gyarmati Patrik
  	- Kücüktüfekci Cengiz Etem
  	- Rózsa Patrik
- - `Érintett témák: Git configurálása, commit-olások, első mérföldkő folytatása`
+ - Érintett témák: Git configurálása, commit-olások, első mérföldkő folytatása
 
 ### 7.3. Minőségbiztosítás
 
@@ -201,7 +201,7 @@ Az alábbi lehetőségek vannak a szoftver megfelelő minőségének biztosítá
 
 ### 7.4. Átadás, eredmények elfogadása
 
-A projekt eredményeit `Dr. Pflanzner Tamás` fogja elfogadni. A projektterven változásokat csak  `Dr. Pflanzner Tamás` írásos kérés esetén `Dr. Pflanzner Tamás`engedélyével lehet tenni. A projekt eredményesnek bizonyul, ha specifikáció helyes és határidőn belül készül el. Az esetleges késések pontlevonást eredményeznek.
+A projekt eredményeit Dr. Pflanzner Tamás fogja elfogadni. A projektterven változásokat csak  Dr. Pflanzner Tamás írásos kérés esetén Dr. Pflanzner Tamás engedélyével lehet tenni. A projekt eredményesnek bizonyul, ha specifikáció helyes és határidőn belül készül el. Az esetleges késések pontlevonást eredményeznek.
 Az elfogadás feltételeire és beadás formájára vonatkozó részletes leírás a következő honlapon olvasható: https://okt.sed.hu/rf1/
 
 ### 7.5. Státuszjelentés
@@ -212,25 +212,25 @@ Minden leadásnál a projektmenedzser jelentést tesz a projekt haladásáról, 
 
 ### 8.1. Tervezett szoftverfolyamat modell és architektúra
 
-`A szoftver fejlesztése során az agilis fejlesztési modellt alkalmazzuk. A fejlesztés során nagy hangsúlyt fektetünk a folyamatos kommunikcióra. A fejlesztés során a szoftver specifikációi rugalmasan vátozhatnak, és ezzel leggyorsabban tudunk a alkalmazkodni az új elvárásokhoz.`
+A szoftver fejlesztése során az agilis fejlesztési modellt alkalmazzuk. A fejlesztés során nagy hangsúlyt fektetünk a folyamatos kommunikcióra. A fejlesztés során a szoftver specifikációi rugalmasan vátozhatnak, és ezzel leggyorsabban tudunk a alkalmazkodni az új elvárásokhoz.
 
-`A szoftver MVC alapú architectúrára fog épülni. A frontend oldalait a backend fogja felépíteni, és elküldeni HTTP üzenetek formájában. Az alkalmazás egy PostGreSQL adatbázis fogja támogatni.`
+A szoftver MVC alapú architectúrára fog épülni. A frontend oldalait a backend fogja felépíteni, és elküldeni HTTP üzenetek formájában. Az alkalmazás egy PostGreSQL adatbázis fogja támogatni.
 
 ```
 Milyen szoftverfolyamat modellt követve állítja elő a csapat a specifikációnak megfelelő prototípusokat? Miért ezt választja? 
-A csapat milyen architektúrát választ a projekt megvalósításához? Milyen rétegek (logikai, adat, GUI) lesznek?`
+A csapat milyen architektúrát választ a projekt megvalósításához? Milyen rétegek (logikai, adat, GUI) lesznek?
 ```
 
 ### 8.2. Átadandók és határidők
 A főbb átadandók és határidők a projekt időtartama alatt a következők:
 
 
-| Szállítandó |                 Neve                |   Határideje  |
-|:-----------:|:-----------------------------------:|:-------------:|
-|      D1     |       Projektterv és útmutató       | `2022-10-05`  |
-|    P1+D2    | UML, DB, képernyőtervek és bemutató | `2022-10-19 ` |
-|    P1+D3    |      Prototípus I. és bemutató      | `2022-11-09 ` |
-|    P2+D4    |      Prototípus II. és bemutató     | `2022-11-30 ` |
+| Szállítandó |                Neve                 | Határideje |
+| :---------: | :---------------------------------: | :--------: |
+|     D1      |       Projektterv és útmutató       | 2022-10-05 |
+|    P1+D2    | UML, DB, képernyőtervek és bemutató | 2022-10-19 |
+|    P1+D3    |      Prototípus I. és bemutató      | 2022-11-09 |
+|    P2+D4    |     Prototípus II. és bemutató      | 2022-11-30 |
 
 ```
 D - dokumentáció, P - prototípus
@@ -240,13 +240,10 @@ D - dokumentáció, P - prototípus
 
 A következőkben a tervezett feladatok részletes összefoglalása található.
 
-```
-Alapvetően egy feladatnak 1 felelőse lehet, de kivételt képez pl. a 9.1.1. részfeladat.`
-```
 
 ### 9.1. Projektterv (1. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `megvalósításhoz szükséges lépéseket, az ütemzést és a felelősöket meghatározzuk.`
+Ennek a feladatnak az a célja, hogy megvalósításhoz szükséges lépéseket, az ütemzést és a felelősöket meghatározzuk.
 
 Részfeladatai a következők:
 
@@ -328,62 +325,7 @@ Tartam:  1 hét
 
 Erőforrásigény: 3 személynap
 
-
-#### 9.3.1.  FrameWork és rendszer felállítás
-
-Felelős: Pál Szilárd
-
-Tartam:  1 hét
-
-Erőforrásigény: 3 személynap
-
-
-
-#### 9.3.2.  Felhasználói fiókkal kapcsolatos Front-End elkészítése (login, register, user-page)
-
-Felelős: Gyarmati Patrik
-
-Tartam:  1 hét
-
-Erőforrásigény: 3 személynap
-
-
-#### 9.3.2.  Felhasználói fiókkal kapcsolatos Back-End elkészítése (login, register, user-page)
-
-Felelős: Gyarmati Patrik
-
-Tartam:  1 hét
-
-Erőforrásigény: 3 személynap
-
-
-#### 9.3.3.  Felhasználók kezeléséhez tartozó back-end (listázása, módosítása, törlése)
-
-Felelős: Rózsa Patrik
-
-Tartam:  1 hét
-
-Erőforrásigény: 3 személynap
-
-#### 9.3.4.  Felhasználók kezeléséhez kapcsolódó front-end (listázása, módosítása, törlése)
-
-Felelős: Rózsa Patrik
-
-Tartam:  1 hét
-
-Erőforrásigény: 3 személynap
-
-#### 9.3.5.  Termékek listázása front-end
-
-Felelős: Gyarmati Patrik
-
-Tartam:  1 hét
-
-Erőforrásigény: 3 személynap
-
-
-
-#### 9.3.6.  Termékek listázása back-end
+#### 9.3.2.  FrameWork és rendszer felállítás
 
 Felelős: Pál Szilárd
 
@@ -392,7 +334,61 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.3.7.	Egy termék oldala front-end
+
+#### 9.3.3.  Felhasználói fiókkal kapcsolatos Front-End elkészítése (login, register, user-page)
+
+Felelős: Gyarmati Patrik
+
+Tartam:  1 hét
+
+Erőforrásigény: 3 személynap
+
+
+#### 9.3.4.  Felhasználói fiókkal kapcsolatos Back-End elkészítése (login, register, user-page)
+
+Felelős: Gyarmati Patrik
+
+Tartam:  1 hét
+
+Erőforrásigény: 3 személynap
+
+
+#### 9.3.5.  Felhasználók kezeléséhez tartozó back-end (listázása, módosítása, törlése)
+
+Felelős: Rózsa Patrik
+
+Tartam:  1 hét
+
+Erőforrásigény: 3 személynap
+
+#### 9.3.6.  Felhasználók kezeléséhez kapcsolódó front-end (listázása, módosítása, törlése)
+
+Felelős: Rózsa Patrik
+
+Tartam:  1 hét
+
+Erőforrásigény: 3 személynap
+
+#### 9.3.7.  Termékek listázása front-end
+
+Felelős: Gyarmati Patrik
+
+Tartam:  1 hét
+
+Erőforrásigény: 3 személynap
+
+
+
+#### 9.3.8.  Termékek listázása back-end
+
+Felelős: Pál Szilárd
+
+Tartam:  1 hét
+
+Erőforrásigény: 3 személynap
+
+
+#### 9.3.9.	Egy termék oldala front-end
 
 Felelős: Katona Ádám
 
@@ -401,7 +397,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.3.8.  Egy termék oldala back-end
+#### 9.3.10.  Egy termék oldala back-end
 
 Felelős: Katona Ádám
 
@@ -410,7 +406,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.3.9.  Termékek management front-end
+#### 9.3.11.  Termékek management front-end
 
 Felelős: Györök Gábor
 
@@ -419,7 +415,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.3.11.  Termékek management back-end
+#### 9.3.12.  Termékek management back-end
 
 Felelős: Györök Gábor
 
@@ -428,7 +424,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.3.12.  Kosár front-end
+#### 9.3.13.  Kosár front-end
 
 Felelős: Kabók Dani
 
@@ -437,7 +433,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.3.13.  Kosár back-end
+#### 9.3.14.  Kosár back-end
 
 Felelős: Kabók Dani
 
@@ -446,7 +442,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.3.14.  Megrendelés front-end
+#### 9.3.15.  Megrendelés front-end
 
 Felelős: Kücüktüfekci Cengiz Etem
 
@@ -455,7 +451,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.3.15.  Megrendelés back-end
+#### 9.3.16.  Megrendelés back-end
 
 Felelős: Kücüktüfekci Cengiz Etem
 
@@ -465,7 +461,7 @@ Erőforrásigény: 3 személynap
 
 
 
-#### 9.3.16.  Style (CSS)
+#### 9.3.17.  Style (CSS)
 
 Felelős: Gyarmati Patrik, Kabók Dani, Katona Ádám
 
@@ -479,7 +475,7 @@ Erőforrásigény: 3 személynap
 Ennek a feladatnak az a célja, hogy az előző mérföldkő hiányzó funkcióit pótoljuk, illetve a hibásan működő funkciókat és az esetlegesen felmerülő új funkciókat megvalósítsuk. Továbbá az alkalmazás alapos tesztelése is a mérföldkőben történik.
 
 
-#### 9.4.2.  Ruha szettek front-end
+#### 9.4.1.  Ruha szettek front-end
 
 Felelős: Katona Ádám
 
@@ -488,7 +484,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.4.3.  Ruha szettek back-end
+#### 9.4.2.  Ruha szettek back-end
 
 Felelős: Katona Ádám
 
@@ -497,7 +493,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.4.1.  Felhasználói jogosultsági szintek tesztelése és javítása (TP, TC, TR)
+#### 9.4.3.  Felhasználói jogosultsági szintek tesztelése és javítása (TP, TC, TR)
 
 Felelős: Pál Szilárd
 
@@ -506,7 +502,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.4.2.  Felhasználói fiókkal kapcsolatos funkciók tesztelése  és javítása (TP, TC, TR)
+#### 9.4.4.  Felhasználói fiókkal kapcsolatos funkciók tesztelése  és javítása (TP, TC, TR)
 
 Felelős: Gyarmati Patrik
 
@@ -516,7 +512,7 @@ Erőforrásigény: 3 személynap
 
 
 
-#### 9.4.3.  Felhasználók kezeléséhez tartozó tesztelése   és javítása(TP, TC, TR)
+#### 9.4.5.  Felhasználók kezeléséhez tartozó tesztelése   és javítása(TP, TC, TR)
 
 Felelős: Rózsa Patrik
 
@@ -525,7 +521,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.4.5.  Termékek listázásának tesztelése  és javítása (TP, TC, TR)
+#### 9.4.6.  Termékek listázásának tesztelése  és javítása (TP, TC, TR)
 
 Felelős: Gyarmati Patrik
 
@@ -544,7 +540,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.4.9.  Termékek management tesztelése  és javítása (TP, TC, TR)
+#### 9.4.8.  Termékek management tesztelése  és javítása (TP, TC, TR)
 
 Felelős: Györök Gábor
 
@@ -553,7 +549,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.4.12.  Kosár tesztelése  és javítása (TP, TC, TR)
+#### 9.4.9.  Kosár tesztelése  és javítása (TP, TC, TR)
 
 Felelős: Kabók Dani
 
@@ -562,7 +558,7 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-#### 9.4.14.  Megrendelés tesztelése  és javítása(TP, TC, TR)
+#### 9.4.10.  Megrendelés tesztelése  és javítása(TP, TC, TR)
 
 Felelős: Kücüktüfekci Cengiz Etem
 
@@ -571,10 +567,6 @@ Tartam:  1 hét
 Erőforrásigény: 3 személynap
 
 
-```
-Működő végleges program, a frissített tesztelési dokumentációval. A 3. mérföldkőhöz képest funkiconálisan többet kell tudnia az oldalnak.
-
-```
 ## 10. Részletes időbeosztás
 
 ![image](./MINTA-gantt-diagram.png)
@@ -593,28 +585,28 @@ Az egyes leadások alkalmával rögzített erőforrásigényt, az elvállalt fel
 ### 11.1. Részletes erőforrásigény (személynap)
 
 
-|                     Név                    | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
-|:------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
-|                     `Teszt Elek`           |           `2`          |             `3`            |           `16`          |            `4`           |    `25`   |
-|                     `Remek Elek`           |           `1`          |             `4`            |           `13`          |            `4`           |    `22`   |
-|                     `Lev Elek`             |           `1`          |             `3`            |           `12`          |            `4`           |    `20`   |
+|     Név      | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
+| :----------: | :---------------------: | :--------------------------: | :-----------------------: | :------------------------: | :------: |
+| `Teszt Elek` |           `2`           |             `3`              |           `16`            |            `4`             |   `25`   |
+| `Remek Elek` |           `1`           |             `4`              |           `13`            |            `4`             |   `22`   |
+|  `Lev Elek`  |           `1`           |             `3`              |           `12`            |            `4`             |   `20`   |
 
 
 ### 11.2. Részletes feladatszámok
 
-|                     Név                    | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
-|:------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
-|                     `Teszt Elek`           |           `2`          |             `3`            |           `9`           |            `6`           |    `20`   |
-|                     `Remek Elek`           |           `1`          |             `2`            |           `7`           |            `5`           |    `15`   |
-|                     `Lev Elek`             |           `1`          |             `2`            |           `8`           |            `5`           |    `16`   |
+|     Név      | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
+| :----------: | :---------------------: | :--------------------------: | :-----------------------: | :------------------------: | :------: |
+| `Teszt Elek` |           `2`           |             `3`              |            `9`            |            `6`             |   `20`   |
+| `Remek Elek` |           `1`           |             `2`              |            `7`            |            `5`             |   `15`   |
+|  `Lev Elek`  |           `1`           |             `2`              |            `8`            |            `5`             |   `16`   |
 
 ### 11.3. Részletes költségvetés
 
-|                     Név                       | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
-|:---------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
-|        Maximálisan választható pontszám %-ban |         10% (7)        |            30% (21)        |          50% (35)       |          30% (21)        | 100% (70) |
-|                     `Teszt Elek`              |           `7`          |             `13`           |          `35`           |            `15`          |    `70`   |
-|                     `Remek Elek`              |           `4`          |             `21`           |          `30`           |            `15`          |    `70`   |
-|                     `Lev Elek`                |           `4`          |             `21`           |          `30`           |            `15`          |    `70`   |
+|                  Név                   | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen  |
+| :------------------------------------: | :---------------------: | :--------------------------: | :-----------------------: | :------------------------: | :-------: |
+| Maximálisan választható pontszám %-ban |         10% (7)         |           30% (21)           |         50% (35)          |          30% (21)          | 100% (70) |
+|              `Teszt Elek`              |           `7`           |             `13`             |           `35`            |            `15`            |   `70`    |
+|              `Remek Elek`              |           `4`           |             `21`             |           `30`            |            `15`            |   `70`    |
+|               `Lev Elek`               |           `4`           |             `21`             |           `30`            |            `15`            |   `70`    |
 
 Szeged, `2021-10-25`.
