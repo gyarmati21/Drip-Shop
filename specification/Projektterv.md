@@ -190,6 +190,19 @@ Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat
  	- Rózsa Patrik
  - Érintett témák: Git configurálása, commit-olások, első mérföldkő folytatása
 
+4. megbeszélés:
+ - Időpont: 2021.10.08.
+ - Hely: Discord
+ - Résztvevők:
+  	- Katona Ádám
+ 	- Pál Szilárd
+ 	- Györök Gábor
+ 	- Kabók Dániel Tibor
+ 	- Gyarmati Patrik
+ 	- Kücüktüfekci Cengiz Etem
+ 	- Rózsa Patrik
+ - Érintett témák: Első mérföldkő formázása, kibővítése, Gantt chart
+
 ### 7.3. Minőségbiztosítás
 
 Az elkészült terveket a terveken nem dolgozó csapattársak közül átnézik, hogy megfelel-e a specifikációnak és az egyes diagramtípusok összhangban vannak-e egymással. A meglévő rendszerünk helyes működését a prototípusok bemutatása előtt a tesztelési dokumentumban leírtak végrehajtása alapján ellenőrizzük és összevetjük a specifikációval, hogy az elvárt eredményt kapjuk-e. További tesztelési lehetőségek: unit tesztek írása az egyes modulokhoz vagy a kód közös átnézése (code review) egy, a vizsgált modul programozásában nem résztvevő csapattaggal. Szoftverünk minőségét a végső leadás előtt javítani kell a rendszerünkre lefuttatott kódelemzés során kapott metrikaértékek és szabálysértések figyelembevételével.
