@@ -574,7 +574,7 @@ Erőforrásigény: 3 személynap
 
 ## 10. Részletes időbeosztás
 
-![image](./MINTA-gantt-diagram.png)
+![image](./GranttChartDripShop.png)
 
 
 
