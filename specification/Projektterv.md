@@ -584,42 +584,48 @@ Erőforrásigény: 3 személynap
 
 ![image](./MINTA-gantt-diagram.png)
 
-```
-Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfeladatokat tartalmazza felelős/tartam bontásban.
-```
+
 
 ## 11. Projekt költségvetés
 
-```
-Az egyes leadások alkalmával rögzített erőforrásigényt, az elvállalt feladatok számát 
-és az adott mérföldkőben végzett munkáért szerezhető pontszámot kell beírni minden emberre külön-külön.
-```
 
 ### 11.1. Részletes erőforrásigény (személynap)
 
 
-|     Név      | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
-| :----------: | :---------------------: | :--------------------------: | :-----------------------: | :------------------------: | :------: |
-| `Teszt Elek` |           `2`           |             `3`              |           `16`            |            `4`             |   `25`   |
-| `Remek Elek` |           `1`           |             `4`              |           `13`            |            `4`             |   `22`   |
-|  `Lev Elek`  |           `1`           |             `3`              |           `12`            |            `4`             |   `20`   |
+|     Név      			| 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
+| :----------: 			| :---------------------: | :--------------------------: | :-----------------------: | :------------------------: | :------: |
+|  Katona Ádám  		|            3            |              2               |            16             |             4              |    25    |
+|  Pál Szilárd  		|            3            |              2               |            18             |             4              |    25    |
+|   Györök Gábor   		|            3            |              2               |            15             |             4              |    24    |
+|   Kabók Dániel Tibor  |            3            |              2               |            18             |             4              |    27    |
+|   Gyarmati Patrik   	|            3            |              2               |            18             |             4              |    27    |
+|   Kücüktüfekci Cengiz |            3            |              2               |            16             |             4              |    25    |
+|   Rózsa Patrik   		|            3            |              2               |            15             |             4              |    24    |
 
 
 ### 11.2. Részletes feladatszámok
 
-|     Név      | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
-| :----------: | :---------------------: | :--------------------------: | :-----------------------: | :------------------------: | :------: |
-| `Teszt Elek` |           `2`           |             `3`              |            `9`            |            `6`             |   `20`   |
-| `Remek Elek` |           `1`           |             `2`              |            `7`            |            `5`             |   `15`   |
-|  `Lev Elek`  |           `1`           |             `2`              |            `8`            |            `5`             |   `16`   |
+|     Név      			| 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
+| :----------: 			| :---------------------: | :--------------------------: | :-----------------------: | :------------------------: | :------: |
+| Katona Ádám 		|            2            |              1               |             2             |             2              |    6    |
+|  Pál Szilárd  		|            2            |              1               |             3             |             2              |    8    |
+|   Györök Gábor 		|            2            |              1               |             2             |             2              |    7    |
+|   Kabók Dániel Tibor 	|            2            |              1               |             3             |             2              |    8    |
+|   Gyarmati Patrik 	|            2            |              1               |             3             |             2              |    8    |
+|   Kücüktüfekci Cengiz |            2            |              1               |             2             |             2              |    7    |
+|   Rózsa Patrik 		|            2            |              1               |             2             |             2              |    7    |
 
 ### 11.3. Részletes költségvetés
 
 |                  Név                   | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen  |
 | :------------------------------------: | :---------------------: | :--------------------------: | :-----------------------: | :------------------------: | :-------: |
 | Maximálisan választható pontszám %-ban |         10% (7)         |           30% (21)           |         50% (35)          |          30% (21)          | 100% (70) |
-|              `Teszt Elek`              |           `7`           |             `13`             |           `35`            |            `15`            |   `70`    |
-|              `Remek Elek`              |           `4`           |             `21`             |           `30`            |            `15`            |   `70`    |
-|               `Lev Elek`               |           `4`           |             `21`             |           `30`            |            `15`            |   `70`    |
+|              Katona Ádám               |            7            |              12              |            33             |             18             |    70     |
+|               Pál Szilárd              |            7            |              12              |            35             |             16             |    70     |
+|                Györök Gábor            |            7            |              12              |            35             |             16             |    70     |
+|                Kabók Dániel Tibor      |            7            |              12              |            35             |             16             |    70     |
+|                 Gyarmati Patrik        |            7            |              12              |            35             |             16             |    70     |
+|                 Kücüktüfekci Cengiz    |            7            |              15              |            34             |             14             |    70     |
+|                Rózsa Patrik            |            7            |              12              |            35             |             16             |    70     |
 
-Szeged, `2021-10-25`.
+Szeged,  2022-10-08 .
