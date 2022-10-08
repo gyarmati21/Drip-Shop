@@ -84,10 +84,6 @@ Az erőforrásigényünk összesen kb. 15 személynap/fő.
 
 A rendelkezésünkre áll összesen (7 * 70 = 490) pont.
 
-```
-Becsült sarokszámok, a rendelkezésre álló erőforrás fejenként általában 17-25 személynap, 
-a pontok száma = fejenként a projektre kapható maxpont * tagok száma.
-```
 
 ## 5. Szervezeti felépítés és felelősségmegosztás
 A projekt megrendelője Dr. Pflanzner Tamás. A Drip Shop projektet a projektcsapat fogja végrehajtani, amely jelenleg hét fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is, A tapasztalt projekttagok több hónapja dolgoznak az iparban, számos sikeres projektten vannak túl.
@@ -152,8 +148,8 @@ A munkát Pál Szilárd Ákos koordinálja. Fő feladata, hogy folyamatosan egye
 Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat, esetleg felmerülő új ötleteket, eltervezzük a következő hét teendőit. A megbeszélésről minden esetben Discord thread készül.
 
 1. megbeszélés:
- - Időpont: 2021.09.17.`
- - Hely: Discord`
+ - Időpont: 2021.09.17.
+ - Hely: Discord 
  - Résztvevők:
  	- Katona Ádám
  	- Pál Szilárd
@@ -215,7 +211,7 @@ Az alábbi lehetőségek vannak a szoftver megfelelő minőségének biztosítá
 ### 7.4. Átadás, eredmények elfogadása
 
 A projekt eredményeit Dr. Pflanzner Tamás fogja elfogadni. A projektterven változásokat csak  Dr. Pflanzner Tamás írásos kérés esetén Dr. Pflanzner Tamás engedélyével lehet tenni. A projekt eredményesnek bizonyul, ha specifikáció helyes és határidőn belül készül el. Az esetleges késések pontlevonást eredményeznek.
-Az elfogadás feltételeire és beadás formájára vonatkozó részletes leírás a következő honlapon olvasható: https://okt.sed.hu/rf1/
+Az elfogadás feltételeire és beadás formájára vonatkozó részletes leírás a következő honlapon olvasható: https://okt.inf.szte.hu/rf1/
 
 ### 7.5. Státuszjelentés
 
@@ -229,10 +225,6 @@ A szoftver fejlesztése során az agilis fejlesztési modellt alkalmazzuk. A fej
 
 A szoftver MVC alapú architectúrára fog épülni. A frontend oldalait a backend fogja felépíteni, és elküldeni HTTP üzenetek formájában. Az alkalmazás egy PostGreSQL adatbázis fogja támogatni.
 
-```
-Milyen szoftverfolyamat modellt követve állítja elő a csapat a specifikációnak megfelelő prototípusokat? Miért ezt választja? 
-A csapat milyen architektúrát választ a projekt megvalósításához? Milyen rétegek (logikai, adat, GUI) lesznek?
-```
 
 ### 8.2. Átadandók és határidők
 A főbb átadandók és határidők a projekt időtartama alatt a következők:
@@ -245,9 +237,9 @@ A főbb átadandók és határidők a projekt időtartama alatt a következők:
 |    P1+D3    |      Prototípus I. és bemutató      | 2022-11-09 |
 |    P2+D4    |     Prototípus II. és bemutató      | 2022-11-30 |
 
-```
-D - dokumentáció, P - prototípus
-```
+
+>  D - dokumentáció, P - prototípus
+
 
 ## 9. Feladatlista
 
