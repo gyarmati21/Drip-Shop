@@ -198,6 +198,19 @@ Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat
  	- Kücüktüfekci Cengiz Etem
  	- Rózsa Patrik
  - Érintett témák: Első mérföldkő formázása, kibővítése, Gantt chart
+ 
+5. megbeszélés:
+ - Időpont: 2021.10.15.
+ - Hely: Discord
+ - Résztvevők:
+  	- Katona Ádám
+ 	- Pál Szilárd
+ 	- Györök Gábor
+ 	- Kabók Dániel Tibor
+ 	- Gyarmati Patrik
+ 	- Kücüktüfekci Cengiz Etem
+ 	- Rózsa Patrik
+ - Érintett témák: Második mérföldkő menetének megbeszélése, diagrammokhoz használt app kiválasztása
 
 ### 7.3. Minőségbiztosítás
 
