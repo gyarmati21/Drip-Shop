@@ -147,7 +147,7 @@ A munkát Pál Szilárd Ákos koordinálja. Fő feladata, hogy folyamatosan egye
 
 Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat, esetleg felmerülő új ötleteket, eltervezzük a következő hét teendőit. A megbeszélésről minden esetben Discord thread készül.
 
-1. megbeszélés:
+1\. megbeszélés:
  - Időpont: 2021.09.17.
  - Hely: Discord 
  - Résztvevők:
@@ -160,7 +160,7 @@ Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat
  	* Rózsa Patrik
  - Érintett témák: Technológiák kiválasztása, téma és név megbeszélése, minták áttekintése
 
-2. megbeszélés:
+2\. megbeszélés:
  - Időpont: 2021.09.24.
  - Hely: Discord
  - Résztvevők:
@@ -173,7 +173,7 @@ Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat
  	* Rózsa Patrik
  - Érintett témák: Első mérföldkő kb felének kitöltése, funkciókról ötletelés
 
-3. megbeszélés:
+3\. megbeszélés:
  - Időpont: 2021.10.01.
  - Hely: Discord
  - Résztvevők:
@@ -186,7 +186,7 @@ Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat
  	* Rózsa Patrik
  - Érintett témák: Git configurálása, commit-olások, első mérföldkő folytatása
 
-4. megbeszélés:
+4\. megbeszélés:
  - Időpont: 2021.10.08.
  - Hely: Discord
  - Résztvevők:
@@ -199,7 +199,7 @@ Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat
  	* Rózsa Patrik
  - Érintett témák: Első mérföldkő formázása, kibővítése, Gantt chart
  
-5. megbeszélés:
+5\. megbeszélés:
  - Időpont: 2021.10.15.
  - Hely: Discord
  - Résztvevők:
