@@ -1,2 +1,2 @@
 web: bundle exec rails server -p $PORT
-web: java -jar backend/target/backend-*.jar
+web: java -jar backend/dripshop/target/backend-*.jar
