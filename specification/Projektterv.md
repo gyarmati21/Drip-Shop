@@ -151,65 +151,65 @@ Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat
  - Időpont: 2021.09.17.
  - Hely: Discord 
  - Résztvevők:
- 	- Katona Ádám
- 	- Pál Szilárd
- 	- Györök Gábor
- 	- Kabók Dániel Tibor
- 	- Gyarmati Patrik
- 	- Kücüktüfekci Cengiz Etem
- 	- Rózsa Patrik
+ 	* Katona Ádám
+ 	* Pál Szilárd
+ 	* Györök Gábor
+ 	* Kabók Dániel Tibor
+ 	* Gyarmati Patrik
+ 	* Kücüktüfekci Cengiz Etem
+ 	* Rózsa Patrik
  - Érintett témák: Technológiák kiválasztása, téma és név megbeszélése, minták áttekintése
 
 2. megbeszélés:
  - Időpont: 2021.09.24.
  - Hely: Discord
  - Résztvevők:
-  	- Katona Ádám
- 	- Pál Szilárd
- 	- Györök Gábor
- 	- Kabók Dániel Tibor
- 	- Gyarmati Patrik
- 	- Kücüktüfekci Cengiz Etem
- 	- Rózsa Patrik
+  	* Katona Ádám
+ 	* Pál Szilárd
+ 	* Györök Gábor
+ 	* Kabók Dániel Tibor
+ 	* Gyarmati Patrik
+ 	* Kücüktüfekci Cengiz Etem
+ 	* Rózsa Patrik
  - Érintett témák: Első mérföldkő kb felének kitöltése, funkciókról ötletelés
 
 3. megbeszélés:
  - Időpont: 2021.10.01.
  - Hely: Discord
  - Résztvevők:
-  	- Katona Ádám
- 	- Pál Szilárd
- 	- Györök Gábor
- 	- Kabók Dániel Tibor
- 	- Gyarmati Patrik
- 	- Kücüktüfekci Cengiz Etem
- 	- Rózsa Patrik
+  	* Katona Ádám
+ 	* Pál Szilárd
+ 	* Györök Gábor
+ 	* Kabók Dániel Tibor
+ 	* Gyarmati Patrik
+ 	* Kücüktüfekci Cengiz Etem
+ 	* Rózsa Patrik
  - Érintett témák: Git configurálása, commit-olások, első mérföldkő folytatása
 
 4. megbeszélés:
  - Időpont: 2021.10.08.
  - Hely: Discord
  - Résztvevők:
-  	- Katona Ádám
- 	- Pál Szilárd
- 	- Györök Gábor
- 	- Kabók Dániel Tibor
- 	- Gyarmati Patrik
- 	- Kücüktüfekci Cengiz Etem
- 	- Rózsa Patrik
+  	* Katona Ádám
+ 	* Pál Szilárd
+ 	* Györök Gábor
+ 	* Kabók Dániel Tibor
+ 	* Gyarmati Patrik
+ 	* Kücüktüfekci Cengiz Etem
+ 	* Rózsa Patrik
  - Érintett témák: Első mérföldkő formázása, kibővítése, Gantt chart
  
 5. megbeszélés:
  - Időpont: 2021.10.15.
  - Hely: Discord
  - Résztvevők:
-  	- Katona Ádám
- 	- Pál Szilárd
- 	- Györök Gábor
- 	- Kabók Dániel Tibor
- 	- Gyarmati Patrik
- 	- Kücüktüfekci Cengiz Etem
- 	- Rózsa Patrik
+  	* Katona Ádám
+ 	* Pál Szilárd
+ 	* Györök Gábor
+ 	* Kabók Dániel Tibor
+ 	* Gyarmati Patrik
+ 	* Kücüktüfekci Cengiz Etem
+ 	* Rózsa Patrik
  - Érintett témák: Második mérföldkő menetének megbeszélése, diagrammokhoz használt app kiválasztása
 
 ### 7.3. Minőségbiztosítás
