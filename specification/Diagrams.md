@@ -13,7 +13,7 @@
 ![entity-relation]()
 
 ## Package diagram
-![package]()
+![package](./diagrams/package.png)
 
 ## Design
 ![design]()
