@@ -7,7 +7,10 @@
 ![class]()
 
 ## Sequence diagram
-![sequence]()
+### Registration
+![sequence](./diagrams/Registration_sequence.drawio.png)
+### Drip insertation
+![sequence](./diagrams/Drip_insert_sequence.drawio.png)
 
 ## Entity-relation diagram
 ![entity-relation]()

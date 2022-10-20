@@ -10,7 +10,8 @@ A projekt célja egy webshop megvalósítása, amelyben ruhákat fogunk árulni.
 | Verzió | Szerző(k)                    | Dátum      | Státusz  | Megjegyzés                               |
 | ------ | ---------------------------- | ---------- | -------- | ---------------------------------------- |
 | 0.1    | Gyarmati Patrik, Katona Ádám | 2022-09-24 | Tervezet | Tervezett és lehetséges funkciók, design |
-
+| ------ | ---------------------------- | ---------- | -------- | ---------------------------------------- |
+| 0.2    | Kabók Dániel, Rózsa Patrik | 2022-10-23 | Diagrammok | Tervezett és lehetséges funkciók diagramjai |
 
 
 Státusz osztályozás:
