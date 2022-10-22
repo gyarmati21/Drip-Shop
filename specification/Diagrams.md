@@ -16,7 +16,7 @@
 ### Diagram
 ![entity-relation](./diagrams/DripShopERD.png)
 ### Mapping
-![entity-relation](./diagrams/ERDmapping.png)
+![entity-relation](./diagrams/ERDmapping.PNG)
 
 
 ## Package diagram
