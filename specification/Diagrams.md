@@ -23,4 +23,4 @@
 ![package](./diagrams/package.png)
 
 ## Design
-![design]()
+![design](./diagrams/Kepernyotervkep.png)
