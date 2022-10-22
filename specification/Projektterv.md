@@ -33,44 +33,43 @@ A rendszer képes lesz több ruhát tárolni és kezelni, külön és csomagokba
 ### 3.2. Funkcionális követelmények
 
 - Felhasználói munkamenet megvalósítása
-	- Bejelentkezés felület megvalósítása
-	- Regisztráció felület megvalósítása
+	- Bejelentkezés felület megvalósítása (email, jelszó)
+	- Regisztráció felület megvalósítása (email, jelszó, név, lakhely, telefonszám)
 	- Munkamenet követés funkció megvalósítása
 - Felhasználók kezelése (CRUD)
-	- Felhasználó fiókok törlése
-	- A felhasználó fiók módosítása
-	- Felhasználói adatok megjelenítése a profilon
+	- Felhasználó fiókok törlése (jelszó)
+	- A felhasználó fiók módosítása (email, név, lakhely, telefonszám, jelszó)
+	- Felhasználói adatok megjelenítése a profilon (email, név, lakhely, telefonszám)
 - Több jogosultsági szint (felhasználó)
 	- Felhasználó
 		- A felhasználók módosíthatják az adataikat (jelszó)
-		- A felhasználó likeolhatja a ruhákat
 		- A felhasználónak megvont jogosultsága a ruhák kezelése felett
 	- Admin
-		- Admin jogosultságú felhasználó az adatbázis egészét tudja kezelni
+		- Admin jogosultságú felhasználó az adatbázis egészét tudja kezelni (minden)
 - Ruhák kezelése (CRUD)
-	- Admin felhasználó tud új ruhákat hozzáadni
+	- Admin felhasználó tud új ruhákat hozzáadni (kategória, ár, név)
 	- Admin felhasználó tud ruhákat törölni az adatbázisból
-	- Admin felhasználó tudja modósítani a már feltöltött ruhákat
-	- Az oldal ki listázza az adatbázisban tárólt ruhákat
+	- Admin felhasználó tudja modósítani a már feltöltött ruhákat (kategória, ár, név)
+	- Az oldal ki listázza az adatbázisban tárólt ruhákat (kategória, ár, név)
 - Outfitek kezelése (CRUD)
-	- Admin felhasználó tud új outfitet hozzáadni
-	- Admin felhasználó tud outfitet törölni az adatbázisból
-	- Admin felhasználó tudja modósítani a már feltöltött outfitet
-	- Az oldal ki listázza az adatbázisban tárólt outfitet
+	- Admin felhasználó tud új outfitet hozzáadni (kategória, ár, név)
+	- Admin felhasználó tud outfitet törölni az adatbázisból 
+	- Admin felhasználó tudja modósítani a már feltöltött outfitet (kategória, ár, név)
+	- Az oldal ki listázza az adatbázisban tárólt outfitet (kategória, ár, név)
 - Megrendelések kezelése (CRD)
-	- A vásárló képes megrendeléseket leadni
+	- A vásárló képes megrendeléseket leadni (dátum, mennyiség, felhasználó id, méret)
 	- A vásárló képes megrendeléseket törölni
-	- Az admin képes a megrendelést törölni
-	- Az admin látja a leadott megrendeléseket
+	- Az admin képes a megrendelést törölni 
+	- Az admin látja a leadott megrendeléseket (dátum, mennyiség, felhasználó id, méret)
 - "Drip-o-meter"
-	- Az oldal képes kiírni a DRIP számát
-	- A felhasználó megrendeléskor látja a Drip-o-meter-t
-	- Az adatbázisban minden ruhának el van tárolva a Drip mértéke
+	- Az oldal képes kiírni a DRIP számát (drip)
+	- A felhasználó megrendeléskor látja a Drip-o-meter-t (drip)
+	- Az adatbázisban minden ruhának el van tárolva a Drip mértéke 
 - Kosárfunkciók
-	- A felhasználó képes hozzáadni ruhákat
-	- A felhasználó képes hozzáadni outfiteket
+	- A felhasználó képes hozzáadni ruhákat (felhasználó id, outfit id, mennyiség)
+	- A felhasználó képes hozzáadni outfiteket (felhasználó id, outfit id, mennyiség)
 	- A felhasználó képes törölni a kosárból
-	- A felhasználó képes updatelni a kosárban lévő ruhák darabszámát
+	- A felhasználó képes updatelni a kosárban lévő ruhák darabszámát (felhasználó id, outfit id,mennyiség)
 
 ### 3.3. Nem funkcionális követelmények
 
@@ -138,6 +137,9 @@ A projekt a következő technológiákat/szoftvereket fogja használni a munka s
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------- |
 | Betegség                                  | Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása        | közepes      | közepes |
 | Kommunikációs fennakadás a csapattagokkal | A csapattagok között nem elégséges az információ áramlás, nem pontosan, esetleg késve vagy nem egyértelműen tájékoztatjuk egymást. Megoldás: még gyakoribb megbeszélések és ellenőrzések | kis          | erős    |
+| Áramszünet | Abban az esetben ha elmegy az áram és a project nincs elmentve valamint feltöltve akkor van esély az adatok vesztésére | közepes          | hatalmas    |
+| Bukás | Ha a csapat egyik tagja nem készül fel a kötelező dolgozatra és elégségesre sikerül neki akkor kiesik a csapatból és több munkát hagy a csapatban bentmaradt szemályekre | kis          | erős    |
+| Fűtés hiánya | A mai világ mostani helyzetét nézve elkerülhetetlen egy energiaválság ami eredménye, hogy az energiahordozók ára megnő és a családi házak melege lecsökken | kis          | erős    |
 
 ## 7. Jelentések
 
