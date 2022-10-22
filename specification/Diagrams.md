@@ -9,7 +9,7 @@
 ## Sequence diagram
 ### Registration
 ![sequence](./diagrams/Registration_sequence.drawio.png)
-### Drip insertation
+### Drip insertion
 ![sequence](./diagrams/Drip_insert_sequence.drawio.png)
 
 ## Entity-relation diagram
