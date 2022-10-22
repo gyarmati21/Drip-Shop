@@ -13,7 +13,7 @@
 ![sequence](./diagrams/Drip_insert_sequence.drawio.png)
 
 ## Entity-relation diagram
-![entity-relation]()
+![entity-relation](./diagrams/DripShopERD.png)
 
 ## Package diagram
 ![package](./diagrams/package.png)
