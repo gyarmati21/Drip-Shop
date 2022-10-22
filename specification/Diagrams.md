@@ -4,7 +4,7 @@
 ![usecase](./diagrams/DripUseCase.drawio.png)
 
 ## Class diagram
-![class]()
+![class](./diagrams/Class_Diagram.drawio.png)
 
 ## Sequence diagram
 ### Registration
