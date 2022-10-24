@@ -7,6 +7,10 @@
     <title>Example page</title>
 </head>
 <body>
-    <h1>Example page</h1>
+    <h1>Drip Shop2</h1>
+    <p th:text="${exampleData}"></p>
+    <th:block th:each="i: ${#numbers.sequence(1, 5)}">
+        <p>this line was written by a for loop</p>
+    </th:block>    
 </body>
 </html>
