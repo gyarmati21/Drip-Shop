@@ -7,10 +7,13 @@
     <title>Example page</title>
 </head>
 <body>
+    <div th:insert="modules/header.html :: header"></div>
     <h1>Drip Shop</h1>
     <p th:text="${exampleData}"></p>
     <th:block th:each="i: ${#numbers.sequence(1, 5)}">
         <p>this line was written by a for loop</p>
-    </th:block>    
+    </th:block>
+
+    <div th:insert="modules/footer.html :: footer"> </div>
 </body>
 </html>
