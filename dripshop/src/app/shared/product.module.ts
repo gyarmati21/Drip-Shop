@@ -1,6 +1,7 @@
 export class Product {
+  id : string;
   category: string;
-  dip : number;
+  drip : number;
   imageURL : string;
   name : string;
   price : number;
