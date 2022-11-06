@@ -47,4 +47,8 @@ Thumbs.db
 .firebase
 *-debug.log
 .runtimeconfig.json
+<<<<<<< HEAD
 >>>>>>> origin/gygbranch
+=======
+>>>>>>> gygbranch
+>>>>>>> origin/kdanbranch
