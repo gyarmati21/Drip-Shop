@@ -4,12 +4,19 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
+
     <mat-nav-list>
-      <a mat-list-item href="#">Main Page</a>
+
+      <a mat-list-item routerLink="/home">Home</a>
+      <mat-divider></mat-divider>
       <a mat-list-item href="#">Products</a>
+      <mat-divider></mat-divider>
       <a mat-list-item href="#">Login</a>
+      <mat-divider></mat-divider>
       <a mat-list-item href="#">Register</a>
+
     </mat-nav-list>
+
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
@@ -21,8 +28,14 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>dripshop</span>
+      <span>DripShop</span>
     </mat-toolbar>
-    <!-- Add Content Here -->
+
+
+
+    <router-outlet></router-outlet>>
+
+
+
   </mat-sidenav-content>
 </mat-sidenav-container>
