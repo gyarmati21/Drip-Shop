@@ -54,3 +54,29 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   width: 100%;
 }
 
+.form-container {
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  background: #eceff1;
+  padding: 48px;
+  border-radius: 16px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.margin-top{
+  margin-top: 16px;
+}
+
+.text-under{
+  display: block;
+}
+
+.text-center{
+  text-align: center;
+}
