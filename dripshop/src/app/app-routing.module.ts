@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 
 const routes: Routes = [
+  {path: '', pathMatch: 'full', component: HomeComponent},
   {path: 'home', component:HomeComponent},
   {path: 'login', component:LoginComponent}
 ];

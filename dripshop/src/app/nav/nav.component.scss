@@ -16,7 +16,7 @@
   z-index: 1;
 }
 
-span {
+.title {
   position: relative;
   font-family: "Avenir Next", sans-serif;
   font-weight: 900;
@@ -25,4 +25,18 @@ span {
   font-style: italic;
   letter-spacing: 0.05em;
   display: inline-block;
+}
+
+#t1:hover {
+  color: #ffb9c7;
+}
+
+#t2:hover {
+  color: #97f0f5;
+}
+
+
+
+.login_button{
+  margin-left: auto;
 }
