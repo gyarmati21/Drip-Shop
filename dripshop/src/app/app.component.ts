@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { AuthenticationService } from './services/authentication.service';
 import { Component } from '@angular/core';
 
 // Product
@@ -14,7 +16,9 @@ export class AppComponent {
 
   productList : Product[]; // Products from table
 
-  constructor(private service : ProductService){  }
+  constructor(private service : ProductService,
+    public authService: AuthenticationService,
+    private router: Router){  }
 
   // Initializing method
   ngOnInit() : void{
