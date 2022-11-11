@@ -4,6 +4,7 @@
 
 .sidenav {
   width: 200px;
+  background: #E8F3F5;
 }
 
 .sidenav .mat-toolbar {
@@ -16,27 +17,13 @@
   z-index: 1;
 }
 
-.title {
-  position: relative;
-  font-family: "Avenir Next", sans-serif;
-  font-weight: 900;
-  font-size: 64px;
-  text-transform: uppercase;
-  font-style: italic;
-  letter-spacing: 0.05em;
-  display: inline-block;
-}
-
-#t1:hover {
-  color: #ffb9c7;
-}
-
-#t2:hover {
-  color: #97f0f5;
-}
-
-
-
 .login_button{
   margin-left: auto;
+}
+.mat-drawer-container {
+  background: rgb(255,227,237);
+  background: -moz-linear-gradient(25deg, rgba(255,227,237,1) 61%, rgba(249,249,249,1) 100%);
+  background: -webkit-linear-gradient(25deg, rgba(255,227,237,1) 61%, rgba(249,249,249,1) 100%);
+  background: linear-gradient(25deg, rgba(255,227,237,1) 61%, rgba(249,249,249,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe3ed",endColorstr="#f9f9f9",GradientType=1);  color: rgba(0, 0, 0, 0.87);
 }
