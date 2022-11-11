@@ -30,6 +30,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import { HotToastModule } from '@ngneat/hot-toast';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     ReactiveFormsModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    HotToastModule.forRoot()
 
   ],
   providers: [],
