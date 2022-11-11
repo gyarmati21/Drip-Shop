@@ -11,12 +11,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
+import { AuthGuard } from './shared/auth.guard/auth.guard';
+import { canActivate, redirectUnauthorizedTo, redirectLoggedInTo } from '@angular/fire/auth-guard';
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', component: HomeComponent},
-  {path: 'home', component:HomeComponent},
+  
+  {path: 'home', component:HomeComponent, canActivate: [AuthGuard]},
+  {path: 'sign-up', component:SignupComponent},
   {path: 'login', component:LoginComponent},
-  {path: 'sign-up', component:SignupComponent}
+  {
+    path: '', 
+    pathMatch: 'full', 
+    component: HomeComponent,
+    ...canActivate(() => redirectLoggedInTo(["/home"]))
+  },
 ];
 
 @NgModule({
