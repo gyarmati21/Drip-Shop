@@ -1,0 +1,15 @@
+<div class="container">
+    <mat-button-toggle-group (change)="changeSide($event.value)">
+        <mat-button-toggle value="products">Items</mat-button-toggle>
+        <mat-button-toggle vlaue="orders">Orders</mat-button-toggle>
+    </mat-button-toggle-group>
+    <br>
+    <div *ngIf="productToShow" style="width: 100%;">
+        <app-new-item></app-new-item>
+        <br>
+        <app-item-list></app-item-list>
+    </div>
+    <div *ngIf="!productToShow" style="width: 100%;">
+        <app-order-list></app-order-list>
+    </div>
+</div>

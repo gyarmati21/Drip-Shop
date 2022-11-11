@@ -13,10 +13,12 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { ProductAdminComponent } from './product-admin/product-admin/product-admin.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductAdminComponent
   ],
   imports: [
     BrowserModule,
