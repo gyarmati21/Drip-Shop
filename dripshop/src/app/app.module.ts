@@ -32,6 +32,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { SignupComponent } from './signup/signup.component';
+import { UsermngmntComponent } from './usermngmnt/usermngmnt.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { SignupComponent } from './signup/signup.component';
     NavComponent,
     LoginComponent,
     HomeComponent,
-    SignupComponent
+    SignupComponent,
+    UsermngmntComponent
   ],
   imports: [
     BrowserModule,
