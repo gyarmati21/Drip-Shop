@@ -1,1 +1,29 @@
-<p>usermngmnt works!</p>
+<div class="form-container mat-elevation-z5">
+    <h1 class="display-4">User management</h1>
+    <form #form="ngForm" autocomplete="off"> <!--<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">-->
+        <input type="hidden" name="id"> <!--<input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">-->
+        <mat-form-field class="form-group">
+            <input type="text" matInput name="firstname" placeholder="First name" class="form-control" required> <!--<input type="text" matInput name="firstname" #name="ngModel" [(ngModel)]="service.formData.name" placeholder="First name" class="form-control" required>-->
+            <!--<div *ngIf="firstname.invalid && firstname.touched" class="validation-error">First name is required!</div>-->
+        </mat-form-field>
+        <mat-form-field class="form-group">
+            <input type="text" matInput name="lastname" placeholder="Last name" class="form-control" required> <!--<input type="text" matInput name="lastname" #name="ngModel" [(ngModel)]="service.formData.name" placeholder="Last name" class="form-control" required-->
+            <!--<div *ngIf="lastname.invalid && lastname.touched" class="validation-error">Last name is required!</div>-->
+        </mat-form-field>
+        <mat-form-field class="form-group">
+            <input type="text" matInput name="email" placeholder="E-mail" class="form-control" required> <!--<input type="text" matInput name="email" #name="ngModel" [(ngModel)]="service.formData.name" placeholder="E-mail" class="form-control" required>-->
+            <!--<div *ngIf="email.invalid && email.touched" class="validation-error">E-mail is required!</div>-->
+        </mat-form-field>
+        <mat-form-field class="form-group">
+            <input type="number" matInput name="phonenumber" placeholder="Phone number" class="form-control" required> <!--<input type="number" matInput name="phonenumber" #name="ngModel" [(ngModel)]="service.formData.name" placeholder="Phone number" class="form-control" required>-->
+            <!--<div *ngIf="phonenumber.invalid && phonenumber.touched" class="validation-error">Phone number is required!</div>-->
+        </mat-form-field>
+        <mat-form-field class="form-group">
+            <input type="text" matInput name="image" placeholder="Profile image URL" class="form-control"> <!--<input type="text" matInput name="image" #image="ngModel" [(ngModel)]="service.formData.image" placeholder="Profile image URL" class="form-control">-->
+            <!--<div *ngIf="image.invalid && image.touched" class="validation-error">Profile image error!</div>-->
+        </mat-form-field>
+        <div class="form-group">
+            <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">Edit user</button> <!--<button mat-raised-button color="primary" *ngIf="id.value" type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">Edit user</button>-->
+        </div>
+    </form>
+</div>
