@@ -31,6 +31,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { HotToastModule } from '@ngneat/hot-toast';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { HotToastModule } from '@ngneat/hot-toast';
     AppComponent,
     NavComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

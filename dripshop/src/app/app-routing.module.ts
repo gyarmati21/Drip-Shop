@@ -1,3 +1,4 @@
+import { SignupComponent } from './signup/signup.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -14,7 +15,8 @@ import {MatInputModule} from '@angular/material/input';
 const routes: Routes = [
   {path: '', pathMatch: 'full', component: HomeComponent},
   {path: 'home', component:HomeComponent},
-  {path: 'login', component:LoginComponent}
+  {path: 'login', component:LoginComponent},
+  {path: 'sign-up', component:SignupComponent}
 ];
 
 @NgModule({
