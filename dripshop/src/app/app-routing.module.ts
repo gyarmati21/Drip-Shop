@@ -11,20 +11,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
-import { AuthGuard } from './shared/auth.guard/auth.guard';
-import { canActivate, redirectUnauthorizedTo, redirectLoggedInTo } from '@angular/fire/auth-guard';
+import { IsNotAuthenticated } from './shared/auth.guard';
 
 const routes: Routes = [
   
-  {path: 'home', component:HomeComponent, canActivate: [AuthGuard]},
-  {path: 'sign-up', component:SignupComponent},
-  {path: 'login', component:LoginComponent},
-  {
-    path: '', 
-    pathMatch: 'full', 
-    component: HomeComponent,
-    ...canActivate(() => redirectLoggedInTo(["/home"]))
-  },
+  { path: 'home', component:HomeComponent },
+  { path: 'sign-up', component:SignupComponent, canActivate: [IsNotAuthenticated] },
+  { path: 'login', component:LoginComponent, canActivate: [IsNotAuthenticated] },
+  
+  { path: '', pathMatch: 'full', redirectTo: "/home" }, // works
+
+
 ];
 
 @NgModule({
@@ -37,8 +34,9 @@ const routes: Routes = [
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [IsNotAuthenticated]
 })
 export class AppRoutingModule { }
