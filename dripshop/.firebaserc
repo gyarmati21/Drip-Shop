@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "drip-shop": {
+      "hosting": {
+        "dripshop": [
+          "drip-shop"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "drip-shop"
+  }
+}
