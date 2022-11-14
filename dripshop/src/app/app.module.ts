@@ -36,6 +36,7 @@ import { UsermngmntComponent } from './usermngmnt/usermngmnt.component';
 import { CartComponent } from './cart/cart.component';
 
 import { ProductAdminComponent } from './shared/product-admin/product-admin.component';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,7 @@ import { ProductAdminComponent } from './shared/product-admin/product-admin.comp
     HomeComponent,
     SignupComponent,
     UsermngmntComponent,
-    CartComponent
+    CartComponent,
     AppComponent,
     ProductAdminComponent
   ],
