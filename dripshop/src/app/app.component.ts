@@ -3,8 +3,8 @@ import { AuthenticationService } from './services/authentication.service';
 import { Component } from '@angular/core';
 
 // Product
-import { Product } from "./shared/product.module";
-import { ProductService } from "./shared/product.service";
+import { Product } from "../app/shared/product/product.module";
+import { ProductService } from "../app/shared/product/product.service";
 
 @Component({
   selector: 'app-root',
