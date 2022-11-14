@@ -5,8 +5,8 @@
     <thead>
         <th>Name</th>
         <th>Image</th>
-        <th>Quantity</th>
         <th>Size</th>
+        <th>Quantity</th>
         <th>Price</th>
         <th>Remove</th>
     </thead>
@@ -22,9 +22,14 @@
         <tr>
             <td>Drip Coat</td>
             <td><img height="100" src="https://www.williamjacket.com/wp-content/uploads/2021/12/Dragon-Ball-Z-Goku-Drip-Zipper-Black-Polyester-Puffer-Jacket-Front.jpg"></td>
+            <td>
+                <input list="sizesTag">
+                <datalist id="sizesTag">
+                    <option *ngFor="let s of sizes.sizes" [value]="s" >{{s}}</option>
+                </datalist>
+            </td>
             <td><button (click)="decreaseQunatitiy()">-</button> {{testQuantitiy}} <button (click)="increaseQunatitiy()">+</button></td>
-            <td>XL</td>
-            <td>1500</td>
+            <td>1500 Ft</td>
             <td><a (click)="deleteCartItem()" class="btn text-danger">
                 <mat-icon color="red">remove_shopping_cart</mat-icon>
             </a></td>
@@ -32,4 +37,5 @@
     </tbody>
 </table>
 <h2 class="right">Total: {{totalPrice}} Ft</h2>
+<button (click)="onSubmit()">Order</button>
 </div>

@@ -1,0 +1,1 @@
+export const SizesObject = {"sizes" : ["XS", "S", "M", "L", "XL", "XXL"]}
