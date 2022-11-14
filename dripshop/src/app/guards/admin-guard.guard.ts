@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Auth, authState, User as FireUser } from '@angular/fire/auth';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
-import { catchError, map, Observable, switchMap, take, tap } from 'rxjs';
+import { catchError, lastValueFrom, map, mergeAll, mergeMap, Observable, switchMap, take, tap } from 'rxjs';
 import { AuthenticationService } from '../services/authentication.service';
 import { User } from '../shared/user.module';
 
@@ -16,69 +16,87 @@ export class AdminGuardGuard implements CanActivate {
 
   constructor(private afAuth: AngularFireAuth, private authService: AuthenticationService, private auth: Auth, private store: AngularFirestore) { }
 
-  user: User;
+  // user: User;
   userId: string;
   admin: boolean;
 
-  
-  isAdmin(id : string | undefined){
-    this.store.collection("user").doc(id).ref.get().then(
-      function (doc) {
-        if (doc.exists) return (doc.data() as User).isAdmin;
-        else return false;
-        
-      }
-    )
+
+  isAdmin(uid: string): Promise<boolean> {
+    console.log("inside the isAdmin");
+    return this.store.collection("user").doc<User>(uid).ref.get().then((doc) => {
+
+      if (doc.exists) return (doc.data() as User).isAdmin;
+      else return false;
+
+    });
   }
 
 
 
   canActivate(
     route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean>{
+    state: RouterStateSnapshot): Promise<boolean> {
+
+      return lastValueFrom(authState(this.auth)).then(user => {
+        console.log("1.");
+
+        if (user) return this.isAdmin(user.uid)
+        else return new Promise<boolean>((resolve) => resolve(true));
+    })
+
+    this.auth.currentUser
 
 
-      // is logged in
-      return authState(this.auth).pipe(map(user => (user)?true:false))
 
-      // return new Promise<boolean>((resolve, reject) => {
-      //   authState(this.auth).pipe(
-      //     tap(user => console.log(user)),
-      //     tap(user => (user)? resolve(true) : reject(false))
-      //   )
-        
-        
-      // })
-
-      // return this.afAuth.currentUser.then( user => {
-      //   if (user) return true;
-      //   else return false;
-      // });
+    // if (this.auth.currentUser) return this.isAdmin(this.auth.currentUser.uid);
+    // else return new Promise<boolean>((resolve) => {
+    //   resolve(false)
+    // });
 
 
-      authState(this.auth).subscribe(user => {
-        this.store.collection("user").doc(user?.uid).ref.get().then(
-          function (doc) {
-            if (doc.exists) return (doc.data() as User).isAdmin;
-            else return false;
-            
-          }
-        )
-        if(user) this.userId = user.uid;
-        console.log(this.userId);
-        console.log(this.isAdmin(this.userId));
-        
-        
-        
-        
-        // this.isAdmin(this.userId).subscribe(id => console.log(id));
-      })
-      // return true;
+    // return authState(this.auth).pipe(map(user => (user)?this.isAdmin(user):false)
 
-      // return this.isAdmin(this.auth.currentUser?.uid).pipe(map(this.isAdmin => {
-      //   if (isAdmin) return true;
-      //   return false;
-      // }))
+    // is logged in
+    // return authState(this.auth).pipe(map(user => (user)?true:false))
+
+    // return new Promise<boolean>((resolve, reject) => {
+    //   authState(this.auth).pipe(
+    //     tap(user => console.log(user)),
+    //     tap(user => (user)? resolve(true) : reject(false))
+    //   )
+
+
+    // })
+
+    // return this.afAuth.currentUser.then( user => {
+    //   if (user) return true;
+    //   else return false;
+    // });
+
+
+    authState(this.auth).subscribe(user => {
+      this.store.collection("user").doc(user?.uid).ref.get().then(
+        function (doc) {
+          if (doc.exists) return (doc.data() as User).isAdmin;
+          else return false;
+
+        }
+      )
+      if (user) this.userId = user.uid;
+      console.log(this.userId);
+      console.log(this.isAdmin(this.userId));
+
+
+
+
+      // this.isAdmin(this.userId).subscribe(id => console.log(id));
+    })
+    // return true;
+
+    // return this.isAdmin(this.auth.currentUser?.uid).pipe(map(this.isAdmin => {
+    //   if (isAdmin) return true;
+    //   return false;
+    // }))
 
 
 
@@ -96,5 +114,5 @@ export class AdminGuardGuard implements CanActivate {
     //     })
     //   });
     // }
-    }
   }
+}
