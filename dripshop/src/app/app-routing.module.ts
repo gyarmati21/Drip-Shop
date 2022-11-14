@@ -11,13 +11,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
-import { IsNotAuthenticated } from './shared/auth.guard';
+import { AdminGuardGuard } from './guards/admin-guard.guard';
 
 const routes: Routes = [
   
   { path: 'home', component:HomeComponent },
-  { path: 'sign-up', component:SignupComponent, canActivate: [IsNotAuthenticated] },
-  { path: 'login', component:LoginComponent, canActivate: [IsNotAuthenticated] },
+  { path: 'sign-up', component:SignupComponent, canActivate: [AdminGuardGuard] },
+  { path: 'login', component:LoginComponent },
   
   { path: '', pathMatch: 'full', redirectTo: "/home" }, // works
 
@@ -37,6 +37,6 @@ const routes: Routes = [
     ReactiveFormsModule,
   ],
   exports: [RouterModule],
-  providers: [IsNotAuthenticated]
+  providers: [AdminGuardGuard]
 })
 export class AppRoutingModule { }
