@@ -11,12 +11,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', component: HomeComponent},
   {path: 'home', component:HomeComponent},
   {path: 'login', component:LoginComponent},
-  {path: 'sign-up', component:SignupComponent}
+  {path: 'sign-up', component:SignupComponent},
+  {path: 'cart', component:CartComponent}
+
 ];
 
 @NgModule({
