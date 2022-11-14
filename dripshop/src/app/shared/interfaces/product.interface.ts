@@ -1,4 +1,4 @@
-export class Product {
+export interface IProduct {
   id : string;
   category: string;
   drip : number;
@@ -6,3 +6,4 @@ export class Product {
   name : string;
   price : number;
  }
+

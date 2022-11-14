@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from "../product/product.module";
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Product } from '../models/product.model';
 
 @Component({
   selector: 'app-product-admin',

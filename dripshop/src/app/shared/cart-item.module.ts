@@ -1,4 +1,5 @@
-import { Product } from "./product/product.module";
+import { Product } from "./models/product.model";
+
 
 export class CartItem {
   product : Product;

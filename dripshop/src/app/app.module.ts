@@ -34,6 +34,7 @@ import { HotToastModule } from '@ngneat/hot-toast';
 import { SignupComponent } from './signup/signup.component';
 import { UsermngmntComponent } from './usermngmnt/usermngmnt.component';
 import { CartComponent } from './cart/cart.component';
+import { ProductsComponent } from './products/products.component';
 
 import { ProductAdminComponent } from './shared/product-admin/product-admin.component';
 import { MatInputModule } from '@angular/material/input';
@@ -48,7 +49,8 @@ import { MatInputModule } from '@angular/material/input';
     UsermngmntComponent,
     CartComponent,
     AppComponent,
-    ProductAdminComponent
+    ProductAdminComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
