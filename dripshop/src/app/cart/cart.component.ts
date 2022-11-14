@@ -12,6 +12,7 @@ import { AuthenticationService } from '../services/authentication.service';
 export class CartComponent implements OnInit {
 
   totalPrice = this.calculatePrice();
+  testQuantitiy = 2;
 
   constructor(private router : Router, private userv: AuthenticationService) { }
 
@@ -28,6 +29,16 @@ export class CartComponent implements OnInit {
 
   calculatePrice() {
       return 1500;
+  }
+
+  decreaseQunatitiy() {
+    if (this.testQuantitiy > 0) {
+      this.testQuantitiy--;
+    }
+  }
+
+  increaseQunatitiy() {
+    this.testQuantitiy++;
   }
 
   onSubmit() {
