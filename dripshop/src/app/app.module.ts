@@ -34,6 +34,7 @@ import { FormsModule } from '@angular/forms';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { SignupComponent } from './signup/signup.component';
 import { UsermngmntComponent } from './usermngmnt/usermngmnt.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { UsermngmntComponent } from './usermngmnt/usermngmnt.component';
     LoginComponent,
     HomeComponent,
     SignupComponent,
-    UsermngmntComponent
+    UsermngmntComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

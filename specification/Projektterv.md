@@ -215,7 +215,7 @@ Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat
  	* Rózsa Patrik
  - Érintett témák: Második mérföldkő menetének megbeszélése, diagrammokhoz használt app kiválasztása
 
- 6\. megbeszélés:
+6\. megbeszélés:
  - Időpont: 2021.10.22.
  - Hely: Discord
  - Résztvevők:
@@ -239,7 +239,33 @@ Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat
  	* Gyarmati Patrik
  	* Kücüktüfekci Cengiz Etem
  	* Rózsa Patrik
- - Érintett témák: Diagrammok kijavítása, prototípus felépítésének előkészítése
+ - Érintett témák: Diagrammok kijavítása, prototípus felépítésének előkészítése, saját branch-ek felállítása
+
+8\. megbeszélés:
+ - Időpont: 2021.11.04.
+ - Hely: Discord
+ - Résztvevők:
+  	* Katona Ádám
+ 	* Pál Szilárd
+ 	* Györök Gábor
+ 	* Kabók Dániel Tibor
+ 	* Gyarmati Patrik
+ 	* Kücüktüfekci Cengiz Etem
+ 	* Rózsa Patrik
+ - Érintett témák: Váltás Angular-ra, annak felállítása
+
+9\. megbeszélés:
+ - Időpont: 2021.11.09.
+ - Hely: Discord
+ - Résztvevők:
+  	* Katona Ádám
+ 	* Pál Szilárd
+ 	* Györök Gábor
+ 	* Kabók Dániel Tibor
+ 	* Gyarmati Patrik
+ 	* Kücüktüfekci Cengiz Etem
+ 	* Rózsa Patrik
+ - Érintett témák: Segítség az Angular elkezdésében, feladatkörök pontos kiosztása
 
 ### 7.3. Minőségbiztosítás
 
