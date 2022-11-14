@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from "../product/product.module";
 import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { Product } from '../shared/product/product.module';
 
 @Component({
   selector: 'app-product-admin',
@@ -11,7 +11,7 @@ export class ProductAdminComponent implements OnInit {
 
   constructor(private firestore: AngularFirestore) { }
 
-  createProduct(data: NewProduct) {
+  createProduct(data: Product) {
     return new Promise<any>((resolve, reject) => {
       this.firestore
         .collection("products")
@@ -24,7 +24,7 @@ export class ProductAdminComponent implements OnInit {
     return this.firestore.collection("products", ref => ref.orderBy(order, direction).limit(63)).snapshotChanges();
   }
 
-  updateProduct(data: newProduct){
+  updateProduct(data: Product){
     let productId = data.id;
 
     return new Promise<any>((resolve, reject) => {
@@ -35,7 +35,7 @@ export class ProductAdminComponent implements OnInit {
     });
   }
 
-  deleteProduct(data: NewProduct){
+  deleteProduct(data: Product){
     return new Promise<any>((resolve,reject) => {
       this.firestore.collection("products")
         .doc(data.id).delete()
