@@ -11,6 +11,8 @@ import { AuthenticationService } from '../services/authentication.service';
 })
 export class CartComponent implements OnInit {
 
+  totalPrice = this.calculatePrice();
+
   constructor(private router : Router, private userv: AuthenticationService) { }
 
   ngOnInit(): void {
@@ -20,12 +22,12 @@ export class CartComponent implements OnInit {
     
   }
 
-  deleteCartItem(item : CartItem) {
+  deleteCartItem() { /*deleteCartItem(item : CartItem)*/
 
   }
 
   calculatePrice() {
-
+      return 1500;
   }
 
   onSubmit() {

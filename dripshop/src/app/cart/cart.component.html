@@ -1,1 +1,33 @@
-<p>cart works!</p>
+<h1 class="display-4">Your Cart</h1>
+
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Quantity</th>
+        <th>Size</th>
+        <th>Price</th>
+        <th>Remove</th>
+    </thead>
+    <tbody>
+        <!-- <tr *ngFor="let i of cartLista">
+            <td>{{i.name}}</td>
+            <td><img height="100" src="{{i.image}}"></td>
+            <td>{{i.price}} Ft</td>
+            <td><a (click)="onDelete(i)" class="btn text-danger">
+                <mat-icon color="red">remove_shopping_cart</mat-icon>
+            </a></td>
+        </tr> -->
+        <tr>
+            <td>Drip Coat</td>
+            <td><img height="100" src="https://www.williamjacket.com/wp-content/uploads/2021/12/Dragon-Ball-Z-Goku-Drip-Zipper-Black-Polyester-Puffer-Jacket-Front.jpg"></td>
+            <td>2</td>
+            <td>XL</td>
+            <td>1500</td>
+            <td><a (click)="deleteCartItem()" class="btn text-danger">
+                <mat-icon color="red">remove_shopping_cart</mat-icon>
+            </a></td>
+        </tr>
+    </tbody>
+</table>
+<h2 class="right">Total: {{totalPrice}} Ft</h2>
