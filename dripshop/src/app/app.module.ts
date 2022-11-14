@@ -1,6 +1,7 @@
 import { MatInputModule } from '@angular/material/input';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 // FireStore module (Database)
 import { AngularFireModule } from "@angular/fire/compat";
@@ -32,6 +33,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { SignupComponent } from './signup/signup.component';
+import { UsermngmntComponent } from './usermngmnt/usermngmnt.component';
 import { CartComponent } from './cart/cart.component';
 
 
@@ -42,6 +44,7 @@ import { CartComponent } from './cart/cart.component';
     LoginComponent,
     HomeComponent,
     SignupComponent,
+    UsermngmntComponent,
     CartComponent
   ],
   imports: [

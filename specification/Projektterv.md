@@ -228,7 +228,7 @@ Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat
  	* Rózsa Patrik
  - Érintett témák: Második mérföldkőre készített diagrammok ellenőrzése és feltöltése, hosting, oldal vázának felállítása
 
-7\. megbeszélés:
+ 7\. megbeszélés:
  - Időpont: 2021.10.28.
  - Hely: Discord
  - Résztvevők:
@@ -239,7 +239,7 @@ Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat
  	* Gyarmati Patrik
  	* Kücüktüfekci Cengiz Etem
  	* Rózsa Patrik
- - Érintett témák: Saját branch-ek felállítása, Spring alapok
+ - Érintett témák: Diagrammok kijavítása, prototípus felépítésének előkészítése, saját branch-ek felállítása
 
 8\. megbeszélés:
  - Időpont: 2021.11.04.
