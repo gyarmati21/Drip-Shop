@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Order } from '../shared/order.module'
+import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
   selector: 'app-order',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router, private userv: AuthenticationService) { }
 
   ngOnInit(): void {
   }
