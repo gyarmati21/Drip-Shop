@@ -37,6 +37,7 @@ import { CartComponent } from './cart/cart.component';
 
 import { ProductAdminComponent } from './shared/product-admin/product-admin.component';
 import { MatInputModule } from '@angular/material/input';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { MatInputModule } from '@angular/material/input';
     UsermngmntComponent,
     CartComponent,
     AppComponent,
-    ProductAdminComponent
+    ProductAdminComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
