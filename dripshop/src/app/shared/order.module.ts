@@ -1,12 +1,4 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-
-
-@NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
-})
-export class OrderModule { }
+export class Order { 
+	user: User;
+	date: DateTime;
+}
