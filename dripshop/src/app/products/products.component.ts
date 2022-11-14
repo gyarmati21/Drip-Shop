@@ -25,7 +25,7 @@ export class ProductsComponent implements OnInit {
 
   openProductDialog(product: Product): void {
     const dialogRef = this.dialog.open(ProductDialogComponent, {
-      panelClass: 'dialogClass',
+      panelClass: 'dialogSClass',
       data: product,
     });
   }
