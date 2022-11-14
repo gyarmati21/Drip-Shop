@@ -1,0 +1,18 @@
+<div class="product-container">
+  <mat-card *ngFor="let product of productList" class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{product.name}}</mat-card-title>
+       
+    </mat-card-header>
+    <img
+      mat-card-image
+      src={{product.imageURL}}
+    />
+    <mat-card-content>
+      <p>
+        
+      </p>
+    </mat-card-content>
+    <mat-card-subtitle>{{product.price}}</mat-card-subtitle>
+  </mat-card>
+</div>
