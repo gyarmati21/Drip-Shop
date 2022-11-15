@@ -2,4 +2,6 @@
 dripshop/.vscode/
 dripshop/HELP.md
 dripshop/target/
-dripshop/.vscode/
+dripshop/.browserslistrc
+dripshop/.editorconfig
+

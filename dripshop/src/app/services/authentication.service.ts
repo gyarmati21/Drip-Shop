@@ -8,6 +8,7 @@ import {
   UserInfo,
   UserCredential,
 } from '@angular/fire/auth';
+import * as firebase from 'firebase/compat';
 import { concatMap, from, Observable, of, switchMap } from 'rxjs';
 
 @Injectable({
@@ -32,5 +33,9 @@ export class AuthenticationService {
 
   logout(){
     return from(this.auth.signOut());
+  }
+
+  getUser(){
+    return this.currentUser$;
   }
 }
