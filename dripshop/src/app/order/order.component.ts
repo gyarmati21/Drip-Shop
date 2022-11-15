@@ -16,5 +16,19 @@ export class OrderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  userData = JSON.parse(localStorage.getItem("User") || "{email: '', isAdmin: false, address: '', firstName: '', lastName: '', phoneNumber: ''}");
+  
+  orderForm = new FormGroup({
+    email: new FormControl(this.userData.email),
+    address: new FormControl(this.userData.address),
+    firstName: new FormControl(this.userData.firstName),
+    lastName: new FormControl(this.userData.lastName),
+    phone: new FormControl(this.userData.phoneNumber),
+  });
+	
+  
+  onSubmit() {
+    this.router.navigateByUrl("");
+  }
 }
