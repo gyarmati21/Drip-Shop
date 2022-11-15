@@ -1,13 +1,13 @@
-
-<h1 mat-dialog-title>{{product.name}}</h1>
-<div mat-dialog-content>
-<p>{{product.price}}</p>
-</div>
-<img
-    mat-card-image
-    src={{product.imageURL}}
+<div  class="dialog-class">
+    <h1 mat-dialog-title>{{product.name}}</h1>
+    <div mat-dialog-content>
+    <p>{{product.price}}</p>
+    </div>
+    <img
+        mat-card-image
+        src={{product.imageURL}}
     />
-<div mat-dialog-actions>
-<button mat-button (click)="onNoClick()">No Thanks</button>
+    <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    </div>
 </div>
-

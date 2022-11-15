@@ -38,6 +38,7 @@ import { ProductsComponent } from './products/products.component';
 
 import { ProductAdminComponent } from './shared/product-admin/product-admin.component';
 import { MatInputModule } from '@angular/material/input';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -75,10 +76,11 @@ import { MatInputModule } from '@angular/material/input';
     ReactiveFormsModule,
     FormsModule,
     MatInputModule,
-    HotToastModule.forRoot()
-
+    HotToastModule.forRoot(),
+    MatDialogModule
+    
   ],
-  providers: [],
+  providers: [MatDialogModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
