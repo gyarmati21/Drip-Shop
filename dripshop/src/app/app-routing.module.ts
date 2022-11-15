@@ -10,13 +10,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
-import { AdminGuardGuard } from './guards/admin-guard.guard';
+import { MatInputModule} from '@angular/material/input';
+import { UserGuard } from './guards/admin-guard.guard';
+import { AdminGuard } from './guards/user-guard.guard';
 
 const routes: Routes = [
   
   { path: 'home', component:HomeComponent },
-  { path: 'sign-up', component:SignupComponent, canActivate: [AdminGuardGuard] },
+  { path: 'sign-up', component:SignupComponent, canActivate: [UserGuard] },
   { path: 'login', component:LoginComponent },
   
   { path: '', pathMatch: 'full', redirectTo: "/home" }, // works
@@ -37,6 +38,6 @@ const routes: Routes = [
     ReactiveFormsModule,
   ],
   exports: [RouterModule],
-  providers: [AdminGuardGuard]
+  providers: [UserGuard]
 })
 export class AppRoutingModule { }

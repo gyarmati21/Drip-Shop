@@ -10,14 +10,13 @@ import { User } from '../shared/user.module';
 @Injectable({
   providedIn: 'root'
 })
-export class UserGuardGuard implements CanActivate {
+export class AdminGuard implements CanActivate {
 
   constructor(private afAuth: AngularFireAuth, private authService: AuthenticationService, private auth: Auth, private store: AngularFirestore) { }
 
   canActivate(
     route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Promise<boolean> {
-
+    state: RouterStateSnapshot): Observable<boolean> {
 
     return authState(this.auth).pipe(map(user => (user) ? true : false));
   }
