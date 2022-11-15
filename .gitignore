@@ -1,4 +1,7 @@
 .idea
+dripshop/.vscode/
+dripshop/HELP.md
+dripshop/target/
 dripshop/.browserslistrc
 dripshop/.editorconfig
-dripshop/.vscode/
+

@@ -3,8 +3,9 @@ import { AuthenticationService } from './services/authentication.service';
 import { Component } from '@angular/core';
 
 // Product
-import { Product } from "./shared/product.module";
 import { ProductService } from "./shared/product.service";
+import { IProduct } from './shared/interfaces/product.interface';
+import { Product } from './shared/models/product.model';
 
 @Component({
   selector: 'app-root',
@@ -14,12 +15,12 @@ import { ProductService } from "./shared/product.service";
 export class AppComponent {
   title = 'dripshop';
 
-  productList : Product[]; // Products from table
+  productList : IProduct[]; // Products from table
 
   constructor(private service : ProductService,
     public authService: AuthenticationService,
     private router: Router){  }
-
+/*
   // Initializing method
   ngOnInit() : void{
     this.service.getProducts().subscribe(actionArray => {
@@ -36,5 +37,5 @@ export class AppComponent {
       })
     })
   }
-
+*/
 }
