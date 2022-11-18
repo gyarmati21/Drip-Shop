@@ -65,7 +65,7 @@ export class SignupComponent implements OnInit {
     {
       'address': "not set",
       'email': this.signUpForm.value.email,
-      'fistName': "not set",
+      'firstName': "not set",
       'isAdmin': false,
       'lastName': "not set",
       'phoneNumber': "not set"

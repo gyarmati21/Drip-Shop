@@ -34,10 +34,11 @@
 
 <table>
     <thead>
+        <th>E-mail</th>
         <th>First name</th>
         <th>Last name</th>
+        <th>Address</th>
         <th>Phone number</th>
-        <th>E-mail</th>
         <th>Manage</th>
     </thead>
     <tbody>
@@ -53,11 +54,12 @@
                 <i class="bi bi-trash"></i>
             </a></td>
         </tr>-->
-        <tr>
-            <td>First name</td>
-            <td>Last name</td>
-            <td>Phone number</td>
-            <td>E-mail</td>
+        <tr *ngFor="let i of lista">
+            <td>{{i.email}}</td>
+            <td>{{i.firstName}}</td>
+            <td>{{i.lastName}}</td>
+            <td>{{i.address}}</td>
+            <td>{{i.phoneNumber}}</td>
             <td style="text-align: center"><a style="color: green" class="mngmnttext">Edit</a></td>
             <td style="text-align: center"><a style="color: red" class="mngmnttext">Delete</a></td>
         </tr>
