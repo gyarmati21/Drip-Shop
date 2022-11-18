@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { AuthenticationService } from '../services/authentication.service';
 import { FormGroup, FormControl, Validators, ValidatorFn, AbstractControl, ValidationErrors } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 export function passwordMathchValidator(): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
@@ -36,7 +37,8 @@ export class SignupComponent implements OnInit {
   constructor(
     private authService: AuthenticationService,
     private router: Router,
-    private toast: HotToastService
+    private toast: HotToastService,
+    private afs: AngularFirestore
   ) {}
 
   ngOnInit(): void {
@@ -58,6 +60,18 @@ export class SignupComponent implements OnInit {
     if (!this.signUpForm.valid) {
       return;
     }
+
+    let data =
+    {
+      'address': "not set",
+      'email': this.signUpForm.value.email,
+      'fistName': "not set",
+      'isAdmin': false,
+      'lastName': "not set",
+      'phoneNumber': "not set"
+    };
+
+    this.afs.collection('user').add(data);
 
     const { name, email, password } = this.signUpForm.value;
     this.authService.signUp(name as string, email as string, password as string).pipe(
