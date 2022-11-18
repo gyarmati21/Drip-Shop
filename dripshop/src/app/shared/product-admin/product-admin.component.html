@@ -1,0 +1,41 @@
+<div>
+    <input type="text" placeholder="Category">
+    <label>Category</label>
+    <input type="number" placeholder="Drip">
+    <label>Drip</label>
+    <input type="text" placeholder="ID">
+    <label>ID</label>
+    <input type="text" placeholder="imageURL">
+    <label>imageURL</label>
+    <input type="text" placeholder="Name">
+    <label>Name</label>
+    <input type="number" placeholder="Price">
+    <label>Price</label>
+</div>
+
+<div>
+    <h1 class="display-4">Product managment</h1>
+    <button>Modify</button>
+    <table>
+        <thead>
+            <th>Category</th>
+            <th>Drip</th>
+            <th>Id</th>
+            <th>imageURL</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Delete</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let k in list">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button>Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
