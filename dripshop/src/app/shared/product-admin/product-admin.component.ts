@@ -9,7 +9,12 @@ import { Product } from '../models/product.model';
 })
 export class ProductAdminComponent implements OnInit { 
 
+  prodList: Product[];
+ 
   constructor(private firestore: AngularFirestore) { }
+
+  ngOnInit(): void {
+  }
 
   createProduct(data: Product) {
     return new Promise<any>((resolve, reject) => {
@@ -42,8 +47,4 @@ export class ProductAdminComponent implements OnInit {
         .then(res => {resolve(res)}, err => {reject(err)});
     });
   }
-
-  ngOnInit(): void {
-  }
-
 }
