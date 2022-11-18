@@ -1,17 +1,17 @@
 <h1 class="display-4">Product managment</h1>
 <div>
     <h2>Modify product</h2>
-    <input type="text" placeholder="Category" [(ngModel)]="category">
+    <input type="text" placeholder="Category" [(ngModel)]="category" required>
     <label>Category</label>
-    <input type="number" placeholder="Drip" [(ngModel)]="drip">
+    <input type="number" placeholder="Drip" [(ngModel)]="drip" required>
     <label>Drip</label>
-    <input type="text" placeholder="ID" [(ngModel)]="id">
+    <input type="text" placeholder="ID" [(ngModel)]="id" required>
     <label>ID</label>
-    <input type="text" placeholder="imageURL" [(ngModel)]="imageURL">
+    <input type="text" placeholder="imageURL" [(ngModel)]="imageURL" required>
     <label>imageURL</label>
-    <input type="text" placeholder="Name" [(ngModel)]="name">
+    <input type="text" placeholder="Name" [(ngModel)]="name" required>
     <label>Name</label>
-    <input type="number" placeholder="Price" [(ngModel)]="price">
+    <input type="number" placeholder="Price" [(ngModel)]="price" required>
     <label>Price</label>
     <button (click)="createProduct">DO IT</button>
 </div>
@@ -35,10 +35,10 @@
                 <td>{{produc.category}}</td>
                 <td>{{produc.drip}}</td>
                 <td>{{produc.id}}</td>
-                <td>{{produc.imageURL}}</td>
+                <td><img height="100px" src="{{produc.imageURL}}"></td>
                 <td>{{produc.name}}</td>
                 <td>{{produc.price}}</td>
-                <td><button (click)="deleteProduct">Delete</button></td>
+                <td><button (click)="deleteProduct(produc)">Delete</button></td>
             </tr>
         </tbody>
     </table>
