@@ -27,18 +27,18 @@
                 <th>imageURL</th>
                 <th>Name</th>
                 <th>Price</th>
-                <th>Delete</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let k in list">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><button>Delete</button></td>
+            <tr *ngFor="let produc in prodList">
+                <td>{{produc.category}}</td>
+                <td>{{produc.drip}}</td>
+                <td>{{produc.id}}</td>
+                <td>{{produc.imageURL}}</td>
+                <td>{{produc.name}}</td>
+                <td>{{produc.price}}</td>
+                <td><button (click)="deleteProduct">Delete</button></td>
             </tr>
         </tbody>
     </table>
