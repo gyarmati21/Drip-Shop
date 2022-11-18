@@ -1,4 +1,6 @@
+<h1 class="display-4">Product managment</h1>
 <div>
+    <h2>Modify product</h2>
     <input type="text" placeholder="Category" [(ngModel)]="category">
     <label>Category</label>
     <input type="number" placeholder="Drip" [(ngModel)]="drip">
@@ -15,17 +17,18 @@
 </div>
 
 <div>
-    <h1 class="display-4">Product managment</h1>
-    <button>Modify</button>
+    <h2>Product list</h2>
     <table>
         <thead>
-            <th>Category</th>
-            <th>Drip</th>
-            <th>Id</th>
-            <th>imageURL</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Delete</th>
+            <tr>
+                <th>Category</th>
+                <th>Drip</th>
+                <th>Id</th>
+                <th>imageURL</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Delete</th>
+            </tr>
         </thead>
         <tbody>
             <tr *ngFor="let k in list">
