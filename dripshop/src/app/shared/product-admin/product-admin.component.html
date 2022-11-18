@@ -1,16 +1,17 @@
 <div>
-    <input type="text" placeholder="Category">
+    <input type="text" placeholder="Category" [(ngModel)]="category">
     <label>Category</label>
-    <input type="number" placeholder="Drip">
+    <input type="number" placeholder="Drip" [(ngModel)]="drip">
     <label>Drip</label>
-    <input type="text" placeholder="ID">
+    <input type="text" placeholder="ID" [(ngModel)]="id">
     <label>ID</label>
-    <input type="text" placeholder="imageURL">
+    <input type="text" placeholder="imageURL" [(ngModel)]="imageURL">
     <label>imageURL</label>
-    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Name" [(ngModel)]="name">
     <label>Name</label>
-    <input type="number" placeholder="Price">
+    <input type="number" placeholder="Price" [(ngModel)]="price">
     <label>Price</label>
+    <button (click)="createProduct">DO IT</button>
 </div>
 
 <div>

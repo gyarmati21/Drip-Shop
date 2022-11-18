@@ -10,10 +10,19 @@ import { Product } from '../models/product.model';
 export class ProductAdminComponent implements OnInit { 
 
   prodList: Product[];
- 
+  id : string = " ";
+  category: string = " ";
+  drip : number = 0; 
+  imageURL : string = " ";
+  name : string = " ";
+  price : number = 0;
+
+  formData : Product;
+
   constructor(private firestore: AngularFirestore) { }
 
   ngOnInit(): void {
+    this.getProducts;
   }
 
   createProduct(data: Product) {
