@@ -10,17 +10,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule} from '@angular/material/input';
+import { UserGuard } from './guards/admin-guard.guard';
 import { UsermngmntComponent } from './usermngmnt/usermngmnt.component';
 import { CartComponent } from './cart/cart.component';
+import { ProductsComponent } from './products/products.component';
+import { AdminGuard } from './guards/user-guard.guard';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', component: HomeComponent},
   {path: 'home', component:HomeComponent},
   {path: 'login', component:LoginComponent},
   {path: 'sign-up', component:SignupComponent},
-  {path: 'user management', component:UsermngmntComponent},
-  {path: 'cart', component:CartComponent}
+  {path: 'products', component:ProductsComponent, canActivate: [UserGuard] },
+  {path: 'user-management', component:UsermngmntComponent, canActivate: [AdminGuard] },
+  {path: 'cart', component:CartComponent, canActivate: [UserGuard] }
 
 ];
 
@@ -34,8 +38,9 @@ const routes: Routes = [
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [UserGuard]
 })
 export class AppRoutingModule { }
