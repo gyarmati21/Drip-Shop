@@ -13,7 +13,7 @@ import { isAdmin } from '@firebase/util';
 @Injectable({
   providedIn: 'root'
 })
-export class UserGuard implements CanActivate {
+export class AdminGuard implements CanActivate {
   router: any;
 
   constructor(private afAuth: AngularFireAuth, private authService: AuthenticationService, private auth: Auth, private store: AngularFirestore) { }
