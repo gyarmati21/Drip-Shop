@@ -27,6 +27,9 @@ export class CartComponent implements OnInit {
   }
 
   loadCartItems() {
+    this.productList = [];
+    this.cartItemList = [];
+
     this.productService.getProducts().subscribe((actionArray) => {
       this.productList = actionArray;
       for (let index = 0; index < this.productList.length; index++) {
@@ -49,13 +52,8 @@ export class CartComponent implements OnInit {
   }
 
   deleteCartItem(item: CartItem) {
-    for (let index = 0; index < this.userv.cartContent.length; index++) {
-      if (this.userv.cartContent[index] === item) {
-        delete this.userv.cartContent[index];
-        this.userv.cartContent.length--;
-      }
-    }
-    this.loadCartItems;
+    const temp = this.userv.cartContent.filter((obj: CartItem) => obj !== item);
+    this.userv.cartContent = temp;
   }
 
   calculatePrice() {
