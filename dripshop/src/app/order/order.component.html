@@ -1,43 +1,55 @@
-<h1>Your order</h1>
+<div class="cartDiv">
+<h1 class="display-4 h1cart">Cart</h1>
 
-<table> 
-	<thead>
-		<th>Name</th>
-		<th>Image</th>
-		<th>Price</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td>{{i.name}}</td>
-			<<td><img height="100" src="{{image}}"></td>
-            		<td>{{i.price}} Ft</td>
-		</tr>
-	</tbody>
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Price</th>
+        <th>Remove</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Név</td>
+            <td><img height="100" src=""></td>
+            <td>1000 Ft</td>
+            <td><a  class="btn text-danger">
+                <mat-icon color="red">remove_shopping_cart</mat-icon>
+            </a></td>
+        </tr>
+    </tbody>
 </table>
-<h2> class="right">Total: {{i.total}} Ft </h2>
-
-	
+<h2 class="right">Total: 1500 Ft</h2>
+</div>
 
 <div class="formDiv">
-	<h1>Order data</h1>
-	<form>
-		<mat-form-field class="form-group">
-            		<input type="text" name="email" placeholder="Email address"  required>
-        	</mat-form-field>
-        	<mat-form-field class="form-group">
-            		<input type="text" name="address" placeholder="Address"  required>
-        	</mat-form-field>
-        	<mat-form-field class="form-group">
-            		<input type="text" name="firstname" placeholder="First name"  required>
-        	</mat-form-field>
-        	<mat-form-field class="form-group">
-            		<input type="text" name="lastname" placeholder="Last name"  required>
-        	</mat-form-field>
-        	<mat-form-field class="form-group">
-            		<input type="text" name="phone"  placeholder="Phone number"  required>
-        	</mat-form-field>
-        	<div class="form-group">
-        		<button type="submit">Order</button>
-        	</div>
-	</form>
+    <h1 class="display-4">Order data</h1>
+    <form  autocomplete="off" >
+
+    
+
+        <mat-form-field class="form-group">
+            <input type="text" matInput name="address" placeholder="Address" class="form-control" >
+        </mat-form-field>
+    
+        <mat-form-field class="form-group">
+            <input type="text" matInput name="firstName" placeholder="First Name" class="form-control" required >
+        </mat-form-field>
+    
+        <mat-form-field class="form-group">
+            <input type="text" matInput name="lastName" placeholder="Last Name" class="form-control" required >
+        </mat-form-field>
+
+        <mat-form-field class="form-group">
+            <input type="text" matInput name="email" placeholder="Email address" class="form-control" >
+        </mat-form-field>
+    
+        <mat-form-field class="form-group">
+            <input type="text" matInput name="phone" placeholder="Phone number" class="form-control" required >
+        </mat-form-field>
+    
+        <div class="form-group">
+            <button class="btn btn-lg btn-block btn-info">Order</button>
+        </div>
+    </form>
 </div>

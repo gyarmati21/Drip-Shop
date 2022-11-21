@@ -38,6 +38,7 @@ import { ProductsComponent } from './products/products.component';
 
 import { ProductAdminComponent } from './shared/product-admin/product-admin.component';
 import { MatInputModule } from '@angular/material/input';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { OrderComponent } from './order/order.component';
 
 @NgModule({
@@ -51,6 +52,7 @@ import { OrderComponent } from './order/order.component';
     CartComponent,
     AppComponent,
     ProductAdminComponent,
+    ProductsComponent,
     OrderComponent
   ],
   imports: [

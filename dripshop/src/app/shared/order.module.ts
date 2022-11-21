@@ -1,4 +1,10 @@
+import { Timestamp } from "@angular/fire/firestore";
+
 export class Order { 
-	user: User;
-	date: DateTime;
+  address: string;
+  date: Timestamp;
+  email: string;
+  firstName: string;
+  lastName: string;
+  phoneNumber: string;
 }
