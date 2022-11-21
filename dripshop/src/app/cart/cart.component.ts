@@ -13,7 +13,6 @@ import { ProductService } from '../shared/product.service';
 })
 export class CartComponent implements OnInit {
 
-  totalPrice = this.calculatePrice();
   testQuantitiy = 2;
   sizes = SizesObject;
 
@@ -21,22 +20,24 @@ export class CartComponent implements OnInit {
   constructor(private router : Router, private userv: AuthenticationService, private productService: ProductService) { }
 
 
-  productList: Product[] = [];
+  productList: Product[];
   cartItemList: CartItem[] = [];
   ngOnInit(): void {
+    this.loadCartItems();
+  }
+
+  loadCartItems() {
     this.productService.getProducts().subscribe((actionArray) => {
       this.productList = actionArray;
+      for (let index = 0; index < this.productList.length; index++) {
+        this.cartItemList.push(new CartItem);
+        this.cartItemList[index].product = this.productList[index];
+        this.cartItemList[index].size = "XL";
+        this.cartItemList[index].quantity = 1;
+
+        this.addCartItem(this.cartItemList[index]);
+      }
     });
-
-    console.log(this.productList);
-
-    for (let index = 0; index < this.productList.length; index++) {
-      this.cartItemList[index].product = this.productList[index];
-      this.cartItemList[index].size = "XL";
-      this.cartItemList[index].quantity = 1;
-    }
-
-    console.log(this.userv.cartContent);
   }
 
   getCartItems() {
@@ -47,25 +48,50 @@ export class CartComponent implements OnInit {
     this.userv.cartContent.push(item);
   }
 
-  deleteCartItem() { /*deleteCartItem(item : CartItem)*/
-
+  deleteCartItem(item: CartItem) {
+    for (let index = 0; index < this.userv.cartContent.length; index++) {
+      if (this.userv.cartContent[index] === item) {
+        delete this.userv.cartContent[index];
+        this.userv.cartContent.length--;
+      }
+    }
+    this.loadCartItems;
   }
 
   calculatePrice() {
-      return 1500;
+    let sum = 0;
+    this.userv.cartContent.forEach(item => {
+      sum += item.product.price;
+    });
+
+    return sum.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1 ");
   }
 
-  decreaseQunatitiy() {
+  decreaseQunatitiy(item: CartItem) {
+    if (item.quantity > 1) {
+      item.quantity--;
+    }
+  }
+
+  increaseQunatitiy(item: CartItem) {
+    item.quantity++;
+  }
+
+
+  // To be deleted
+  decreaseQunatitiyTest() {
     if (this.testQuantitiy > 0) {
       this.testQuantitiy--;
     }
   }
 
-  increaseQunatitiy() {
+  // To be deleted
+  increaseQunatitiyTest() {
     this.testQuantitiy++;
   }
 
   onSubmit() {
+    // uploading to database
     this.router.navigateByUrl("/order");
   }
 

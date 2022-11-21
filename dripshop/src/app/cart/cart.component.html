@@ -20,9 +20,9 @@
                     <option *ngFor="let s of sizes.sizes" [value]="s" >{{s}}</option>
                 </datalist>
             </td>
-            <td><button (click)="decreaseQunatitiy()">-</button> {{testQuantitiy}} <button (click)="increaseQunatitiy()">+</button></td>
+            <td><button (click)="decreaseQunatitiyTest()">-</button> {{testQuantitiy}} <button (click)="increaseQunatitiyTest()">+</button></td>
             <td>1500 Ft</td>
-            <td><a (click)="deleteCartItem()" class="btn text-danger">
+            <td><a class="btn text-danger">
                 <mat-icon color="red">remove_shopping_cart</mat-icon>
             </a></td>
         </tr>
@@ -36,14 +36,14 @@
                     <option *ngFor="let s of sizes.sizes" [value]="s" >{{i.size}}</option>
                 </datalist>
             </td>
-            <td><button (click)="decreaseQunatitiy()">-</button> {{i.quantity}} <button (click)="increaseQunatitiy()">+</button></td>
+            <td><button (click)="decreaseQunatitiy(i)">-</button> {{i.quantity}} <button (click)="increaseQunatitiy(i)">+</button></td>
             <td>{{i.product.price}} Ft</td>
-            <td><a (click)="deleteCartItem()" class="btn text-danger">
+            <td><a (click)="deleteCartItem(i)" class="btn text-danger">
                 <mat-icon color="red">remove_shopping_cart</mat-icon>
             </a></td>
         </tr>
     </tbody>
 </table>
-<h2 class="right">Total: {{totalPrice}} Ft</h2>
+<h2 class="right">Total: {{calculatePrice()}} Ft</h2>
 <button (click)="onSubmit()">Order</button>
 </div>
