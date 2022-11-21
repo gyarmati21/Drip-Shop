@@ -48,7 +48,28 @@ export class CartComponent implements OnInit {
   }
 
   addCartItem(item: CartItem) {
-    this.userv.cartContent.push(item);
+
+    if (this.userv.cartContent.length > 0) {
+      let isin = false;
+      let inindex = 0;
+      for (var i = 0; i < this.userv.cartContent.length; i++) {
+        // console.log(this.userv.cartContent[i].product.name + " - " + item.product.name);
+        if (this.userv.cartContent[i].product.name === item.product.name && this.userv.cartContent[i].size === item.size) {
+          // console.log("Already in: " + item);
+          isin = true;
+          inindex = i;
+        }
+      }
+      if (isin) {
+        this.userv.cartContent[inindex].quantity++;
+      }
+      else {
+        this.userv.cartContent.push(item);
+      }
+    }
+    else {
+      this.userv.cartContent.push(item);
+    }
   }
 
   deleteCartItem(item: CartItem) {
@@ -59,7 +80,7 @@ export class CartComponent implements OnInit {
   calculatePrice() {
     let sum = 0;
     this.userv.cartContent.forEach(item => {
-      sum += item.product.price;
+      sum += (item.product.price * item.quantity);
     });
 
     return sum.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1 ");
