@@ -46,8 +46,19 @@
                     </mat-select>
                   </mat-form-field>
             </td>
-            <td><button (click)="decreaseQunatitiy(i)">-</button> {{i.quantity}} <button (click)="increaseQunatitiy(i)">+</button></td>
-            <td>{{i.product.price}} Ft</td>
+            <!-- <td><button (click)="decreaseQunatitiy(i)">-</button> {{i.quantity}} <button (click)="increaseQunatitiy(i)">+</button></td> -->
+            <td>
+                <div fxLayout="row" fxLayoutAlign="space-evenly center" >
+                    <button mat-mini-fab color="primary" (click)="decreaseQunatitiy(i)">
+                      <mat-icon>remove</mat-icon>
+                    </button>
+                  {{i.quantity}}
+                    <button mat-mini-fab color="primary" (click)="increaseQunatitiy(i)">
+                      <mat-icon>add</mat-icon>
+                    </button>
+                </div>
+            </td>
+            <td>{{formatPrice(i.product.price)}} Ft</td>
             <td><a (click)="deleteCartItem(i)" class="btn text-danger">
                 <mat-icon color="red">remove_shopping_cart</mat-icon>
             </a></td>

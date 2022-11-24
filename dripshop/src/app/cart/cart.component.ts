@@ -81,13 +81,17 @@ export class CartComponent implements OnInit {
     this.userv.cartContent = temp;
   }
 
+  formatPrice(price: number) {
+    return price.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1 ")
+  }
+
   calculatePrice() {
     let sum = 0;
     this.userv.cartContent.forEach(item => {
       sum += (item.product.price * item.quantity);
     });
 
-    return sum.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1 ");
+    return this.formatPrice(sum);
   }
 
   decreaseQunatitiy(item: CartItem) {
