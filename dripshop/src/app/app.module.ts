@@ -39,6 +39,9 @@ import { ProductsComponent } from './products/products.component';
 import { ProductAdminComponent } from './shared/product-admin/product-admin.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { CommonModule } from '@angular/common';
+
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -77,7 +80,9 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
     FormsModule,
     MatInputModule,
     HotToastModule.forRoot(),
-    MatDialogModule
+    MatDialogModule,
+    CommonModule,
+    ToastrModule.forRoot()
     
   ],
   providers: [MatDialogModule],
