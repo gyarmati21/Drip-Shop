@@ -28,10 +28,9 @@ export class UserService {
 
   updateItem(data : User)
   {
-    let userEmail = data.email;
-
-    return new Promise<any>((resolve, reject) => {
-      this.afs.collection("user").doc(userEmail).update(data).then(res => {resolve(res)}, err => reject(err));
+    return new Promise<any>((resolve, reject) =>
+    {
+      this.afs.collection("user").doc(data.email).update(data).then(res => {resolve(res)}, err => reject(err));
     });
   }
 }
