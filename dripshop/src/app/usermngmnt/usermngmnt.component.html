@@ -1,7 +1,7 @@
 <div class="form-container mat-elevation-z5 formDiv">
     <h1 class="display-4">User management</h1>
     <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
-        <!--<input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">-->
+        <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
         <mat-form-field class="form-group">
             <input type="text" matInput name="firstName" #firstName="ngModel" [(ngModel)]="service.formData.firstName" placeholder="First name" class="form-control" required>
             <div *ngIf="firstName.invalid && firstName.touched" class="validation-error">First name is required!</div>

@@ -22,6 +22,7 @@ export class UsermngmntComponent implements OnInit {
       this.lista = actionArray.map(i =>{
         const data = i.payload.doc.data() as User
         return {
+          id: i.payload.doc.id,
           address: data.address,
           email: data.email,
           firstName: data.firstName,
@@ -42,6 +43,7 @@ export class UsermngmntComponent implements OnInit {
       form.resetForm();
     }
     this.service.formData = {
+      id: "",
       firstName: "",
       lastName: "",
       email: "",
@@ -67,6 +69,11 @@ export class UsermngmntComponent implements OnInit {
       }).catch(err => {
         this.toastr.error(err, "Item update error");
       });
+    }
+    else
+    {
+      form.form.markAllAsTouched();
+      this.resetForm();
     }
   }
 

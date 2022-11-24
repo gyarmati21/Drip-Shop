@@ -22,7 +22,7 @@ export class UserService {
   { 
     return new Promise<any>((resolve, reject) =>
     {
-      this.afs.collection("user").doc(data.email).delete().then(res => {resolve(res)}, err => reject(err));
+      this.afs.collection("user").doc(data.id).delete().then(res => {resolve(res)}, err => reject(err));
     });
   }
 
@@ -30,7 +30,7 @@ export class UserService {
   {
     return new Promise<any>((resolve, reject) =>
     {
-      this.afs.collection("user").doc(data.email).update(data).then(res => {resolve(res)}, err => reject(err));
+      this.afs.collection("user").doc(data.id).update(data).then(res => {resolve(res)}, err => reject(err));
     });
   }
 }
