@@ -13,14 +13,18 @@ import { ProductService } from '../shared/product.service';
 })
 export class CartComponent implements OnInit {
 
-  testQuantitiy = 2;
+  testQuantitiy = 2; // To be deleted
   sizes = SizesObject;
 
 
-  constructor(private router : Router, private userv: AuthenticationService, private productService: ProductService) { }
+  constructor(
+    private router : Router,
+    private userv: AuthenticationService,
+    private productService: ProductService
+  ) { }
 
 
-  productList: Product[];
+  productList: Product[]; 
   cartItemList: CartItem[] = [];
   ngOnInit(): void {
     this.loadCartItems();
@@ -111,6 +115,7 @@ export class CartComponent implements OnInit {
 
   onSubmit() {
     // uploading to database
+    console.log(this.userv.cartContent);
     this.router.navigateByUrl("/order");
   }
 

@@ -30,11 +30,21 @@
         <tr *ngFor="let i of getCartItems()">
             <td>{{i.product.name}}</td>
             <td><img height="100" src="{{i.product.imageURL}}"></td>
-            <td>
+            <!-- <td>
                 <input list="sizesTag">
                 <datalist id="sizesTag">
                     <option *ngFor="let s of sizes.sizes" [value]="s" >{{i.size}}</option>
                 </datalist>
+            </td> -->
+            <td>
+                <mat-form-field appearance="fill">
+                    <mat-label>Size</mat-label>
+                    <mat-select [(value)]="i.size">
+                      <mat-option *ngFor="let s of sizes.sizes" [value]="s">
+                        {{s}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
             </td>
             <td><button (click)="decreaseQunatitiy(i)">-</button> {{i.quantity}} <button (click)="increaseQunatitiy(i)">+</button></td>
             <td>{{i.product.price}} Ft</td>
