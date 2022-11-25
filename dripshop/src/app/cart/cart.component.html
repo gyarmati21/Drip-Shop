@@ -48,23 +48,27 @@
             </td>
             <!-- <td><button (click)="decreaseQunatitiy(i)">-</button> {{i.quantity}} <button (click)="increaseQunatitiy(i)">+</button></td> -->
             <td>
-                <div fxLayout="row" fxLayoutAlign="space-evenly center" >
-                    <button mat-mini-fab color="primary" (click)="decreaseQunatitiy(i)">
+                <div id="flexContainer">
+                    <button mat-flat-button color="primary" (click)="decreaseQunatitiy(i)">
                       <mat-icon>remove</mat-icon>
                     </button>
-                  {{i.quantity}}
-                    <button mat-mini-fab color="primary" (click)="increaseQunatitiy(i)">
+                    <div id="quantityBox">{{i.quantity}}</div>
+                    <button mat-flat-button color="primary" (click)="increaseQunatitiy(i)">
                       <mat-icon>add</mat-icon>
                     </button>
                 </div>
             </td>
-            <td>{{formatPrice(i.product.price)}} Ft</td>
+            <td>{{i.quantity * i.product.price}}<br>{{i.quantity}} * {{formatPrice(i.product.price)}} Ft</td>
             <td><a (click)="deleteCartItem(i)" class="btn text-danger">
                 <mat-icon color="red">remove_shopping_cart</mat-icon>
             </a></td>
         </tr>
     </tbody>
 </table>
-<h2 class="right">Total: {{calculatePrice()}} Ft</h2>
-<button (click)="onSubmit()">Order</button>
+<div id="checkoutArea">
+    <h2>Total: {{calculatePrice()}} Ft</h2>
+    <!-- <button (click)="onSubmit()">Order</button> -->
+    <button mat-flat-button color="primary" (click)="onSubmit()">Checkout!</button>
 </div>
+</div>
+<!-- <button (click)="onSubmit()">Order</button> -->
