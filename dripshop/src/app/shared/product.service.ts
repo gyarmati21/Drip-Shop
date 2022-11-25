@@ -37,6 +37,26 @@ export class ProductService {
       );
   }
 
+
+  getProductsByCategory(category:String) {
+    return this.firestore.collection("product", ref => ref.where("category", "==", category)).snapshotChanges().pipe(
+      map((snapShot) => {
+        return snapShot.map((item) => {
+          const data = item.payload.doc.data() as Product;
+
+          return <Product>{
+            id: item.payload.doc.id,
+            category: data.category,
+            drip: data.drip,
+            imageURL: data.imageURL,
+            name: data.name,
+            price: data.price,
+          };
+        });
+      })
+    );
+  }
+
   //Product managment
   //Get product az összes productot lekéri
   //get product id alapjám
