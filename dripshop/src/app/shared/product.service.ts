@@ -5,7 +5,7 @@ import {
   DocumentChangeAction,
   QuerySnapshot,
 } from "@angular/fire/compat/firestore";
-import { map, observable, Observable, take } from "rxjs";
+import { distinct, map, mergeAll, observable, Observable, take, tap } from "rxjs";
 import { Product } from "./models/product.model";
 import { observableToBeFn } from "rxjs/internal/testing/TestScheduler";
 
@@ -58,6 +58,10 @@ export class ProductService {
       }
       )
     );
+  }
+
+  getCategories() {
+    return this.firestore.collection<Product>("product").valueChanges().pipe(mergeAll(), map(product => product.category), distinct())
   }
 
   //Product managment
