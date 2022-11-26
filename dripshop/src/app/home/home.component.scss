@@ -1,33 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-.boujee-text {
-  --bg-size: 600%;
-  --color-one: rgba(2,0,36,1);
-  --color-two: rgba(24,121,72,1);
-  --color-three: rgba(0,83,99,1);
 
-  background: linear-gradient(
-      50deg,
-      var(--color-one),
-      var(--color-two),
-      var(--color-three),
-      var(--color-two),
-      var(--color-one),
-      
-    )
-    0 0 / var(--bg-size) 100%;
-  color: transparent;
-  background-clip: text;
 
-  position: relative;
-  font-family: "Avenir Next", sans-serif;
-  font-weight: 900;
-  font-size: 20vh;
-  letter-spacing: 0.05em;
-
+#main-title{
+  margin-bottom: 7%;
 }
-
 
 .main-page{
   text-align: center;
@@ -35,7 +13,10 @@
 }
 
 .example-card {
-  width: 250px;
+
+
+  width: 300px;
+  height: 250px;
 
 
   backdrop-filter: blur(16px) saturate(180%);
@@ -55,17 +36,12 @@
 }
 
 .example-card:hover{
-
   background-color: rgba(17, 25, 40, 0);
-
+  opacity: 60%;
 }
-
-
-
 
 .product-item {
   display: flex;
-
 }
 
 .example-header-image {
@@ -79,6 +55,22 @@
   flex-flow: wrap;
   justify-content:center;
   gap: 25px;
+}
+
+#products-card{
+  background-image: url("https://cdn.discordapp.com/attachments/707651426297577492/1046182783044829234/products.jpg");
+  background-repeat: no-repeat;
+}
+#login-card{
+  background-image: url("https://cdn.discordapp.com/attachments/707651426297577492/1046193420554735726/user_green.png");
+  background-size: 170%;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+#outfits-card{
+  background-image: url("https://cdn.discordapp.com/attachments/707651426297577492/1046181722808655972/Mix-and-match-Tinie-Tempah.-Photo_-Twitter-e1519025612707.jpg");
+  background-repeat: no-repeat;
 
 }
 

@@ -55,7 +55,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   max-width: 300px;
   margin: auto;
   margin-top: 50px;
-  background: linear-gradient(#141e30, #243b55);
+  background: linear-gradient(#243b55, #243b55);
   padding: 48px;
 }
 
@@ -121,7 +121,31 @@ body{
   width: 100vw;
   z-index: -1;
 }
+.boujee-text {
+  --bg-size: 600%;
+  --color-one: rgba(2,0,36,1);
+  --color-two: rgba(24,121,72,1);
+  --color-three: rgba(0,83,99,1);
 
+  background: linear-gradient(
+      50deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-three),
+      var(--color-two),
+      var(--color-one),
+      
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+
+  position: relative;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 900;
+  font-size: 20vh;
+  letter-spacing: 0.05em;
+}
 
 
 
