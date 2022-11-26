@@ -1,6 +1,6 @@
 <mat-sidenav-container class="sidenav-container">
 
-  <mat-sidenav-content>
+  <mat-sidenav-content >
     
     <mat-toolbar color="primary">
 
@@ -8,10 +8,10 @@
       
       <span class="title" id="t1" routerLink="/home">Drip</span><span class="title" id="t2" routerLink="/home">Shop</span>
       
-      <button class="button-28"><a [routerLink]="'/products'">Products</a></button>
-      
-      <button class="button-28"><a [routerLink]="'/cart'">Cart</a></button>
+      <h3 class="product" [routerLink]="'/products'" >Products</h3>
 
+    
+      <mat-icon [routerLink]="'/cart'" class="cart">shopping_cart</mat-icon>
 
 
       <button class="login_button" mat-button [matMenuTriggerFor]="userMenu" *ngIf="authService.currentUser$ | async as user; else loginButton">
@@ -28,14 +28,9 @@
         </ng-template>
         <mat-menu #userMenu="matMenu">
           <button class="leugroMenu" mat-menu-item (click)="logout()">Logout</button>
-          <button class="leugroMenu" mat-menu-item  routerLink="/user management">User management</button>
+          <button class="leugroMenu" mat-menu-item  routerLink="/user-management">User Management</button>
         </mat-menu>
 
     </mat-toolbar>
-
-
-
-
-
   </mat-sidenav-content>
 </mat-sidenav-container>

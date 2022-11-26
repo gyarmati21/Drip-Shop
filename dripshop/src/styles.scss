@@ -84,24 +84,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   text-align: center;
 }
 
-.title {
-  position: relative;
-  font-family: "Avenir Next", sans-serif;
-  font-weight: 900;
-  font-size: 64px;
-  text-transform: uppercase;
-  font-style: italic;
-  letter-spacing: 0.05em;
-  display: inline-block;
-}
 
-#t1:hover {
-  color: #ffb9c7;
-}
-
-#t2:hover {
-  color: #97f0f5;
-}
 
 
 
@@ -291,6 +274,7 @@ $mat-dark-theme-background: (
 // Theme Config
 
 body {
+  
   --primary-color: #005b41;
   --primary-lighter-color: #b3cec6;
   --primary-darker-color: #00402a;
@@ -388,3 +372,5 @@ $altTheme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
     font-family: 'Roboto';
   }
 }
+
+
