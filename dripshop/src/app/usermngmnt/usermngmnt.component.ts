@@ -66,13 +66,16 @@ export class UsermngmntComponent implements OnInit {
       .then(() => {
         this.toastr.success("User updated successfully", "User update");
         this.resetForm();
+        form.form.markAsPristine;
+        form.form.markAsUntouched
       }).catch(err => {
         this.toastr.error(err, "Item update error");
       });
     }
     else
     {
-      form.form.markAllAsTouched();
+      form.form.markAsPristine;
+      form.form.markAsUntouched;
       this.resetForm();
     }
   }
