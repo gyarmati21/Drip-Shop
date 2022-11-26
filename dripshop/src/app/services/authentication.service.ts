@@ -10,6 +10,7 @@ import {
 } from '@angular/fire/auth';
 import * as firebase from 'firebase/compat';
 import { concatMap, from, Observable, of, switchMap } from 'rxjs';
+import { CartItem } from '../shared/cart-item.module';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +18,8 @@ import { concatMap, from, Observable, of, switchMap } from 'rxjs';
 export class AuthenticationService {
 
   currentUser$ = authState(this.auth);
+
+  cartContent: Array<CartItem> = new Array;
 
   constructor(private auth: Auth) { }
 

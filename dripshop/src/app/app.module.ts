@@ -44,6 +44,7 @@ import { OrderComponent } from './order/order.component';
 import { CommonModule } from '@angular/common';
 
 import { ToastrModule } from 'ngx-toastr';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -87,6 +88,7 @@ import { ToastrModule } from 'ngx-toastr';
     CommonModule,
     ToastrModule.forRoot(),
     MatCheckboxModule,
+    MatSelectModule,
   ],
   providers: [MatDialogModule],
   bootstrap: [AppComponent]
