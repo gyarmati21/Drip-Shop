@@ -29,11 +29,11 @@
     
 
         <mat-form-field class="form-group">
-            <input type="text" matInput name="address" placeholder="Address" class="form-control" required>
+            <input type="text" matInput name="address" value="{{user.address}}" placeholder="Address" class="form-control" required>
         </mat-form-field>
     
         <mat-form-field class="form-group">
-            <input type="text" matInput name="firstName" placeholder="First Name" class="form-control" required >
+            <input type="text" matInput name="firstName"  placeholder="First Name" class="form-control" required >
         </mat-form-field>
     
         <mat-form-field class="form-group">
@@ -41,7 +41,7 @@
         </mat-form-field>
 
         <mat-form-field class="form-group">
-            <input type="text" matInput name="email" placeholder="Email address" class="form-control" required>
+            <input type="text" matInput name="email" value="{{user.email}}" placeholder="Email address" class="form-control" required>
         </mat-form-field>
     
         <mat-form-field class="form-group">

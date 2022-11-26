@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Auth, authState } from '@angular/fire/auth';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { FieldPath } from 'firebase/firestore';
+import { map, switchMap, of, observable, tap } from 'rxjs';
+import { AuthenticationService } from '../services/authentication.service';
 import { User } from '../shared/user.module';
 
 
@@ -10,10 +14,17 @@ import { User } from '../shared/user.module';
   styleUrls: ['./order.component.scss']
 })
 export class OrderComponent implements OnInit {
-
-  constructor() { }
+  user: User;
+  constructor(private afAuth: AngularFireAuth, private authService: AuthenticationService, private auth: Auth, private store: AngularFirestore) {}
 
   ngOnInit(): void {
+      authState(this.auth).pipe(
+        map(user => user?.uid), 
+        map(uid => (uid) ? this.store.collection<User>("user").doc(String(uid)).get() : null),
+        switchMap(snapshot => (snapshot) ? snapshot.pipe( map(snapshot => snapshot.data()) ) : of(undefined))
+      ).subscribe(user => {
+        (user)?  this.user = user : undefined
+      });
   }
-
+  
 }
