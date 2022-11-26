@@ -22,6 +22,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -79,8 +80,8 @@ import { OrderComponent } from './order/order.component';
     FormsModule,
     MatInputModule,
     HotToastModule.forRoot(),
-    MatDialogModule
-    
+    MatDialogModule,
+    MatCheckboxModule,
   ],
   providers: [MatDialogModule],
   bootstrap: [AppComponent]
