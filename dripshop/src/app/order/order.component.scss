@@ -1,0 +1,57 @@
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+mat-form-field {
+    width: 64%;
+}
+
+.formDiv {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 16px;
+    overflow: hidden;
+    border-right: 0;
+    border-left: 0;
+}
+
+.cartDiv {
+    width: 90%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    border-right: 0;
+    border-left: 0;
+    overflow: hidden;
+}
+
+input {
+    font-size: 24px;
+}
+
+.h1cart {
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0.5em 1em;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.right  {
+    text-align: right;
+    margin-right: 40px;
+}
