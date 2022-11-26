@@ -105,6 +105,22 @@ body {
   }
 }
 
+body{
+    background-image: radial-gradient(
+    rgba(255, 255, 255, 0.1) 10%, 
+    transparent 10%
+  );
+  
+  background-position: 0% 0%;
+  background-size: 4vmin 4vmin;
+  height: 100vh;
+
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  z-index: -1;
+}
 
 
 
