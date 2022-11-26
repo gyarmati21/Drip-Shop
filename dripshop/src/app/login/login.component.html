@@ -1,6 +1,6 @@
 <div class="form-container mat-elevation-z5">
     <h1>Login</h1>
-    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+    <form [formGroup]="loginForm" (ngSubmit)="submit()" class="xd">
         <mat-form-field>
             <input matInput placeholder="Email" formControlName="email"/>
             <mat-error *ngIf="email?.errors?.['required']">Type in your <b>e-mail</b> address</mat-error>

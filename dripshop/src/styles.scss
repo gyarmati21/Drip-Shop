@@ -43,28 +43,20 @@ $dripshop-theme: mat.define-light-theme((
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.form-container {
-  display: block;
-  max-width: 300px;
-  margin: auto;
-  margin-top: 50px;
-  background: #eceff1;
-  padding: 48px;
-  border-radius: 16px;
-}
+
 
 .form-container mat-form-field{
+  color: white;
   width: 100%;
 }
-
 .form-container {
+  color: white;
   display: block;
   max-width: 300px;
   margin: auto;
   margin-top: 50px;
-  background: #eceff1;
+  background: linear-gradient(#141e30, #243b55);
   padding: 48px;
-  border-radius: 16px;
 }
 
 .center{
@@ -77,6 +69,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .text-under{
+  
   display: block;
 }
 
@@ -84,15 +77,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   text-align: center;
 }
 
-
-
-
-
 body {
     background: #212534;
 }
-
-
 
 .dashboard-card-content {
   text-align: center;
