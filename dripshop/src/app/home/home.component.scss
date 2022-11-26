@@ -4,7 +4,7 @@
 
 
 #main-title{
-  margin-bottom: 7%;
+  margin-bottom: 4%;
 }
 
 .main-page{
@@ -75,10 +75,15 @@
 }
 
 h1{
-  font-family: 'Righteous', sans-serif;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 600;
+
   color: rgba(255,255,255,0.98);
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 36px;
+  margin-top: 20px;
+
+  text-align: center;
 }
 
 p {
