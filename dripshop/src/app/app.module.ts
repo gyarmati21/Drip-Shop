@@ -41,6 +41,9 @@ import { ProductAdminComponent } from './shared/product-admin/product-admin.comp
 import { MatInputModule } from '@angular/material/input';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { OrderComponent } from './order/order.component';
+import { CommonModule } from '@angular/common';
+
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -81,6 +84,8 @@ import { OrderComponent } from './order/order.component';
     MatInputModule,
     HotToastModule.forRoot(),
     MatDialogModule,
+    CommonModule,
+    ToastrModule.forRoot(),
     MatCheckboxModule,
   ],
   providers: [MatDialogModule],

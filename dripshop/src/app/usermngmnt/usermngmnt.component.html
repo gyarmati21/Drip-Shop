@@ -1,29 +1,30 @@
-<div class="form-container mat-elevation-z5">
+<div class="form-container mat-elevation-z5 formDiv">
     <h1 class="display-4">User management</h1>
-    <form #form="ngForm" autocomplete="off"> <!--<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">-->
-        <input type="hidden" name="id"> <!--<input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">-->
+    <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+        <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
         <mat-form-field class="form-group">
-            <input type="text" matInput name="firstName" placeholder="First name" class="form-control" required> <!--<input type="text" matInput name="firstName" #name="ngModel" [(ngModel)]="service.formData.fisrtName" placeholder="First name" class="form-control" required>-->
-            <!--<div *ngIf="firstName.invalid && firstName.touched" class="validation-error">First name is required!</div>-->
+            <input type="text" matInput name="firstName" #firstName="ngModel" [(ngModel)]="service.formData.firstName" placeholder="First name" class="form-control" required>
+            <div *ngIf="firstName.invalid && firstName.touched" class="validation-error">First name is required!</div>
         </mat-form-field>
         <mat-form-field class="form-group">
-            <input type="text" matInput name="lastName" placeholder="Last name" class="form-control" required> <!--<input type="text" matInput name="lastName" #name="ngModel" [(ngModel)]="service.formData.lastName" placeholder="Last name" class="form-control" required-->
-            <!--<div *ngIf="lastName.invalid && lastName.touched" class="validation-error">Last name is required!</div>-->
+            <input type="text" matInput name="lastName" #lastName="ngModel" [(ngModel)]="service.formData.lastName" placeholder="Last name" class="form-control" required>
+            <div *ngIf="lastName.invalid && lastName.touched" class="validation-error">Last name is required!</div>
         </mat-form-field>
         <mat-form-field class="form-group">
-            <input type="text" matInput name="email" placeholder="E-mail" class="form-control" required> <!--<input type="text" matInput name="email" #name="ngModel" [(ngModel)]="service.formData.email" placeholder="E-mail" class="form-control" required>-->
-            <!--<div *ngIf="email.invalid && email.touched" class="validation-error">E-mail is required!</div>-->
+            <input type="text" matInput name="email" #email="ngModel" [(ngModel)]="service.formData.email" placeholder="E-mail" class="form-control" required>
+            <div *ngIf="email.invalid && email.touched" class="validation-error">E-mail is required!</div>
         </mat-form-field>
         <mat-form-field class="form-group">
-            <input type="number" matInput name="phoneNumber" placeholder="Phone number" class="form-control" required> <!--<input type="number" matInput name="phoneNumber" #name="ngModel" [(ngModel)]="service.formData.phoneNumber" placeholder="Phone number" class="form-control" required>-->
-            <!--<div *ngIf="phoneNumber.invalid && phoneNumber.touched" class="validation-error">Phone number is required!</div>-->
+            <input type="text" matInput name="phoneNumber" #phoneNumber="ngModel" [(ngModel)]="service.formData.phoneNumber" placeholder="Phone number" class="form-control" required>
+            <div *ngIf="phoneNumber.invalid && phoneNumber.touched" class="validation-error">Phone number is required!</div>
         </mat-form-field>
         <mat-form-field class="form-group">
-            <input type="text" matInput name="address" placeholder="Address" class="form-control" required> <!--<input type="text" matInput name="address" #name="ngModel" [(ngModel)]="service.formData.adress" placeholder="Phone number" class="form-control" required>-->
-            <!--<div *ngIf="address.invalid && address.touched" class="validation-error">Address is required!</div>-->
+            <input type="text" matInput name="address" #address="ngModel" [(ngModel)]="service.formData.address" placeholder="Address" class="form-control" required>
+            <div *ngIf="address.invalid && address.touched" class="validation-error">Address is required!</div>
         </mat-form-field>
         <div class="form-group">
-            <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">Edit user</button> <!--<button mat-raised-button color="primary" *ngIf="id.value" type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">Edit user</button>-->
+            <button mat-raised-button color="primary" *ngIf="id.value" type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">Edit user</button>
+            <!--<button mat-raised-button color="primary" *ngIf="id.value" type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">Edit user</button>-->
         </div>
     </form>
 </div>
@@ -34,10 +35,11 @@
 
 <table>
     <thead>
+        <th>E-mail</th>
         <th>First name</th>
         <th>Last name</th>
+        <th>Address</th>
         <th>Phone number</th>
-        <th>E-mail</th>
         <th>Manage</th>
     </thead>
     <tbody>
@@ -53,13 +55,14 @@
                 <i class="bi bi-trash"></i>
             </a></td>
         </tr>-->
-        <tr>
-            <td>First name</td>
-            <td>Last name</td>
-            <td>Phone number</td>
-            <td>E-mail</td>
-            <td style="text-align: center"><a style="color: green" class="mngmnttext">Edit</a></td>
-            <td style="text-align: center"><a style="color: red" class="mngmnttext">Delete</a></td>
+        <tr *ngFor="let i of lista">
+            <td>{{i.email}}</td>
+            <td>{{i.firstName}}</td>
+            <td>{{i.lastName}}</td>
+            <td>{{i.address}}</td>
+            <td>{{i.phoneNumber}}</td>
+            <td style="text-align: center"><a style="color: green" class="mngmnttext" (click)="onEdit(i)">Edit</a></td>
+            <td style="text-align: center"><a style="color: red" class="mngmnttext" (click)="onDelete(i)">Delete</a></td>
         </tr>
     </tbody>
 </table>
