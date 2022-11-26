@@ -40,6 +40,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductAdminComponent } from './shared/product-admin/product-admin.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
     CartComponent,
     AppComponent,
     ProductAdminComponent,
-    ProductsComponent
+    ProductsComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
