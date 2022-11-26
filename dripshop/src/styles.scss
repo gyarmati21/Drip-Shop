@@ -1,4 +1,10 @@
 
+
+
+
+
+
+
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
@@ -96,6 +102,42 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 #t2:hover {
   color: #97f0f5;
 }
+
+
+
+body {
+    background: #212534;
+}
+
+
+
+.dashboard-card-content {
+  text-align: center;
+  justify-content: center;
+}
+
+.content {
+  padding: 16px;
+}
+
+.content > mat-card {
+  width: 250px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .boujee-text {
+    animation: move-bg 8s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
+
+
+
+
 
 /**
 * Generated theme by Material Theme Generator

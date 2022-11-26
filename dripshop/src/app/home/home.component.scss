@@ -1,21 +1,32 @@
-.grid-container {
-  margin: 20px;
+
+.boujee-text {
+  --bg-size: 600%;
+  --color-one: rgba(2,0,36,1);
+  --color-two: rgba(24,121,72,1);
+  --color-three: rgba(0,83,99,1);
+
+  background: linear-gradient(
+      50deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-three),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+
+  position: relative;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 900;
+  font-size: 20vh;
+  letter-spacing: 0.05em;
+
 }
 
-.dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-}
 
-.more-button {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-}
-
-.dashboard-card-content {
+.main-page{
   text-align: center;
+  margin-top: 20%;
 }
