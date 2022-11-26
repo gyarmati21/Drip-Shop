@@ -23,6 +23,7 @@ const routes: Routes = [
   {path: 'login', component:LoginComponent},
   {path: 'sign-up', component:SignupComponent},
   {path: 'products', component:ProductsComponent, canActivate: [UserGuard] },
+  {path: 'products/:category', component:ProductsComponent, canActivate: [UserGuard] },
   {path: 'user-management', component:UsermngmntComponent, canActivate: [UserGuard] },
   {path: 'cart', component:CartComponent, canActivate: [UserGuard] }
 
