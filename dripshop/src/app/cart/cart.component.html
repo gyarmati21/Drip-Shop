@@ -23,7 +23,7 @@
             <td><button (click)="decreaseQunatitiyTest()">-</button> {{testQuantitiy}} <button (click)="increaseQunatitiyTest()">+</button></td>
             <td>1500 Ft</td>
             <td><a class="btn text-danger">
-                <mat-icon color="red">remove_shopping_cart</mat-icon>
+                <mat-icon>remove_shopping_cart</mat-icon>
             </a></td>
         </tr>
 
@@ -58,9 +58,9 @@
                     </button>
                 </div>
             </td>
-            <td>{{i.quantity * i.product.price}}<br>{{i.quantity}} * {{formatPrice(i.product.price)}} Ft</td>
+            <td><span id="bigPrice">{{formatPrice(i.quantity * i.product.price)}} Ft</span><br>({{i.quantity}} * {{formatPrice(i.product.price)}} Ft)</td>
             <td><a (click)="deleteCartItem(i)" class="btn text-danger">
-                <mat-icon color="red">remove_shopping_cart</mat-icon>
+                <mat-icon style="color: red;">remove_shopping_cart</mat-icon>
             </a></td>
         </tr>
     </tbody>

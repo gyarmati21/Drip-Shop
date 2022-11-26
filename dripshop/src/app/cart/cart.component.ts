@@ -76,6 +76,14 @@ export class CartComponent implements OnInit {
     }
   }
 
+  getCartItemCount() {
+    return this.userv.cartContent.length;
+  }
+
+  emptyCart() {
+    this.userv.cartContent = [];
+  }
+
   deleteCartItem(item: CartItem) {
     const temp = this.userv.cartContent.filter((obj: CartItem) => obj !== item);
     this.userv.cartContent = temp;
