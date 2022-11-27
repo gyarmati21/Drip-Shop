@@ -40,9 +40,6 @@
 }
 
 .title {
-
-  
-
   position: relative;
   font-family: "Avenir Next", sans-serif;
   font-weight: 900;
@@ -54,11 +51,11 @@
 }
 
 #t1:hover {
-  color: #ffb9c7;
+  color: rgba(2,0,36,1);
 }
 
 #t2:hover {
-  color: #97f0f5;
+  color: rgba(2,0,36,1);
 }
 
 .leugroMenu{
@@ -87,3 +84,80 @@
   color: transparent;
   background-clip: text
 }
+
+$mainColor: rgb(255, 255, 255);
+$backgroundColor: rgb(0, 0, 0);
+$maxNumberOfElements: 5;
+
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: border-box;
+    transition: all 200ms ease;
+  }
+}
+
+body {
+  background: $backgroundColor;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+@mixin generateClasses {
+  @for $lastElementNo from 1 through $maxNumberOfElements {
+    // find the correct width
+    &:last-child:nth-child(#{$lastElementNo}):before {
+      width: 100% / $lastElementNo;
+    }
+    
+    @for $hoveredElement from 1 through $lastElementNo {
+      // try to figure out which one is the one hovered
+      &:nth-child(#{$hoveredElement}):nth-last-child(#{$lastElementNo - $hoveredElement + 1}):hover ~ :last-child:before,
+      &:nth-child(#{$hoveredElement}):nth-last-child(#{$lastElementNo - $hoveredElement + 1}):last-child:hover:before {
+        left: ($hoveredElement - 1) * 100% / $lastElementNo;
+      }
+        
+      &:nth-child(#{$hoveredElement}):nth-last-child(#{$lastElementNo - $hoveredElement + 1}):last-child:before {
+        left: -100% / $lastElementNo;
+      }
+    }
+  }
+}
+
+nav {
+  display: table;
+  table-layout: fixed;
+  margin: 40vh auto;
+  width: 40%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  a {
+    display: table-cell;    
+    padding: 1rem;
+    color: $mainColor;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    @include generateClasses();
+
+    &:hover {
+      color: $backgroundColor;
+    }
+    
+    &:last-child:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      background: $mainColor;
+      height: 100%;
+      z-index: -1;
+    }
+
+  }
+}
+
