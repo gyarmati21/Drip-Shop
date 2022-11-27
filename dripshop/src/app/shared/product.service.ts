@@ -39,7 +39,7 @@ export class ProductService {
 
 
   getProductsByCategory(category: String) {
-    console.log(category);
+    // console.log(category);
 
     return this.firestore.collection("product", ref => ref.where("category", "==", category)).snapshotChanges().pipe(
       mergeAll(),
