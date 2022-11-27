@@ -5,7 +5,7 @@ import {
   DocumentChangeAction,
   QuerySnapshot,
 } from "@angular/fire/compat/firestore";
-import { map, observable, Observable, take } from "rxjs";
+import { distinct, map, mergeAll, observable, Observable, of, take, tap } from "rxjs";
 import { Product } from "./models/product.model";
 import { observableToBeFn } from "rxjs/internal/testing/TestScheduler";
 
@@ -35,6 +35,34 @@ export class ProductService {
           });
         })
       );
+  }
+
+
+  getProductsByCategory(category: String) {
+    console.log(category);
+
+    return this.firestore.collection("product", ref => ref.where("category", "==", category)).snapshotChanges().pipe(
+      mergeAll(),
+      map((snapShot) => {
+
+        const data = snapShot.payload.doc.data() as Product;
+
+          return <Product>{
+          id: snapShot.payload.doc.id,
+            category: data.category,
+            drip: data.drip,
+            imageURL: data.imageURL,
+            name: data.name,
+            price: data.price,
+          };
+      }
+      )
+    );
+  }
+
+  getCategories() {
+    return this.firestore.collection<Product>("product").valueChanges().pipe(mergeAll(), map(product => product.category), distinct())
+    //return of("Outfit", "Coat")
   }
 
   //Product managment
