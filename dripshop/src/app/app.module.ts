@@ -22,6 +22,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -39,6 +40,11 @@ import { ProductsComponent } from './products/products.component';
 import { ProductAdminComponent } from './shared/product-admin/product-admin.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { OrderComponent } from './order/order.component';
+import { CommonModule } from '@angular/common';
+
+import { ToastrModule } from 'ngx-toastr';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -51,7 +57,8 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
     CartComponent,
     AppComponent,
     ProductAdminComponent,
-    ProductsComponent
+    ProductsComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
@@ -77,8 +84,11 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
     FormsModule,
     MatInputModule,
     HotToastModule.forRoot(),
-    MatDialogModule
-    
+    MatDialogModule,
+    CommonModule,
+    ToastrModule.forRoot(),
+    MatCheckboxModule,
+    MatSelectModule,
   ],
   providers: [MatDialogModule],
   bootstrap: [AppComponent]

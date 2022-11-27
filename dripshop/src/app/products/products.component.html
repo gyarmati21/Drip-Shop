@@ -1,6 +1,14 @@
 <app-nav></app-nav>
 
 <div class="product-container">
+
+<div class="side-bar">
+  <form *ngFor="let category of categories" >
+      <mat-checkbox #categoryBox id="{{category}}" (change)="changeCategorySelectedState($event)" value="{{category}}" >{{category}}</mat-checkbox>   
+  </form>
+  <button (click)="filter()">Filter</button>
+</div>
+
 <div *ngFor="let product of productList" class="product-item">
  <mat-card class="example-card" (click)="openProductDialog(product)">
     <mat-card-header>
