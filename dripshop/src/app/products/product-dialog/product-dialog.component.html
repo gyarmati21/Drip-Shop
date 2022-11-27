@@ -3,19 +3,6 @@
     <div class="cover-image product-image">
       <img mat-card-image src="{{ product.imageURL }}" />
     </div>
-    <!--
-      <div class="more-image-container">
-        <div class="more-image product-image">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.alternate.nl%2Fp%2F600x600%2Fk%2FRazer_Kraken___Kitty_Edition___Quartz_gaming_headset%40%40kh-r59_31.jpg&f=1&nofb=1" alt="">
-        </div>
-        <div class="more-image product-image">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.komplett.no%2Fimg%2Fp%2F1144%2F1146947_6.jpg&f=1&nofb=1" alt="">
-        </div>
-        <div class="more-image product-image">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.komplett.no%2Fimg%2Fp%2F870%2F1146947_4.jpg&f=1&nofb=1" alt="">
-        </div>
-      </div>
-      -->
   </div>
   <div class="product-info">
     <h3 class="product-name">{{ product.name }}</h3>
@@ -24,8 +11,9 @@
     <mat-chip-list>
       <mat-chip color="accent">Drip certified</mat-chip>
     </mat-chip-list>
-    <div class="discount-price"></div>
+    <div class="price">
     <p>{{ product.price }} FT</p>
+  </div>
   </div>
   <!--<p class="regular-price">1599$</p>-->
   <div class="example-button-row">
