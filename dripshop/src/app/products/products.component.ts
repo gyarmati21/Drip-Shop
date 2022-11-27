@@ -2,8 +2,12 @@ import { Component, OnInit, QueryList, ViewChildren } from "@angular/core";
 import { MatCheckbox, MatCheckboxChange } from "@angular/material/checkbox";
 import { _countGroupLabelsBeforeOption } from "@angular/material/core";
 import { MatDialog } from "@angular/material/dialog";
+
+import { ɵINTERNAL_BROWSER_DYNAMIC_PLATFORM_PROVIDERS } from "@angular/platform-browser-dynamic";
+
 import { ActivatedRoute, NavigationEnd, NavigationStart, Route, Router } from "@angular/router";
 import { skip, tap } from "rxjs";
+
 import { Product } from "../shared/models/product.model";
 import { ProductService } from "../shared/product.service";
 import { ProductDialogComponent } from "./product-dialog/product-dialog.component";

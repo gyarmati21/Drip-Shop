@@ -4,18 +4,37 @@
   .product-item {
     display: flex;
   }
-  
+
   .example-header-image {
     background-size: cover;
+    
   }
-
   .product-container {
     margin-top:15px;
     width: 100%;
     display: flex;
     flex-flow: wrap;
     justify-content:center;
+    
     gap: 25px;
   }
+  .cover-image {
+    overflow: hidden;
+  }
+  .image-container{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+  }
+  .cover-image {
+    height: 250px;
+    overflow: hidden;
+  }
+  img{
+    display: flex;
+    margin-inline: auto;
+    width: 100%;
+
   
+  }
  

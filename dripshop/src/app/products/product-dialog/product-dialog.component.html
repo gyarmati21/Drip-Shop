@@ -1,13 +1,41 @@
-<div  class="dialog-class">
-    <h1 mat-dialog-title>{{product.name}}</h1>
-    <div mat-dialog-content>
-    <p>{{product.price}}</p>
+<div class="product-card">
+  <div class="image-container">
+    <div class="cover-image product-image">
+      <img mat-card-image src="{{ product.imageURL }}" />
     </div>
-    <img
-        mat-card-image
-        src={{product.imageURL}}
-    />
-    <div mat-dialog-actions>
-    <button mat-button (click)="onNoClick()">Cancel</button>
+  </div>
+  <div class="product-info">
+    <h3 class="product-name">{{ product.name }}</h3>
+  </div>
+  <div>
+    <mat-chip-list>
+      <mat-chip color="accent">Drip certified</mat-chip>
+    </mat-chip-list>
+    <div class="price">
+    <p>{{ product.price }} FT</p>
+  </div>
+  </div>
+  <!--<p class="regular-price">1599$</p>-->
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <mat-button-toggle-group
+        class="mat-size-container"
+        name="fontStyle"
+        aria-label="Font Style"
+      >
+        <mat-button-toggle
+          class="mat-size-button"
+          *ngFor="let size of productSize | keyvalue"
+          value="size.value"
+          >{{ size.value }}</mat-button-toggle
+        >
+      </mat-button-toggle-group>
     </div>
+  </div>
+  <!--<p class="offer-info">The offer is valid until April 3 or as long as stock losts!</p>-->
+  <div class="button-container">
+    <button class="submit-button" mat-raised-button color="primary">
+      Add to cart
+    </button>
+  </div>
 </div>
