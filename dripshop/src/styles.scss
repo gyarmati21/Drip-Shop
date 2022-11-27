@@ -146,6 +146,45 @@ body{
   font-size: 20vh;
   letter-spacing: 0.05em;
 }
+.fill{
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+.fill:hover,
+.fill:focus {
+
+
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.mat-button.mat-success,
+.mat-stroked-button.mat-success {
+    color: #155724;
+
+}
+.mat-button.mat-success:hover,
+.mat-stroked-button.mat-success:hover {
+  background-color: #f0fff3;
+}
+
+.mat-raised-button.mat-success,
+.mat-flat-button.mat-success,
+.mat-fab.mat-success,
+.mat-mini-fab.mat-success {
+
+  
+  color: #f0fff3;
+  background-color: #155724;
+  width: 80%;
+}
+
+.mat-icon-button.mat-success {
+  color:#155724;
+}
 
 
 
