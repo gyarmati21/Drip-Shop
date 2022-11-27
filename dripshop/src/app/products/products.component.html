@@ -4,7 +4,14 @@
     <mat-card-header>
       <mat-card-title>{{product.name}}</mat-card-title>
     </mat-card-header>
-    <img class="product-image" mat-card-image src={{product.imageURL}}/>
+    <div class="image-container">
+      <div class="cover-image product-image">
+        <img
+        mat-card-image
+        src={{product.imageURL}}
+        />
+      </div>
+    </div>
     <mat-card-subtitle>{{product.price}}</mat-card-subtitle>
   </mat-card>
 </div>
