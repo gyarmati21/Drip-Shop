@@ -6,9 +6,14 @@
 
 
       
-      <span class="title" id="t1" routerLink="/home">Drip</span><span class="title" id="t2" routerLink="/home">Shop</span>
-      
-      <h3 class="product" [routerLink]="'/products'" >Products</h3>
+      <span class="title" id="t1" routerLink="/home">Drip</span><span class="title" id="t2" routerLink="/products">Shop</span>
+    
+      <nav role='navigation'>
+        <a [routerLink]="'/products/Tops'">Tops          </a>
+        <a [routerLink]="'/products/Pants'">Pants         </a>
+        <a [routerLink]="'/products/Accessories'">Accessories   </a>
+        <a [routerLink]="'/products/Outfit'">Outfits       </a>      
+      </nav>  
 
       <mat-icon [routerLink]="'/cart'" class="cart">shopping_cart</mat-icon>
 
@@ -27,7 +32,7 @@
         </ng-template>
         <mat-menu #userMenu="matMenu">
           <button class="leugroMenu" mat-menu-item (click)="logout()">Logout</button>
-          <button class="leugroMenu" mat-menu-item  routerLink="/user management">User management</button>
+          <button class="leugroMenu" mat-menu-item  routerLink="/usermanagement">User management</button>
         </mat-menu>
 
     </mat-toolbar>

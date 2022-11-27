@@ -145,6 +145,12 @@ body{
   font-weight: 900;
   font-size: 20vh;
   letter-spacing: 0.05em;
+
+  &:hover{
+    letter-spacing: 25px;
+		transform: scale(1.3);
+		transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
 }
 .fill{
   background: none;
@@ -349,7 +355,7 @@ body {
   --text-primary-darker-color: #{$light-primary-text};
 }   
 $mat-primary: (
-  main: linear-gradient(25deg, rgba(0,91,65,1) 42%, rgba(80,112,103,1) 100%),
+  main: linear-gradient(25deg, rgba(0,91,65,1) 35%, rgba(0,83,99,1) 70%, rgba(2,0,36,1) 100%),
   lighter: #b3cec6,
   darker: #00402a,
   200: #005b41, // For slide toggle,
