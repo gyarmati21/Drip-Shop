@@ -11,12 +11,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule} from '@angular/material/input';
-import { UserGuard } from './guards/admin-guard.guard';
+import { AdminGuard } from './guards/admin-guard.guard';
 import { UsermngmntComponent } from './usermngmnt/usermngmnt.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductsComponent } from './products/products.component';
-import { AdminGuard } from './guards/user-guard.guard';
+import { UserGuard } from './guards/user-guard.guard';
 import { ProductAdminComponent } from './shared/product-admin/product-admin.component';
+import { OrderComponent } from './order/order.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', component: HomeComponent},
@@ -25,8 +26,10 @@ const routes: Routes = [
   {path: 'sign-up', component:SignupComponent},
   {path: 'products', component:ProductsComponent, canActivate: [UserGuard] },
   {path: 'shared/product-admin', component:ProductAdminComponent, canActivate: [AdminGuard] },
-  {path: 'user-management', component:UsermngmntComponent, canActivate: [AdminGuard] },
-  {path: 'cart', component:CartComponent, canActivate: [UserGuard] }
+  {path: 'products/:category', component:ProductsComponent, canActivate: [UserGuard] },
+  {path: 'usermanagement', component:UsermngmntComponent, canActivate: [AdminGuard] },
+  {path: 'cart', component:CartComponent, canActivate: [UserGuard] },
+  {path: 'order', component:OrderComponent, canActivate: [UserGuard] }
 
 ];
 
@@ -43,6 +46,6 @@ const routes: Routes = [
     ReactiveFormsModule,
   ],
   exports: [RouterModule],
-  providers: [UserGuard]
+  providers: [AdminGuard]
 })
 export class AppRoutingModule { }

@@ -1,37 +1,22 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
 
-    <mat-nav-list>
-
-      <a mat-list-item routerLink="/home">Home</a>
-      <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="'/products'">Products</a>
-      <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="'/shared/product-admin'">Product management</a>
-      <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="'/cart'">Cart</a>
-      <mat-divider></mat-divider>
-
-    </mat-nav-list>
-
-  </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content >
+    
     <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
+
 
       
-      <span class="title" id="t1">Drip</span><span class="title" id="t2">Shop</span>
+      <span class="title" id="t1" routerLink="/home">Drip</span><span class="title" id="t2" routerLink="/products">Shop</span>
+    
+      <nav role='navigation'>
+        <a [routerLink]="'/products/Tops'">Tops          </a>
+        <a [routerLink]="'/products/Pants'">Pants         </a>
+        <a [routerLink]="'/products/Accessories'">Accessories   </a>
+        <a [routerLink]="'/products/Outfit'">Outfits       </a>      
+      </nav>  
+
+      <mat-icon [routerLink]="'/cart'" class="cart">shopping_cart</mat-icon>
+
 
       <button class="login_button" mat-button [matMenuTriggerFor]="userMenu" *ngIf="authService.currentUser$ | async as user; else loginButton">
         <mat-icon>account_circle</mat-icon>
@@ -47,16 +32,9 @@
         </ng-template>
         <mat-menu #userMenu="matMenu">
           <button class="leugroMenu" mat-menu-item (click)="logout()">Logout</button>
-          <button class="leugroMenu" mat-menu-item  routerLink="/user management">User management</button>
+          <button class="leugroMenu" mat-menu-item  routerLink="/usermanagement">User management</button>
         </mat-menu>
 
     </mat-toolbar>
-
-
-
-    <router-outlet></router-outlet>
-
-
-
   </mat-sidenav-content>
 </mat-sidenav-container>
