@@ -1,9 +1,7 @@
-
-img{
+img {
   display: flex;
   margin-inline: auto;
   width: 60%;
-
 }
 * {
   padding: 0;
@@ -25,7 +23,6 @@ body {
   margin: 0 auto;
   gap: 5%;
   color: #191847;
-  
 }
 
 .cover-image {
@@ -33,10 +30,10 @@ body {
   height: 500px;
   overflow: hidden;
 }
-img:hover{
+img:hover {
   transform: scale(1.05);
 }
-.image-container{
+.image-container {
   display: flex;
   justify-content: center;
   padding: 5%;
@@ -44,7 +41,6 @@ img:hover{
 .image-container img {
   width: 100%;
   object-fit: cover;
-  
 }
 
 .free-shipping {
@@ -57,14 +53,18 @@ img:hover{
   font-weight: 400;
 }
 
-.product-name {
-  margin: 10px 0 20px 0;
-  font-size: 22px;
+.product-info {
+  display: flex;
+  justify-content: center;
+
+  .product-name {
+    margin: 10px 0 20px 0;
+    font-size: 22px;
+  }
 }
 
-
 .discount-price {
-  display: inline-block;
+  padding-top: 30px;
   font-size: 40px;
   font-weight: 700;
 }
@@ -74,51 +74,34 @@ img:hover{
   color: gray;
 }
 
-.add-to-cart {
-  display: inline-block;
+.mat-size-container {
+  border: 0;
+  gap: 3%;
+}
+
+.mat-button-toggle {
+  border: 1px solid grey !important;
+}
+
+.mat-size-button {
+  border-radius: 5px;
+  width: 50px;
+  padding: 0;
+  
+}
+
+.mat-size-button:hover {
+  background-color: grey;
+}
+
+.button-container {
   width: 100%;
-  background: #191847;
-  color: white;
-  padding: 15px;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
-  box-shadow: #e2e9f3 0 5px;
-  margin: 20px 0;
-}
-.add-to-cart:hover {
-  background: #e2e9f3;
-  box-shadow: #191847 0 5px;
-  color: #191847;
-}
-
-
-
-
-.buttons {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  justify-content: center;
+  margin-block: 15px;
 }
 
-.button {
-  width: 200px;
-  color: #191847;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
-  padding: 15px;
-  border: solid #dfe6f0 2px;
-  border-radius: 10px;
-}
-.button ion-icon {
-  font-size: 30px;
-  margin-bottom: -7px;
-}
-.button:hover {
-  box-shadow: #e2e9f3 0 0 10px;
-}
-.button:hover ion-icon {
-  transform: rotate(360deg);
+.submit-button {
+  width: 100%;
+  height: 45px;
 }

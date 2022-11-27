@@ -1,13 +1,9 @@
-
 <div class="product-card">
-    <div class="image-container">
-      <div class="cover-image product-image">
-        <img
-        mat-card-image
-        src={{product.imageURL}}
-        />
-      </div>
-      <!--
+  <div class="image-container">
+    <div class="cover-image product-image">
+      <img mat-card-image src="{{ product.imageURL }}" />
+    </div>
+    <!--
       <div class="more-image-container">
         <div class="more-image product-image">
           <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.alternate.nl%2Fp%2F600x600%2Fk%2FRazer_Kraken___Kitty_Edition___Quartz_gaming_headset%40%40kh-r59_31.jpg&f=1&nofb=1" alt="">
@@ -20,28 +16,38 @@
         </div>
       </div>
       -->
-    </div>
-    <div class="product-info">
-      <a href="#" class="free-shipping">Drip certified</a>
-      <h3 class="product-name">{{product.name}}</h3>
-      <!--<p class="regular-price">1599$</p>-->
-      <p class="discount-price">{{product.price}} FT</p>
-      <div class="example-label">Mini FAB</div>
+  </div>
+  <div class="product-info">
+    <h3 class="product-name">{{ product.name }}</h3>
+  </div>
+  <div>
+    <mat-chip-list>
+      <mat-chip color="accent">Drip certified</mat-chip>
+    </mat-chip-list>
+    <div class="discount-price"></div>
+    <p>{{ product.price }} FT</p>
+  </div>
+  <!--<p class="regular-price">1599$</p>-->
   <div class="example-button-row">
     <div class="example-flex-container">
-      <div class="example-button-container">
-        <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-          XL
-        </button>
-      </div>
+      <mat-button-toggle-group
+        class="mat-size-container"
+        name="fontStyle"
+        aria-label="Font Style"
+      >
+        <mat-button-toggle
+          class="mat-size-button"
+          *ngFor="let size of productSize | keyvalue"
+          value="size.value"
+          >{{ size.value }}</mat-button-toggle
+        >
+      </mat-button-toggle-group>
     </div>
   </div>
-      <!--<p class="offer-info">The offer is valid until April 3 or as long as stock losts!</p>-->
-      <a href="#" class="add-to-cart">
-         Add to cart
-      </a>
-      
-    </div>
+  <!--<p class="offer-info">The offer is valid until April 3 or as long as stock losts!</p>-->
+  <div class="button-container">
+    <button class="submit-button" mat-raised-button color="primary">
+      Add to cart
+    </button>
   </div>
-  
-  
+</div>

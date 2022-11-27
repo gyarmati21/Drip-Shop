@@ -35,10 +35,12 @@ import { SignupComponent } from './signup/signup.component';
 import { UsermngmntComponent } from './usermngmnt/usermngmnt.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductsComponent } from './products/products.component';
-
+import { MatChipsModule } from "@angular/material/chips";
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
 import { ProductAdminComponent } from './shared/product-admin/product-admin.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { ProductDialogComponent } from './products/product-dialog/product-dialog.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,7 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
     CartComponent,
     AppComponent,
     ProductAdminComponent,
+    ProductDialogComponent,
     ProductsComponent
   ],
   imports: [
@@ -77,6 +80,8 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
     FormsModule,
     MatInputModule,
     HotToastModule.forRoot(),
+    MatChipsModule,
+    MatButtonToggleModule,
     MatDialogModule
     
   ],
