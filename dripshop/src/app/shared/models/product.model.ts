@@ -1,12 +1,13 @@
 import { IProduct } from "../interfaces/product.interface";
 
 export class Product implements IProduct{
-    readonly id: string;
-    readonly category: string;
-    readonly drip: number;
-    readonly imageURL: string;
-    readonly name: string;
-    readonly price: number;
+     id: string;
+     category: string;
+     drip: number;
+     imageURL: string;
+     name: string;
+     price: number;
+
     
     /**
      * EZ EGY KONSTRUKTOR

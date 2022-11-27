@@ -1,45 +1,61 @@
-<h1 class="display-4">Product managment</h1>
-<div>
-    <h2>Modify product</h2>
-    <input type="text" placeholder="Category" [(ngModel)]="category" required>
-    <label>Category</label>
-    <input type="number" placeholder="Drip" [(ngModel)]="drip" required>
-    <label>Drip</label>
-    <input type="text" placeholder="ID" [(ngModel)]="id" required>
-    <label>ID</label>
-    <input type="text" placeholder="imageURL" [(ngModel)]="imageURL" required>
-    <label>imageURL</label>
-    <input type="text" placeholder="Name" [(ngModel)]="name" required>
-    <label>Name</label>
-    <input type="number" placeholder="Price" [(ngModel)]="price" required>
-    <label>Price</label>
-    <button (click)="createProduct">DO IT</button>
+<div class="formDiv">
+<h1 *ngIf="!id.value" class="display-4">Add new item!</h1>
+<h1 *ngIf="id.value" class="display-4">Update item!</h1>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+
+    <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+
+    <mat-form-field class="form-group">
+        <input type="text" matInput name="category" #name="ngModel" [(ngModel)]="service.formData.category" placeholder="Category" class="form-control" required>
+        </mat-form-field>
+
+    <mat-form-field class="form-group">
+        <input type="number" matInput name="drip" #price="ngModel" [(ngModel)]="service.formData.drip" placeholder="Drip" class="form-control" required>
+        </mat-form-field>
+
+    <mat-form-field class="form-group">
+        <input type="text" matInput name="imageurl" #image="ngModel" [(ngModel)]="service.formData.imageURL" placeholder="Image URL" class="form-control" required>
+        </mat-form-field>
+
+    <mat-form-field class="form-group">
+        <input type="text" matInput name="name" #image="ngModel" [(ngModel)]="service.formData.name" placeholder="Name" class="form-control" required>
+        </mat-form-field>
+
+    <mat-form-field class="form-group">
+        <input type="number" matInput name="price" #price="ngModel" [(ngModel)]="service.formData.price" placeholder="Product's price in HUF" class="form-control" required>
+        </mat-form-field>
+
+    <div class="form-group">
+        <button mat-raised-button color="primary" *ngIf="!id.value" type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">Add item</button>
+        <button mat-raised-button color="primary" *ngIf="id.value" type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">Update item</button>
+    </div>
+</form>
 </div>
 
-<div>
-    <h2>Product list</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Category</th>
-                <th>Drip</th>
-                <th>Id</th>
-                <th>imageURL</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let produc in prodList">
-                <td>{{produc.category}}</td>
-                <td>{{produc.drip}}</td>
-                <td>{{produc.id}}</td>
-                <td><img height="100px" src="{{produc.imageURL}}"></td>
-                <td>{{produc.name}}</td>
-                <td>{{produc.price}}</td>
-                <td><button (click)="deleteProduct(produc)">Delete</button></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<table>
+    <thead>
+        <th>Category</th>
+        <th>Drip</th>
+        <th>ImageURL</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Modify</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of lista">
+            <td>{{i.category}}</td>
+            <td>{{i.drip}}</td>
+            <td><img height="100" src="{{i.imageURL}}"></td>
+            <td>{{i.name}} Ft</td>
+            <td>{{i.price}}</td>
+            <td><a (click)="onEdit(i)" class="btn text-success">
+                Edit
+            </a></td>
+            <td><a (click)="onDelete(i)" class="btn text-danger">
+                Delete
+            </a></td>
+        </tr>
+    </tbody>
+</table>
+

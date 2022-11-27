@@ -13,6 +13,8 @@ import { observableToBeFn } from "rxjs/internal/testing/TestScheduler";
   providedIn: "root",
 })
 export class ProductService {
+  formData: Product;
+
   constructor(private firestore: AngularFirestore) {}
 
   getProducts(): Observable<Product[]> {
@@ -40,7 +42,7 @@ export class ProductService {
   //Product managment
   //Get product az összes productot lekéri
   //get product id alapjám
-  /*
+
   createProduct(data: Product) {
     return new Promise<any>((resolve, reject) => {
       this.firestore
@@ -54,7 +56,7 @@ export class ProductService {
         );
     });
   }
-  */
+
   updateProduct(data: Product) {
     let productId = data.id;
 
