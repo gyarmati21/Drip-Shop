@@ -26,7 +26,6 @@ export class ProductsComponent implements OnInit {
 
   openProductDialog(product: Product): void {
     const dialogRef = this.dialog.open(ProductDialogComponent, {
-      backdropClass: "dialog-class",
       data: product,
     });
   }
