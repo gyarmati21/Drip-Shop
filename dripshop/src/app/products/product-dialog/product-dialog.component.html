@@ -1,13 +1,39 @@
-<div  class="dialog-class">
-    <h1 mat-dialog-title>{{product.name}}</h1>
-    <div mat-dialog-content>
-    <p>{{product.price}}</p>
-    </div>
-    <img
+<div class="product-card">
+    <div class="image-container">
+      <div class="cover-image product-image">
+        <img
         mat-card-image
         src={{product.imageURL}}
-    />
-    <div mat-dialog-actions>
-    <button mat-button (click)="onNoClick()">Cancel</button>
+        />
+      </div>
+      <!--
+      <div class="more-image-container">
+        <div class="more-image product-image">
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.alternate.nl%2Fp%2F600x600%2Fk%2FRazer_Kraken___Kitty_Edition___Quartz_gaming_headset%40%40kh-r59_31.jpg&f=1&nofb=1" alt="">
+        </div>
+        <div class="more-image product-image">
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.komplett.no%2Fimg%2Fp%2F1144%2F1146947_6.jpg&f=1&nofb=1" alt="">
+        </div>
+        <div class="more-image product-image">
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.komplett.no%2Fimg%2Fp%2F870%2F1146947_4.jpg&f=1&nofb=1" alt="">
+        </div>
+      </div>
+      -->
     </div>
-</div>
+    <div class="product-info">
+      <a href="#" class="free-shipping">Free shipping</a>
+      <h3 class="product-name">{{product.name}}</h3>
+      <!--<p class="regular-price">1599$</p>-->
+      <p class="discount-price">{{product.price}} FT</p>
+      <p class="offer-info">The offer is valid until April 3 or as long as stock losts!</p>
+      <a href="#" class="add-to-cart">
+         Add to cart
+      </a>
+      <div class="stock">
+        <div class="stock-status"></div>
+        <p class="stock-info">50+ pcs. in stock.</p>
+      </div>
+    </div>
+  </div>
+  
+  

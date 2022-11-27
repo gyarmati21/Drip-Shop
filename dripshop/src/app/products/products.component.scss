@@ -4,17 +4,23 @@
   .product-item {
     display: flex;
   }
-  
+
   .example-header-image {
     background-size: cover;
+    
   }
-
+  .product-image{
+    overflow: hidden;
+    width: 200px;
+    height: 300px;
+  }
   .product-container {
     margin-top:15px;
     width: 100%;
     display: flex;
     flex-flow: wrap;
     justify-content:center;
+    
     gap: 25px;
   }
   
