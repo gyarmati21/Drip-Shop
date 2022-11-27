@@ -4,9 +4,9 @@
 
 <div class="side-bar">
   <form *ngFor="let category of categories" >
-      <mat-checkbox #categoryBox id="{{category}}" (change)="changeCategorySelectedState($event)" value="{{category}}" >{{category}}</mat-checkbox>   
+      <mat-checkbox #categoryBox id="{{category}}" value="{{category}}" >{{category}}</mat-checkbox>   
   </form>
-  <button (click)="filter()">Filter</button>
+  <button (click)="filterByCheckBoxValues()">Filter</button>
 </div>
 
 <div *ngFor="let product of productList" class="product-item">
