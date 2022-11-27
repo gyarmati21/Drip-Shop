@@ -16,6 +16,7 @@ import { UsermngmntComponent } from './usermngmnt/usermngmnt.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductsComponent } from './products/products.component';
 import { UserGuard } from './guards/user-guard.guard';
+import { ProductAdminComponent } from './shared/product-admin/product-admin.component';
 import { OrderComponent } from './order/order.component';
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'login', component:LoginComponent},
   {path: 'sign-up', component:SignupComponent},
   {path: 'products', component:ProductsComponent, canActivate: [UserGuard] },
+  {path: 'shared/product-admin', component:ProductAdminComponent, canActivate: [AdminGuard] },
   {path: 'products/:category', component:ProductsComponent, canActivate: [UserGuard] },
   {path: 'usermanagement', component:UsermngmntComponent, canActivate: [AdminGuard] },
   {path: 'cart', component:CartComponent, canActivate: [UserGuard] },

@@ -1,12 +1,13 @@
 import { IProduct } from "../interfaces/product.interface";
 
 export class Product implements IProduct{
-    id: string;
-    category: string;
-    drip: number;
-    imageURL: string;
-    name: string;
-    price: number;
+     id: string;
+     category: string;
+     drip: number;
+     imageURL: string;
+     name: string;
+     price: number;
+
     
     /**
      * EZ EGY KONSTRUKTOR
