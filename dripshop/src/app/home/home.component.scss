@@ -41,6 +41,13 @@
   
   .card-h1{
     color: white;
+
+    letter-spacing: 5px;
+		transform: scale(1.1);
+		transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(24,121,72,1);
   }
 }
 
@@ -118,10 +125,6 @@
   background-clip: text;
 
   line-height: normal;
-
-  &:hover {
-    color: white;
-  }
 }
 
 p {
