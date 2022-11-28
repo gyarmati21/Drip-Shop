@@ -1,35 +1,28 @@
 <app-nav></app-nav>
 
-<div class="cartDiv">
-<h1 class="display-4 h1cart">Cart</h1>
-
-<table>
-    <thead>
-        <th>Name</th>
-        <th>Image</th>
-        <th>Price</th>
-        <th>Remove</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Név</td>
-            <td><img height="100" src=""></td>
-            <td>1000 Ft</td>
-            <td><a  class="btn text-danger">
-                <mat-icon color="red">remove_shopping_cart</mat-icon>
-            </a></td>
-        </tr>
-    </tbody>
-</table>
-<h2 class="right">Total: 1500 Ft</h2>
+<div class="container">
+    <table mat-table>
+        <thead>
+            <th>Name:</th>
+            <th>Size:</th>
+            <th>Quantity:</th>
+            <th>Price:</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Black Bomber</td>
+                <td>XL</td>
+                <td>1</td>
+                <td>189 999 Ft</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
-<div class="formDiv">
-    <h1 class="display-4">Order data</h1>
+
+<div class="order-container mat-elevation-z5">
+    <h1 class="subtitle">Order data</h1>
     <form  autocomplete="off" >
-
-    
-
         <mat-form-field class="form-group">
             <input type="text" matInput name="address" placeholder="Address" class="form-control" required>
         </mat-form-field>
@@ -49,9 +42,8 @@
         <mat-form-field class="form-group">
             <input type="text" matInput name="phone" placeholder="Phone number" class="form-control" required >
         </mat-form-field>
-    
-        <div class="form-group">
-            <button class="btn btn-lg btn-block btn-info">Order</button>
-        </div>
+
+            <button class="pulse">Order</button>
+        
     </form>
 </div>
