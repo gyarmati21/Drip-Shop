@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
         error: `There was an error `
       })
     ).subscribe(() => {
-      this.router.navigate(['/home']);
+      this.router.navigate(['/products']);
     });
 
   }

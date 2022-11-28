@@ -15,7 +15,7 @@
         <a [routerLink]="'/products/Outfit'">Outfits       </a>      
       </nav>  
 
-      <mat-icon [routerLink]="'/cart'" class="cart">shopping_cart</mat-icon>
+      <mat-icon *ngIf="authService.currentUser$ | async as user;" [routerLink]="'/cart'" class="cart">shopping_cart</mat-icon>
 
 
       <button class="login_button" mat-button [matMenuTriggerFor]="userMenu" *ngIf="authService.currentUser$ | async as user; else loginButton">
@@ -25,15 +25,17 @@
       </button>
       
         <ng-template #loginButton >
-          <button class="login_button" mat-button routerLink="login">
+          <button class="login_button" mat-button routerLink="login" [routerLink]="'../login'">
             <mat-icon>login</mat-icon>
             Login
           </button>
         </ng-template>
         <mat-menu #userMenu="matMenu">
-          <button class="leugroMenu" mat-menu-item (click)="logout()">Logout</button>
-          <button class="leugroMenu" mat-menu-item  routerLink="/usermanagement">User Management</button>
-          <button class="leugroMenu" mat-menu-item  routerLink="/product-admin">Product Management</button>
+          <span *ngIf="authService.currentUser$ | async as user">
+            <button class="leugroMenu" mat-menu-item (click)="logout()">Logout</button>
+            <button *ngIf="user.displayName == 'Admin'" class="leugroMenu" mat-menu-item  routerLink="/usermanagement">User Management</button>
+            <button *ngIf="user.displayName == 'Admin'" class="leugroMenu" mat-menu-item  routerLink="/product-admin">Product Management</button>
+          </span>
         </mat-menu>
 
     </mat-toolbar>

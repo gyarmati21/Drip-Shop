@@ -22,11 +22,11 @@ import { OrderComponent } from './order/order.component';
 const routes: Routes = [
   {path: '', pathMatch: 'full', component: HomeComponent},
   {path: 'home', component:HomeComponent},
-  {path: 'login', component:LoginComponent},
-  {path: 'sign-up', component:SignupComponent},
-  {path: 'products', component:ProductsComponent, canActivate: [UserGuard] },
+  {path: 'login', component:LoginComponent, canActivate: []},
+  {path: 'sign-up', component:SignupComponent, canActivate: []},
+  {path: 'products', component:ProductsComponent },
   {path: 'product-admin', component:ProductAdminComponent, canActivate: [AdminGuard] },
-  {path: 'products/:category', component:ProductsComponent, canActivate: [UserGuard] },
+  {path: 'products/:category', component:ProductsComponent },
   {path: 'usermanagement', component:UsermngmntComponent, canActivate: [AdminGuard] },
   {path: 'cart', component:CartComponent, canActivate: [UserGuard] },
   {path: 'order', component:OrderComponent, canActivate: [UserGuard] }
