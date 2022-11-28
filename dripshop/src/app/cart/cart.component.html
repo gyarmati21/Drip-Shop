@@ -1,77 +1,63 @@
 <app-nav>
   
 </app-nav>
-<div>
-<h1 class="display-4">Your Cart</h1>
+<div class="cart-container">
+    <h1 class="subtitle">Your Cart</h1>
+    <div class="container">
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Size</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </thead>
+            <tbody>
 
-<table>
-    <thead>
-        <th>Name</th>
-        <th>Image</th>
-        <th>Size</th>
-        <th>Quantity</th>
-        <th>Price</th>
-        <th>Remove</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Drip Coat</td>
-            <td><img height="100" src="https://www.williamjacket.com/wp-content/uploads/2021/12/Dragon-Ball-Z-Goku-Drip-Zipper-Black-Polyester-Puffer-Jacket-Front.jpg"></td>
-            <td>
-                <input list="sizesTag">
-                <datalist id="sizesTag">
-                    <option *ngFor="let s of sizes.sizes" [value]="s" >{{s}}</option>
-                </datalist>
-            </td>
-            <td><button (click)="decreaseQunatitiyTest()">-</button> {{testQuantitiy}} <button (click)="increaseQunatitiyTest()">+</button></td>
-            <td>1500 Ft</td>
-            <td><a class="btn text-danger">
-                <mat-icon>remove_shopping_cart</mat-icon>
-            </a></td>
-        </tr>
+        
+                <tr *ngFor="let i of getCartItems()">
+                    <td class="bigText">{{i.product.name}}</td>
+                    <td><img height="100" src="{{i.product.imageURL}}"></td>
+                    <!-- <td>
+                        <input list="sizesTag">
+                        <datalist id="sizesTag">
+                            <option *ngFor="let s of sizes.sizes" [value]="s" >{{i.size}}</option>
+                        </datalist>
+                    </td> -->
+                    <td>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Size</mat-label>
+                            <mat-select [(value)]="i.size">
+                              <mat-option *ngFor="let s of sizes.sizes" [value]="s">
+                                {{s}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                    </td>
+                    <!-- <td><button (click)="decreaseQunatitiy(i)">-</button> {{i.quantity}} <button (click)="increaseQunatitiy(i)">+</button></td> -->
+                    <td>
+                        
+                            <button class="pulse"(click)="decreaseQunatitiy(i)">
+                              -
+                            </button>
+                            {{i.quantity}}
+                            <button class="pulse" (click)="increaseQunatitiy(i)">
+                              +
+                            </button>
+                       
+                    </td>
+                    <td><span class="bigText">{{formatPrice(i.quantity * i.product.price)}} Ft</span><br>({{i.quantity}} * {{formatPrice(i.product.price)}} Ft)</td>
+                    <td><a (click)="deleteCartItem(i)" class="btn text-danger">
+                        <mat-icon style="color: red;">remove_shopping_cart</mat-icon>
+                    </a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="checkout">
+        <h2 class="subtitle">Total: {{calculatePrice()}} Ft</h2>
+        <button class="pulse" style="width: 60%; height: 100px;" (click)="onSubmit()">Checkout!</button>
+    </div>
+</div>
 
-        <tr *ngFor="let i of getCartItems()">
-            <td class="bigText">{{i.product.name}}</td>
-            <td><img height="100" src="{{i.product.imageURL}}"></td>
-            <!-- <td>
-                <input list="sizesTag">
-                <datalist id="sizesTag">
-                    <option *ngFor="let s of sizes.sizes" [value]="s" >{{i.size}}</option>
-                </datalist>
-            </td> -->
-            <td>
-                <mat-form-field appearance="fill">
-                    <mat-label>Size</mat-label>
-                    <mat-select [(value)]="i.size">
-                      <mat-option *ngFor="let s of sizes.sizes" [value]="s">
-                        {{s}}
-                      </mat-option>
-                    </mat-select>
-                  </mat-form-field>
-            </td>
-            <!-- <td><button (click)="decreaseQunatitiy(i)">-</button> {{i.quantity}} <button (click)="increaseQunatitiy(i)">+</button></td> -->
-            <td>
-                <div id="flexContainer">
-                    <button mat-flat-button color="primary" (click)="decreaseQunatitiy(i)">
-                      <mat-icon>remove</mat-icon>
-                    </button>
-                    <div id="quantityBox">{{i.quantity}}</div>
-                    <button mat-flat-button color="primary" (click)="increaseQunatitiy(i)">
-                      <mat-icon>add</mat-icon>
-                    </button>
-                </div>
-            </td>
-            <td><span class="bigText">{{formatPrice(i.quantity * i.product.price)}} Ft</span><br>({{i.quantity}} * {{formatPrice(i.product.price)}} Ft)</td>
-            <td><a (click)="deleteCartItem(i)" class="btn text-danger">
-                <mat-icon style="color: red;">remove_shopping_cart</mat-icon>
-            </a></td>
-        </tr>
-    </tbody>
-</table>
-<div id="checkoutArea">
-    <h2>Total: {{calculatePrice()}} Ft</h2>
-    <!-- <button (click)="onSubmit()">Order</button> -->
-    <button mat-flat-button color="primary" (click)="onSubmit()" class="bigText">Checkout!</button>
-</div>
-</div>
-<!-- <button (click)="onSubmit()">Order</button> -->
