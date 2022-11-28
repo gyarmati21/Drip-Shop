@@ -358,6 +358,7 @@ body {
   --text-primary-lighter-color: #{$dark-primary-text};
   --text-primary-darker-color: #{$light-primary-text};
 }   
+//nav-gradient
 $mat-primary: (
   main: linear-gradient(25deg, rgba(0,91,65,1) 35%, rgba(0,83,99,1) 70%, rgba(2,0,36,1) 100%),
   lighter: #b3cec6,

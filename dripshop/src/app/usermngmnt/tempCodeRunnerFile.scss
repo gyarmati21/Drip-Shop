@@ -1,6 +1,3 @@
-body{
-    overflow: hidden;
-}
 .container {
     justify-content: center;
     margin-top: 5%;
@@ -124,29 +121,3 @@ button, a {
   text-decoration: none;
   
 }
-
-.user-management-container{
-    margin-bottom: 50px;
-}
-
-.form-container {
-    color: white;
-    display: block;
-    max-width: 50%;
-    margin: auto;
-    margin-top: 30px;
-    background: linear-gradient(#243b55, #243b55);
-    padding: 48px;
-    text-align: center;
-  }
-
-  .subtitle{
-    font-family: "Avenir Next", sans-serif;
-    font-weight: 800;
-  
-    text-transform: uppercase;
-    font-size: 36px;
-    color: white;
-  
-    text-align: center;
-  }
