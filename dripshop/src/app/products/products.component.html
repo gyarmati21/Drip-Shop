@@ -2,17 +2,19 @@
 
 <div class="product-container">
 
+  <!--
 <div class="side-bar">
   <form *ngFor="let category of categories" >
       <mat-checkbox #categoryBox id="{{category}}" value="{{category}}" >{{category}}</mat-checkbox>   
   </form>
   <button (click)="filterByCheckBoxValues()">Filter</button>
 </div>
+-->
 
 <div *ngFor="let product of productList" class="product-item">
- <mat-card class="example-card" (click)="openProductDialog(product)">
-    <mat-card-header>
-      <mat-card-title>{{product.name}}</mat-card-title>
+ <mat-card class="example-card product-border" (click)="openProductDialog(product)">
+    <mat-card-header >
+      <mat-card-title class="product-title">{{product.name}}</mat-card-title>
     </mat-card-header>
     <div class="image-container">
       <div class="cover-image product-image">
@@ -22,7 +24,7 @@
         />
       </div>
     </div>
-    <mat-card-subtitle>{{ formatPrice(product.price) }} Ft</mat-card-subtitle>
+    <mat-card-subtitle class="product-price">{{ formatPrice(product.price) }} Ft</mat-card-subtitle>
   </mat-card>
 </div>
 </div>
