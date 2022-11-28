@@ -1,0 +1,61 @@
+<div class="formDiv">
+<h1 *ngIf="!id.value" class="display-4">Add new item!</h1>
+<h1 *ngIf="id.value" class="display-4">Update item!</h1>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+
+    <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+
+    <mat-form-field class="form-group">
+        <input type="text" matInput name="category" #name="ngModel" [(ngModel)]="service.formData.category" placeholder="Category" class="form-control" required>
+        </mat-form-field>
+
+    <mat-form-field class="form-group">
+        <input type="number" matInput name="drip" #price="ngModel" [(ngModel)]="service.formData.drip" placeholder="Drip" class="form-control" required>
+        </mat-form-field>
+
+    <mat-form-field class="form-group">
+        <input type="text" matInput name="imageurl" #image="ngModel" [(ngModel)]="service.formData.imageURL" placeholder="Image URL" class="form-control" required>
+        </mat-form-field>
+
+    <mat-form-field class="form-group">
+        <input type="text" matInput name="name" #image="ngModel" [(ngModel)]="service.formData.name" placeholder="Name" class="form-control" required>
+        </mat-form-field>
+
+    <mat-form-field class="form-group">
+        <input type="number" matInput name="price" #price="ngModel" [(ngModel)]="service.formData.price" placeholder="Product's price in HUF" class="form-control" required>
+        </mat-form-field>
+
+    <div class="form-group">
+        <button mat-raised-button color="primary" *ngIf="!id.value" type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">Add item</button>
+        <button mat-raised-button color="primary" *ngIf="id.value" type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">Update item</button>
+    </div>
+</form>
+</div>
+
+<table>
+    <thead>
+        <th>Category</th>
+        <th>Drip</th>
+        <th>ImageURL</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Modify</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of lista">
+            <td>{{i.category}}</td>
+            <td>{{i.drip}}</td>
+            <td><img height="100" src="{{i.imageURL}}"></td>
+            <td>{{i.name}} Ft</td>
+            <td>{{i.price}}</td>
+            <td><a (click)="onEdit(i)" class="btn text-success">
+                Edit
+            </a></td>
+            <td><a (click)="onDelete(i)" class="btn text-danger">
+                Delete
+            </a></td>
+        </tr>
+    </tbody>
+</table>
+

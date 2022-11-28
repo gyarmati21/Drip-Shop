@@ -1,10 +1,12 @@
+<app-nav></app-nav>
+
 <div class="product-container">
 
 <div class="side-bar">
   <form *ngFor="let category of categories" >
-      <mat-checkbox #categoryBox id="{{category}}" (change)="changeCategorySelectedState($event)" value="{{category}}" >{{category}}</mat-checkbox>   
+      <mat-checkbox #categoryBox id="{{category}}" value="{{category}}" >{{category}}</mat-checkbox>   
   </form>
-  <button (click)="filter()">Filter</button>
+  <button (click)="filterByCheckBoxValues()">Filter</button>
 </div>
 
 <div *ngFor="let product of productList" class="product-item">
@@ -12,7 +14,14 @@
     <mat-card-header>
       <mat-card-title>{{product.name}}</mat-card-title>
     </mat-card-header>
-    <img mat-card-image src={{product.imageURL}}/>
+    <div class="image-container">
+      <div class="cover-image product-image">
+        <img
+        mat-card-image
+        src={{product.imageURL}}
+        />
+      </div>
+    </div>
     <mat-card-subtitle>{{product.price}}</mat-card-subtitle>
   </mat-card>
 </div>

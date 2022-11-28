@@ -36,11 +36,17 @@ import { SignupComponent } from './signup/signup.component';
 import { UsermngmntComponent } from './usermngmnt/usermngmnt.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductsComponent } from './products/products.component';
-
+import { MatChipsModule } from "@angular/material/chips";
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
 import { ProductAdminComponent } from './shared/product-admin/product-admin.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { ProductDialogComponent } from './products/product-dialog/product-dialog.component';
 import { OrderComponent } from './order/order.component';
+import { CommonModule } from '@angular/common';
+
+import { ToastrModule } from 'ngx-toastr';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -53,6 +59,7 @@ import { OrderComponent } from './order/order.component';
     CartComponent,
     AppComponent,
     ProductAdminComponent,
+    ProductDialogComponent,
     ProductsComponent,
     OrderComponent
   ],
@@ -80,8 +87,13 @@ import { OrderComponent } from './order/order.component';
     FormsModule,
     MatInputModule,
     HotToastModule.forRoot(),
+    MatChipsModule,
+    MatButtonToggleModule,
     MatDialogModule,
+    CommonModule,
+    ToastrModule.forRoot(),
     MatCheckboxModule,
+    MatSelectModule,
   ],
   providers: [MatDialogModule],
   bootstrap: [AppComponent]
