@@ -74,6 +74,11 @@ tbody {
 	}
 }
 
+.pulse {
+  letter-spacing: 0;
+  font-size: 64px;
+}
+
 .pulse:after, 
 .pulse:focus {
   animation: pulse 1s;
