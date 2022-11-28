@@ -5,6 +5,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { FieldPath } from 'firebase/firestore';
 import { map, switchMap, of, observable, tap } from 'rxjs';
 import { AuthenticationService } from '../services/authentication.service';
+import { CartItem } from '../shared/cart-item.module';
 import { User } from '../shared/user.module';
 
 
@@ -17,6 +18,8 @@ export class OrderComponent implements OnInit {
   user: User;
   constructor(private afAuth: AngularFireAuth, private authService: AuthenticationService, private auth: Auth, private store: AngularFirestore) {}
 
+  cartList: Array<CartItem> = this.authService.cartContent;
+
   ngOnInit(): void {
       authState(this.auth).pipe(
         map(user => user?.uid), 
@@ -25,6 +28,11 @@ export class OrderComponent implements OnInit {
       ).subscribe(user => {
         (user)?  this.user = user : undefined
       });
+
+      
   }
   
+  
+  
+
 }

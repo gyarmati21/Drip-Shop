@@ -8,12 +8,12 @@
             <th>Quantity:</th>
             <th>Price:</th>
         </thead>
-        <tbody>
+        <tbody *ngFor="let i of cartList">
             <tr>
-                <td>Black Bomber</td>
-                <td>XL</td>
-                <td>1</td>
-                <td>189 999 Ft</td>
+                <td>{{i.product.name}}</td>
+                <td>{{i.size}}</td>
+                <td>{{i.quantity}}</td>
+                <td>{{i.quantity * i.product.price}} Ft</td>
             </tr>
         </tbody>
     </table>
@@ -28,11 +28,11 @@
         </mat-form-field>
     
         <mat-form-field class="form-group">
-            <input type="text" matInput name="firstName"  placeholder="First Name" class="form-control" required >
+            <input type="text" matInput name="firstName" value="{{user.firstName}}" placeholder="First Name" class="form-control" required >
         </mat-form-field>
     
         <mat-form-field class="form-group">
-            <input type="text" matInput name="lastName" placeholder="Last Name" class="form-control" required >
+            <input type="text" matInput name="lastName" value="{{user.lastName}}" placeholder="Last Name" class="form-control" required >
         </mat-form-field>
 
         <mat-form-field class="form-group">
@@ -40,7 +40,7 @@
         </mat-form-field>
     
         <mat-form-field class="form-group">
-            <input type="text" matInput name="phone" placeholder="Phone number" class="form-control" required >
+            <input type="text" matInput name="phone" value="{{user.phoneNumber}}" placeholder="Phone number" class="form-control" required >
         </mat-form-field>
 
             <button class="pulse">Order</button>
