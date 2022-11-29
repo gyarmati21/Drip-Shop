@@ -8,12 +8,12 @@
             <th>Quantity:</th>
             <th>Price:</th>
         </thead>
-        <tbody>
+        <tbody *ngFor="let i of cartList">
             <tr>
-                <td>Black Bomber</td>
-                <td>XL</td>
-                <td>1</td>
-                <td>189 999 Ft</td>
+                <td>{{i.product.name}}</td>
+                <td>{{i.size}}</td>
+                <td>{{i.quantity}}</td>
+                <td>{{i.quantity * i.product.price}} Ft</td>
             </tr>
         </tbody>
     </table>
@@ -22,28 +22,29 @@
 
 <div class="order-container mat-elevation-z5">
     <h1 class="subtitle">Order data</h1>
-    <form  autocomplete="off" >
+    <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
         <mat-form-field class="form-group">
-            <input type="text" matInput name="address" placeholder="Address" class="form-control" required>
+            <input type="text" matInput name="address" #address="ngModel" ngModel value="{{user.address}}" placeholder="Address" class="form-control" required>
+        </mat-form-field>
+        
+
+        <mat-form-field class="form-group">
+            <input type="text" matInput name="firstName" #firstName="ngModel" ngModel value="{{user.firstName}}" placeholder="First Name" class="form-control" required >
         </mat-form-field>
     
         <mat-form-field class="form-group">
-            <input type="text" matInput name="firstName" placeholder="First Name" class="form-control" required >
-        </mat-form-field>
-    
-        <mat-form-field class="form-group">
-            <input type="text" matInput name="lastName" placeholder="Last Name" class="form-control" required >
+            <input type="text" matInput name="lastName" #lastName="ngModel" ngModel value="{{user.lastName}}" placeholder="Last Name" class="form-control" required >
         </mat-form-field>
 
         <mat-form-field class="form-group">
-            <input type="text" matInput name="email" placeholder="Email address" class="form-control" required>
+            <input type="text" matInput name="email" #email="ngModel" ngModel value="{{user.email}}" placeholder="Email address" class="form-control" required>
         </mat-form-field>
     
         <mat-form-field class="form-group">
-            <input type="text" matInput name="phone" placeholder="Phone number" class="form-control" required >
+            <input type="text" matInput name="phone"  #phone="ngModel" ngModel value="{{user.phoneNumber}}" placeholder="Phone number" class="form-control" required >
         </mat-form-field>
 
-            <button class="pulse">Order</button>
+            <button class="pulse" type="submit">Order</button>
         
     </form>
 </div>

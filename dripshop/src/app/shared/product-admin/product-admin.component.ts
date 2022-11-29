@@ -96,7 +96,7 @@ export class ProductAdminComponent implements OnInit {
   onSubmit(form: NgForm){
     let data = form.value;
     form.form.markAsUntouched();
-    console.log(data);
+    console.log(data.email);
     if(form.value.id !== ""){
       this.updateProduct(data)
       .then(()=> {
