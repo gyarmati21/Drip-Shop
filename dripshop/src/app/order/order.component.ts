@@ -10,6 +10,10 @@ import { User } from '../shared/user.module';
 import { NgForm } from "@angular/forms";
 import { OrderService } from '../shared/order.service';
 import { Order } from '../shared/order.module';
+import { HotToastService } from '@ngneat/hot-toast';
+import { Router } from '@angular/router';
+import { Timestamp } from '@angular/fire/firestore';
+
 
 @Component({
   selector: 'app-order',
@@ -18,7 +22,7 @@ import { Order } from '../shared/order.module';
 })
 export class OrderComponent implements OnInit {
   user: User;
-  constructor(public service: OrderService  ,private afAuth: AngularFireAuth, private authService: AuthenticationService, private auth: Auth, private store: AngularFirestore) {}
+  constructor(private router: Router, private toast: HotToastService,public service: OrderService , private firestore: AngularFirestore ,private afAuth: AngularFireAuth, private authService: AuthenticationService, private auth: Auth, private store: AngularFirestore) {}
 
   cartList: Array<CartItem> = this.authService.cartContent;
 
@@ -34,11 +38,28 @@ export class OrderComponent implements OnInit {
   
 
   onSubmit(form: NgForm){
-    let data = form.value
-    data.cart =  this.cartList;
+
+    let data  = {
+    "address": form.value.address ,
+    "cart": this.cartList, 
+    "date": this.firestore.Timestamp.fromDate(new Date()),
+    "email": form.value.email, 
+    "firstName": form.value.firstName, 
+    "lastName":  form.value.lastName,
+    "phoneNumber": form.value.phone,
+  };
     form.form.markAsUntouched();
     console.log(data);
-    this.createOrder(data)
+    this.createOrder(data).then(()=>{
+      form.form.markAsUntouched();
+      form.resetForm();
+      this.showSuccess()
+      this.router.navigate(['/home']);
+    });
+  }
+  
+  showSuccess() {
+    this.toast.success('Success the ordering');
   }
   
   createOrder(data: Order) {

@@ -1,8 +1,9 @@
 import { Timestamp } from "@angular/fire/firestore";
+import { CartItem } from "./cart-item.module";
 
 export class Order { 
   address: string;
-  carts: []
+  cart: Array<CartItem>;
   date: Timestamp;
   email: string;
   firstName: string;

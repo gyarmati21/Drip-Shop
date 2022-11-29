@@ -26,7 +26,8 @@
         <mat-form-field class="form-group">
             <input type="text" matInput name="address" #address="ngModel" ngModel value="{{user.address}}" placeholder="Address" class="form-control" required>
         </mat-form-field>
-    
+        
+
         <mat-form-field class="form-group">
             <input type="text" matInput name="firstName" #firstName="ngModel" ngModel value="{{user.firstName}}" placeholder="First Name" class="form-control" required >
         </mat-form-field>
@@ -40,7 +41,7 @@
         </mat-form-field>
     
         <mat-form-field class="form-group">
-            <input type="text" matInput name="phone"  #phoneNumber="ngModel" ngModel value="{{user.phoneNumber}}" placeholder="Phone number" class="form-control" required >
+            <input type="text" matInput name="phone"  #phone="ngModel" ngModel value="{{user.phoneNumber}}" placeholder="Phone number" class="form-control" required >
         </mat-form-field>
 
             <button class="pulse" type="submit">Order</button>
