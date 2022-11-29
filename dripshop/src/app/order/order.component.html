@@ -22,28 +22,28 @@
 
 <div class="order-container mat-elevation-z5">
     <h1 class="subtitle">Order data</h1>
-    <form  autocomplete="off" >
+    <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
         <mat-form-field class="form-group">
-            <input type="text" matInput name="address" value="{{user.address}}" placeholder="Address" class="form-control" required>
+            <input type="text" matInput name="address" #address="ngModel" ngModel value="{{user.address}}" placeholder="Address" class="form-control" required>
         </mat-form-field>
     
         <mat-form-field class="form-group">
-            <input type="text" matInput name="firstName" value="{{user.firstName}}" placeholder="First Name" class="form-control" required >
+            <input type="text" matInput name="firstName" #firstName="ngModel" ngModel value="{{user.firstName}}" placeholder="First Name" class="form-control" required >
         </mat-form-field>
     
         <mat-form-field class="form-group">
-            <input type="text" matInput name="lastName" value="{{user.lastName}}" placeholder="Last Name" class="form-control" required >
+            <input type="text" matInput name="lastName" #lastName="ngModel" ngModel value="{{user.lastName}}" placeholder="Last Name" class="form-control" required >
         </mat-form-field>
 
         <mat-form-field class="form-group">
-            <input type="text" matInput name="email" value="{{user.email}}" placeholder="Email address" class="form-control" required>
+            <input type="text" matInput name="email" #email="ngModel" ngModel value="{{user.email}}" placeholder="Email address" class="form-control" required>
         </mat-form-field>
     
         <mat-form-field class="form-group">
-            <input type="text" matInput name="phone" value="{{user.phoneNumber}}" placeholder="Phone number" class="form-control" required >
+            <input type="text" matInput name="phone"  #phoneNumber="ngModel" ngModel value="{{user.phoneNumber}}" placeholder="Phone number" class="form-control" required >
         </mat-form-field>
 
-            <button class="pulse">Order</button>
+            <button class="pulse" type="submit">Order</button>
         
     </form>
 </div>

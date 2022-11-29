@@ -1,9 +1,29 @@
 import { Injectable } from '@angular/core';
+import {
+  AngularFirestore,
+  DocumentChangeAction,
+  QuerySnapshot,
+} from "@angular/fire/compat/firestore";
+import { Order } from './order.module';
 
 @Injectable({
   providedIn: 'root'
 })
 export class OrderService {
+  constructor(private firestore: AngularFirestore) { }
 
-  constructor() { }
+  createOrder(data: Order) {
+    return new Promise<any>((resolve, reject) => {
+      this.firestore
+        .collection("order")
+        .add(data)
+        .then(
+          (res) => {
+            resolve(res);
+          },
+          (err) => reject(err)
+        );
+    });
+  }
+
 }

@@ -7,7 +7,9 @@ import { map, switchMap, of, observable, tap } from 'rxjs';
 import { AuthenticationService } from '../services/authentication.service';
 import { CartItem } from '../shared/cart-item.module';
 import { User } from '../shared/user.module';
-
+import { NgForm } from "@angular/forms";
+import { OrderService } from '../shared/order.service';
+import { Order } from '../shared/order.module';
 
 @Component({
   selector: 'app-order',
@@ -16,7 +18,7 @@ import { User } from '../shared/user.module';
 })
 export class OrderComponent implements OnInit {
   user: User;
-  constructor(private afAuth: AngularFireAuth, private authService: AuthenticationService, private auth: Auth, private store: AngularFirestore) {}
+  constructor(public service: OrderService  ,private afAuth: AngularFireAuth, private authService: AuthenticationService, private auth: Auth, private store: AngularFirestore) {}
 
   cartList: Array<CartItem> = this.authService.cartContent;
 
@@ -28,11 +30,25 @@ export class OrderComponent implements OnInit {
       ).subscribe(user => {
         (user)?  this.user = user : undefined
       });
-
-      
   }
   
+
+  onSubmit(form: NgForm){
+    let data = form.value
+    data.cart =  this.cartList;
+    form.form.markAsUntouched();
+    console.log(data);
+    this.createOrder(data)
+  }
   
+  createOrder(data: Order) {
+    return new Promise<any>((resolve, reject) => {
+      this.firestore
+        .collection("order")
+        .add(data)
+        .then(res => {resolve(res)}, err => reject(err))
+    });
+  }
   
 
 }
