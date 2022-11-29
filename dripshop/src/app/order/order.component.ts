@@ -81,7 +81,7 @@ export class OrderComponent implements OnInit {
   }
   
   showSuccess() {
-    this.toast.success('Order was Succesful');
+    this.toast.success('Order was successful');
   }
   
   createOrder(data: Order) {
