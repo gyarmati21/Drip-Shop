@@ -267,6 +267,41 @@ Hetente ülésezünk, megbeszéljük az elmúlt héten felmerülő problémákat
  	* Rózsa Patrik
  - Érintett témák: Segítség az Angular elkezdésében, feladatkörök pontos kiosztása
 
+10\. megbeszélés:
+ - Időpont: 2021.11.16.
+ - Hely: Discord
+ - Résztvevők:
+  	* Katona Ádám
+ 	* Pál Szilárd
+ 	* Györök Gábor
+ 	* Kabók Dániel Tibor
+ 	* Gyarmati Patrik
+ 	* Kücüktüfekci Cengiz Etem
+ 	* Rózsa Patrik
+ - Érintett témák: Jelenlegi állások bemutatása, felmerülő problémák megbeszélése
+
+11\. megbeszélés:
+ - Időpont: 2021.11.26.
+ - Hely: Discord
+ - Résztvevők:
+  	* Katona Ádám
+ 	* Pál Szilárd
+ 	* Györök Gábor
+ 	* Kabók Dániel Tibor
+ 	* Gyarmati Patrik
+ 	* Rózsa Patrik
+ - Érintett témák: Adatbázis feltöltése, CSS színek megbeszélése, kategoríák eldöntése
+
+12\. megbeszélés:
+ - Időpont: 2021.11.29.
+ - Hely: Discord
+ - Résztvevők:
+  	* Katona Ádám
+ 	* Györök Gábor
+ 	* Kabók Dániel Tibor
+ 	* Gyarmati Patrik
+ 	* Rózsa Patrik
+ - Érintett témák: Merge-ölések, teszt file-ok megírása, végső javítások
 ### 7.3. Minőségbiztosítás
 
 Az elkészült terveket a terveken nem dolgozó csapattársak közül átnézik, hogy megfelel-e a specifikációnak és az egyes diagramtípusok összhangban vannak-e egymással. A meglévő rendszerünk helyes működését a prototípusok bemutatása előtt a tesztelési dokumentumban leírtak végrehajtása alapján ellenőrizzük és összevetjük a specifikációval, hogy az elvárt eredményt kapjuk-e. További tesztelési lehetőségek: unit tesztek írása az egyes modulokhoz vagy a kód közös átnézése (code review) egy, a vizsgált modul programozásában nem résztvevő csapattaggal. Szoftverünk minőségét a végső leadás előtt javítani kell a rendszerünkre lefuttatott kódelemzés során kapott metrikaértékek és szabálysértések figyelembevételével.
