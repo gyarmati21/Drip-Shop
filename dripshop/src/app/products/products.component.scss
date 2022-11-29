@@ -52,7 +52,7 @@
     }
   }
 
-  .product-title{
+  ::ng-deep .product-title{
     text-align: center;
     font-family: "Avenir Next", sans-serif;
     font-weight: 800;
@@ -71,9 +71,6 @@
     color: white;
     margin-top: 5%;
   }
-
-
-
 
   body{
     color: white;
