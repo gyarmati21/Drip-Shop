@@ -7,16 +7,18 @@
   <div class="product-info">
     <h3 class="product-name">{{ product.name }}</h3>
   </div>
-  <div>
+  <div class="product-chip">
     <mat-chip-list>
-      <mat-chip color="accent">Drip certified</mat-chip>
+      <mat-chip class="chips" color="accent">Drip Certified</mat-chip>
+      <mat-chip class="chips" color="accent">Cengiz Approved</mat-chip>
     </mat-chip-list>
-    <div class="price">
-    <p>{{ product.price }} FT</p>
   </div>
+    <div class="price">
+    <p>{{ formatPrice(product.price) }} Ft</p>
+  
   </div>
   <!--<p class="regular-price">1599$</p>-->
-  <div class="example-button-row">
+  <!-- <div class="example-button-row">
     <div class="example-flex-container">
       <mat-button-toggle-group
         class="mat-size-container"
@@ -31,10 +33,10 @@
         >
       </mat-button-toggle-group>
     </div>
-  </div>
+  </div> -->
   <!--<p class="offer-info">The offer is valid until April 3 or as long as stock losts!</p>-->
   <div class="button-container">
-    <button class="submit-button" mat-raised-button color="primary">
+    <button class="submit-button pulse" (click)="sumbit(product)">
       Add to cart
     </button>
   </div>
