@@ -66,7 +66,9 @@ export class ProductsComponent {
     })
   }
 
-
+  formatPrice(price: number) {
+    return price.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1 ")
+  }
 
   openProductDialog(product: Product): void {
     const dialogRef = this.dialog.open(ProductDialogComponent, {

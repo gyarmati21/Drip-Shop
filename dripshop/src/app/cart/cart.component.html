@@ -39,17 +39,17 @@
                     <td>
                         
                             <button class="pulse"(click)="decreaseQunatitiy(i)">
-                              -
+                                <mat-icon class="qauntR">remove</mat-icon>
                             </button>
                             {{i.quantity}}
                             <button class="pulse" (click)="increaseQunatitiy(i)">
-                              +
+                                <mat-icon class="quantA">add</mat-icon>
                             </button>
                        
                     </td>
-                    <td><span class="bigText">{{formatPrice(i.quantity * i.product.price)}} Ft</span><br>({{i.quantity}} * {{formatPrice(i.product.price)}} Ft)</td>
+                    <td><span>{{formatPrice(i.quantity * i.product.price)}} Ft</span><br><span id="smallPrice">({{i.quantity}} * {{formatPrice(i.product.price)}} Ft)</span></td>
                     <td><a (click)="deleteCartItem(i)" class="btn text-danger">
-                        <mat-icon style="color: red;">remove_shopping_cart</mat-icon>
+                        <mat-icon style="color: red; transform: scale(1.3);">remove_shopping_cart</mat-icon>
                     </a></td>
                 </tr>
             </tbody>
@@ -57,7 +57,7 @@
     </div>
     <div class="checkout">
         <h2 class="subtitle">Total: {{calculatePrice()}} Ft</h2>
-        <button class="pulse" style="width: 60%; height: 100px;" (click)="onSubmit()">Checkout!</button>
+        <button class="pulse" style="width: 60%; height: 100px; font-size: 32px" (click)="onSubmit()">Checkout!</button>
     </div>
 </div>
 
