@@ -126,6 +126,11 @@ img:hover {
   box-shadow: 0 0 0 2em transparent;
 }
 
+.pulse:hover{
+  color: rgb(72, 140, 106);
+  transform: scale(1.05);
+}
+
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 var(--after); }
 }

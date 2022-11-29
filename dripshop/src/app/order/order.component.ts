@@ -68,20 +68,20 @@ export class OrderComponent implements OnInit {
       || data.email.length == 0 || data.firstName.length == 0 ||
       data.lastName.length == 0 || data.phoneNumber.length == 0
       ) {
-        this.toast.error('Not correct input or Some input empty or empty the cart!');
+        this.toast.error('Something went wrong!');
       }
     else {
       this.createOrder(data).then(()=>{
         form.form.markAsUntouched();
         form.resetForm();
         this.showSuccess()
-        this.router.navigate(['/home']);
+        this.router.navigate(['/products']);
       });
     }
   }
   
   showSuccess() {
-    this.toast.success('Success the ordering');
+    this.toast.success('Order was Succesful');
   }
   
   createOrder(data: Order) {
