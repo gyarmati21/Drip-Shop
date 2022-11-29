@@ -12,7 +12,7 @@ import { OrderService } from '../shared/order.service';
 import { Order } from '../shared/order.module';
 import { HotToastService } from '@ngneat/hot-toast';
 import { Router } from '@angular/router';
-import { Timestamp } from '@angular/fire/firestore';
+import { serverTimestamp } from '@angular/fire/firestore';
 
 
 @Component({
@@ -36,26 +36,48 @@ export class OrderComponent implements OnInit {
       });
   }
   
+  cartitemtoarray(cartlista: Array<CartItem>) {
+    var templista = []
+    for(let i = 0; i < cartlista.length; i++) {
+      templista.push({
+ 
+          "productID" :cartlista[i].product.id,
+          "quantity": cartlista[i].quantity,
+          "size": cartlista[i].size
+        
+      })
+    }
+    return templista;
+  }
 
   onSubmit(form: NgForm){
+    let cart = this.cartitemtoarray(this.cartList)
 
     let data  = {
     "address": form.value.address ,
-    "cart": this.cartList, 
-    "date": this.firestore.Timestamp.fromDate(new Date()),
+    "cart": cart, 
+    "date": serverTimestamp(),
     "email": form.value.email, 
     "firstName": form.value.firstName, 
     "lastName":  form.value.lastName,
     "phoneNumber": form.value.phone,
   };
     form.form.markAsUntouched();
-    console.log(data);
-    this.createOrder(data).then(()=>{
-      form.form.markAsUntouched();
-      form.resetForm();
-      this.showSuccess()
-      this.router.navigate(['/home']);
-    });
+
+    if(data.address.length == 0 || data.cart.length  == 0
+      || data.email.length == 0 || data.firstName.length == 0 ||
+      data.lastName.length == 0 || data.phoneNumber.length == 0
+      ) {
+        this.toast.error('Not correct input or Some input empty or empty the cart!');
+      }
+    else {
+      this.createOrder(data).then(()=>{
+        form.form.markAsUntouched();
+        form.resetForm();
+        this.showSuccess()
+        this.router.navigate(['/home']);
+      });
+    }
   }
   
   showSuccess() {

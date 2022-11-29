@@ -3,8 +3,8 @@ import { CartItem } from "./cart-item.module";
 
 export class Order { 
   address: string;
-  cart: Array<CartItem>;
-  date: Timestamp;
+  cart: Array<any>;
+  date: any;
   email: string;
   firstName: string;
   lastName: string;
