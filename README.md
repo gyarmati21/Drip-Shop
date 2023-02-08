@@ -1,4 +1,4 @@
-# Drip-Shop
+# [Drip-Shop](https://drip-shop.web.app/)
 An imaginary webshop selling interesting and unusual clothing items.
 
 ## Features
@@ -9,4 +9,4 @@ An imaginary webshop selling interesting and unusual clothing items.
 ## Team
 
 - [Gyarmati Patrik](https://github.com/gyarmati21) (Design, CSS & User Authorization)
-- [Rózsa Patrik](https://github.com/rozsapatrik) (User management)
+- [Rózsa Patrik](https://github.com/rozsapatrik) (User Management & Database)
