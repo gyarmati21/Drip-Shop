@@ -8,4 +8,4 @@ An imaginary webshop selling interesting and unusual clothing items.
 
 ## Team
 
-- [Gyarmati Patrik](https://github.com/gyarmati21) (Design & User Authorization)
+- [Gyarmati Patrik](https://github.com/gyarmati21) (Design, CSS & User Authorization)
