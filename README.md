@@ -7,10 +7,5 @@ An imaginary webshop selling interesting and unusual clothing items.
 - Feature 3
 
 ## Team
-- Person 1 (Role)
-- Person 2 (Role)
-- Person 3 (Role)
 
-## Creators:
-
-- [Gyarmati Patrik](https://github.com/gyarmati21)
+- [Gyarmati Patrik](https://github.com/gyarmati21) (Design & User Authorization)
