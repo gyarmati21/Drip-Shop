@@ -10,3 +10,4 @@ An imaginary webshop selling interesting and unusual clothing items.
 
 - [Gyarmati Patrik](https://github.com/gyarmati21) (Design, CSS & User Authorization)
 - [Rózsa Patrik](https://github.com/rozsapatrik) (User Management & Database)
+- [Kabók Dániel Tibor](https://github.com/Darcosi) (Cart & Team Manager)
